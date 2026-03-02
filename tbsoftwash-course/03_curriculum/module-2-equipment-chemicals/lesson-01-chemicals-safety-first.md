@@ -25,6 +25,26 @@ Use the PPE Gear Box and enforce it.
 
 - Gear library: `05_sales_marketing/affiliate/gearbox-library.md`
 
+## SDS habit (public-safe)
+Your best “recipe” is the SDS.
+
+Minimum standard:
+- [ ] Know where SDS sheets live (crew can pull them in 60 seconds)
+- [ ] Read first aid + incompatibilities for anything new
+- [ ] Treat labels as the law
+
+## Truck safety loadout (non-negotiable)
+This isn’t optional. If you touch chemicals, ladders, or traffic—this gear is part of the job.
+
+Printable:
+- `03_curriculum/printables/safety-loadout-checklist-v1.md`
+
+## Spill + exposure response
+We don’t operate without a plan.
+
+Printable:
+- `03_curriculum/printables/spill-and-exposure-response-card-v1.md`
+
 ## Heat matters
 Florida heat changes risk.
 

@@ -2,6 +2,10 @@
 
 Print this and keep it in the truck.
 
+Additional printables:
+- `03_curriculum/printables/safety-loadout-checklist-v1.md`
+- `03_curriculum/printables/spill-and-exposure-response-card-v1.md`
+
 ---
 
 ## Roof Soft Wash — QA Checklist
