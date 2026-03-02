@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getLesson } from "@/lib/course";
 import { getNeighbors } from "@/lib/nav";
+import { LessonHeader } from "@/components/LessonHeader";
+import { Button } from "@/components/ui/button";
 import { remark } from "remark";
 import html from "remark-html";
 import gfm from "remark-gfm";
@@ -22,16 +24,31 @@ export default async function LessonPage({
   const contentHtml = processed.toString();
 
   return (
-    <main style={{ maxWidth: 900 }}>
-      <h1>{lesson.title}</h1>
-      <div style={{ display: "flex", gap: 12, margin: "12px 0 20px" }}>
-        {neighbors.prev ? <Link href={neighbors.prev.href}>← Prev</Link> : <span />}
-        {neighbors.next ? <Link href={neighbors.next.href}>Next →</Link> : <span />}
-      </div>
+    <main className="mx-auto max-w-4xl px-6">
+      {/** glass header */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.18),transparent_55%)]" />
+
+      <LessonHeader
+        kicker={`Core • Module ${module}`}
+        title={lesson.title}
+        prev={neighbors.prev}
+        next={neighbors.next}
+      />
+
       <div className="markdown" dangerouslySetInnerHTML={{ __html: contentHtml }} />
-      <div style={{ display: "flex", gap: 12, marginTop: 24 }}>
-        {neighbors.prev ? <Link href={neighbors.prev.href}>← {neighbors.prev.label}</Link> : <span />}
-        {neighbors.next ? <Link href={neighbors.next.href}>{neighbors.next.label} →</Link> : <span />}
+
+      <div className="mt-10 flex flex-wrap gap-2">
+        {neighbors.prev ? (
+          <Button asChild variant="outline">
+            <Link href={neighbors.prev.href}>← {neighbors.prev.label}</Link>
+          </Button>
+        ) : null}
+        {neighbors.next ? (
+          <Button asChild>
+            <Link href={neighbors.next.href}>{neighbors.next.label} →</Link>
+          </Button>
+        ) : null}
       </div>
     </main>
   );
