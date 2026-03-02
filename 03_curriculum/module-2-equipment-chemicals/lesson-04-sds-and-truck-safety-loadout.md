@@ -36,6 +36,9 @@ You don’t “wing it” when something splashes.
 Printable:
 - `03_curriculum/printables/spill-and-exposure-response-card-v1.md`
 
+## FIGURE (electrical safety — last resort)
+FIGURE: mock-fig-101-outlet-taping-sequence
+
 ## The operator mindset
 Your safety standard is part of your brand.
 
