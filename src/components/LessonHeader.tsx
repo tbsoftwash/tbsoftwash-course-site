@@ -1,16 +1,19 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { MarkCompleteButton } from "@/components/MarkCompleteButton";
 
 export function LessonHeader({
   kicker,
   title,
   prev,
   next,
+  progress,
 }: {
   kicker: string;
   title: string;
   prev?: { href: string; label: string };
   next?: { href: string; label: string };
+  progress: { track: "core" | "springboard"; module?: number; week?: string; slug: string };
 }) {
   return (
     <div className="sticky top-0 z-40 -mx-6 mb-6 border-b bg-background/60 backdrop-blur-xl">
@@ -23,6 +26,7 @@ export function LessonHeader({
         </div>
 
         <div className="flex shrink-0 items-center gap-2">
+          <MarkCompleteButton {...progress} />
           {prev ? (
             <Button asChild variant="outline" size="sm">
               <Link href={prev.href}>← Prev</Link>
