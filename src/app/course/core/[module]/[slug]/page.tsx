@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+
 import { getLesson } from "@/lib/course";
 import { getNeighbors } from "@/lib/nav";
+import { buildLessonSections } from "@/lib/lessonSections";
+
 import { LessonHeader } from "@/components/LessonHeader";
+import { LessonTabs } from "@/components/LessonTabs";
 import { FiguresHydrator } from "@/components/FiguresHydrator";
 import { Button } from "@/components/ui/button";
-import { remark } from "remark";
-import html from "remark-html";
-import gfm from "remark-gfm";
 
 export default async function LessonPage({
   params,
@@ -21,19 +22,19 @@ export default async function LessonPage({
 
   const neighbors = getNeighbors({ track: "core", module: Number(module), slug });
 
-  const processed = await remark().use(gfm).use(html).process(lesson.content);
-  let contentHtml = processed.toString();
-  // Replace FIGURE callouts with placeholders hydrated on the client.
-  // Expected markdown line: `FIGURE: mock-fig-103-psi-vs-gpm`
-  contentHtml = contentHtml.replace(
-    /<p>FIGURE:\s*([^<]+)<\/p>/g,
-    (_m, name) => `<div data-figure="${String(name).trim()}"></div>`
-  );
+  const sections = await buildLessonSections(lesson.content);
+
+  // Replace FIGURE callouts inside each section.
+  const patched = sections.map((s) => ({
+    ...s,
+    html: s.html.replace(
+      /<p>FIGURE:\s*([^<]+)<\/p>/g,
+      (_m, name) => `<div data-figure="${String(name).trim()}"></div>`
+    ),
+  }));
 
   return (
     <main className="mx-auto max-w-4xl px-6">
-      {/** glass header */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.18),transparent_55%)]" />
 
       <LessonHeader
@@ -44,7 +45,7 @@ export default async function LessonPage({
         progress={{ track: "core", module: Number(module), slug }}
       />
 
-      <div className="markdown" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+      <LessonTabs sections={patched} />
       <FiguresHydrator />
 
       <div className="mt-10 flex flex-wrap gap-2">
