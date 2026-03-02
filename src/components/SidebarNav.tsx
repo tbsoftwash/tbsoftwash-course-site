@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { LessonMeta } from "@/lib/course";
 import { ModeToggle } from "@/components/ModeToggle";
+import { DiagramStyleToggle } from "@/components/DiagramStyleToggle";
 import { SearchInput } from "@/components/SearchInput";
 import { cn } from "@/lib/utils";
 import { lessonKey, loadCompleted } from "@/lib/progress";
@@ -163,6 +164,17 @@ export function SidebarNav({ lessons }: { lessons: LessonMeta[] }) {
               <NavItem href="/course/printables/operator-checklist-pack" label="Operator Checklist Pack" />
               <NavItem href="/course/printables/safety-loadout-checklist-v1" label="Safety Loadout Checklist" />
               <NavItem href="/course/printables/spill-and-exposure-response-card-v1" label="Spill + Exposure Card" />
+            </div>
+          </section>
+
+          <section>
+            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+              Settings
+            </h3>
+            <div className="grid gap-2">
+              <div className="text-xs text-muted-foreground">Diagram style</div>
+              <DiagramStyleToggle />
+              <NavItem href="/course/figures/psi-vs-gpm" label="Figure demo" />
             </div>
           </section>
         </div>
