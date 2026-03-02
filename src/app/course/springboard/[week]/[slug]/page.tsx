@@ -4,6 +4,7 @@ import { getLesson } from "@/lib/course";
 import { getNeighbors } from "@/lib/nav";
 import { remark } from "remark";
 import html from "remark-html";
+import gfm from "remark-gfm";
 
 export default async function SpringboardLessonPage({
   params,
@@ -17,7 +18,7 @@ export default async function SpringboardLessonPage({
 
   const neighbors = getNeighbors({ track: "springboard", week, slug });
 
-  const processed = await remark().use(html).process(lesson.content);
+  const processed = await remark().use(gfm).use(html).process(lesson.content);
   const contentHtml = processed.toString();
 
   return (
@@ -27,7 +28,7 @@ export default async function SpringboardLessonPage({
         {neighbors.prev ? <Link href={neighbors.prev.href}>← Prev</Link> : <span />}
         {neighbors.next ? <Link href={neighbors.next.href}>Next →</Link> : <span />}
       </div>
-      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+      <div className="markdown" dangerouslySetInnerHTML={{ __html: contentHtml }} />
       <div style={{ display: "flex", gap: 12, marginTop: 24 }}>
         {neighbors.prev ? <Link href={neighbors.prev.href}>← {neighbors.prev.label}</Link> : <span />}
         {neighbors.next ? <Link href={neighbors.next.href}>{neighbors.next.label} →</Link> : <span />}

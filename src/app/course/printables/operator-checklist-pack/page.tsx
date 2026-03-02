@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { remark } from "remark";
 import html from "remark-html";
+import gfm from "remark-gfm";
 
 export default async function OperatorChecklistPackPage() {
   const filePath = path.join(
@@ -13,7 +14,7 @@ export default async function OperatorChecklistPackPage() {
   );
 
   const md = fs.readFileSync(filePath, "utf8");
-  const processed = await remark().use(html).process(md);
+  const processed = await remark().use(gfm).use(html).process(md);
   const contentHtml = processed.toString();
 
   return (
@@ -22,7 +23,7 @@ export default async function OperatorChecklistPackPage() {
       <p>
         This is the truck-ready pack. (DOCX/PDF downloads can be wired here next.)
       </p>
-      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+      <div className="markdown" dangerouslySetInnerHTML={{ __html: contentHtml }} />
     </main>
   );
 }
