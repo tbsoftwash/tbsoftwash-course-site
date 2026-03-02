@@ -15,6 +15,9 @@ Your method changes before you ever pull the trigger.
 ## SOP
 - `04_sops/flatwork/flatwork-surface-cleaning-sop-v2.md`
 
+## FIGURE (pressure vs flow mindset)
+FIGURE: mock-fig-103-psi-vs-gpm
+
 ## Customer expectation setting
 Old stains are not the same as organic growth.
 
