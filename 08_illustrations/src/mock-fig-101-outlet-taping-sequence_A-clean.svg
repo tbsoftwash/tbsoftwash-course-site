@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .h1{font:700 44px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;fill:#111827}
+      .h2{font:700 26px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;fill:#111827}
+      .p{font:400 20px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;fill:#374151}
+      .muted{fill:#6b7280}
+      .box{fill:#ffffff;stroke:#111827;stroke-width:3;rx:18}
+      .step{fill:#ffffff;stroke:#111827;stroke-width:2;rx:16}
+      .tape{fill:#fde68a;stroke:#111827;stroke-width:2}
+      .danger{fill:#fee2e2;stroke:#111827;stroke-width:2;rx:14}
+      .num{font:800 22px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;fill:#111827}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#ffffff"/>
+  <text x="80" y="110" class="h1">Taping Off Electrical Outlets (Water-Shedding Pattern)</text>
+  <text x="80" y="155" class="p">Only after power is safely off (LOTO). This is a last resort—avoid spraying near electricity.</text>
+
+  <rect x="80" y="200" width="1440" height="620" class="box"/>
+
+  <!-- warning -->
+  <rect x="110" y="230" width="1380" height="70" class="danger"/>
+  <text x="130" y="275" class="h2" style="font-size:22px">STOP: Never tape or cover a live circuit. Confirm power is OFF first.</text>
+
+  <!-- steps row -->
+  <g transform="translate(110,330)">
+    <!-- step 1 -->
+    <rect x="0" y="0" width="430" height="460" class="step"/>
+    <text x="20" y="40" class="num">1</text>
+    <text x="55" y="40" class="h2" style="font-size:22px">Bottom anchor</text>
+    <text x="20" y="76" class="p">Tape the bottom edge to the wall.</text>
+
+    <rect x="130" y="130" width="170" height="250" fill="#f3f4f6" stroke="#111827" stroke-width="2" rx="16"/>
+    <rect x="170" y="170" width="90" height="120" fill="#ffffff" stroke="#111827" stroke-width="2" rx="10"/>
+    <rect x="155" y="345" width="120" height="26" class="tape" rx="6"/>
+    <text x="215" y="362" class="p" text-anchor="middle" style="font-size:16px">tape</text>
+
+    <!-- step 2 -->
+    <rect x="470" y="0" width="430" height="460" class="step"/>
+    <text x="490" y="40" class="num">2</text>
+    <text x="525" y="40" class="h2" style="font-size:22px">Vertical strips</text>
+    <text x="490" y="76" class="p">Work bottom → top with overlap.</text>
+
+    <rect x="600" y="130" width="170" height="250" fill="#f3f4f6" stroke="#111827" stroke-width="2" rx="16"/>
+    <rect x="640" y="170" width="90" height="120" fill="#ffffff" stroke="#111827" stroke-width="2" rx="10"/>
+    <rect x="605" y="155" width="18" height="220" class="tape" rx="6"/>
+    <rect x="632" y="155" width="18" height="220" class="tape" rx="6"/>
+    <rect x="659" y="155" width="18" height="220" class="tape" rx="6"/>
+    <rect x="686" y="155" width="18" height="220" class="tape" rx="6"/>
+    <rect x="713" y="155" width="18" height="220" class="tape" rx="6"/>
+    <text x="685" y="410" class="muted" style="font-size:16px">overlap like shingles</text>
+
+    <!-- step 3 -->
+    <rect x="940" y="0" width="430" height="460" class="step"/>
+    <text x="960" y="40" class="num">3</text>
+    <text x="995" y="40" class="h2" style="font-size:22px">Top cap + final overlap</text>
+    <text x="960" y="76" class="p">Cap the top, then add horizontal</text>
+    <text x="960" y="102" class="p">rows bottom → top to shed water.</text>
+
+    <rect x="1070" y="130" width="170" height="250" fill="#f3f4f6" stroke="#111827" stroke-width="2" rx="16"/>
+    <rect x="1110" y="170" width="90" height="120" fill="#ffffff" stroke="#111827" stroke-width="2" rx="10"/>
+    <rect x="1085" y="150" width="140" height="22" class="tape" rx="6"/>
+    <rect x="1085" y="180" width="140" height="22" class="tape" rx="6"/>
+    <rect x="1085" y="210" width="140" height="22" class="tape" rx="6"/>
+    <rect x="1085" y="240" width="140" height="22" class="tape" rx="6"/>
+    <rect x="1085" y="270" width="140" height="22" class="tape" rx="6"/>
+    <text x="1155" y="410" class="muted" text-anchor="middle" style="font-size:16px">bottom → top overlap</text>
+  </g>
+
+  <text x="110" y="835" class="p">After work: remove tape, verify dry, then restore power. When unsure: leave power OFF and call an electrician.</text>
+</svg>

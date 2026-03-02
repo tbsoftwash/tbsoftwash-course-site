@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .h1{font:700 44px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;fill:#0f172a}
+      .h2{font:700 24px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;fill:#0f172a}
+      .p{font:400 20px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;fill:#334155}
+      .muted{fill:#64748b}
+      .card{fill:#ffffff;stroke:#e2e8f0;stroke-width:2;rx:22}
+      .step{fill:rgba(15,23,42,0.03);stroke:#e2e8f0;stroke-width:2;rx:18}
+      .warn{fill:#fff1f2;stroke:#fecdd3;stroke-width:2;rx:16}
+      .tape{fill:#fde68a;stroke:#f59e0b;stroke-width:2}
+      .chip{fill:#2563eb}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#f8fafc"/>
+
+  <text x="80" y="120" class="h1">Taping Off Electrical Outlets (Water-Shedding Pattern)</text>
+  <text x="80" y="165" class="p">Hybrid: clean canvas + TBSoftWash blue accents + subtle panels.</text>
+
+  <rect x="80" y="220" width="1440" height="580" class="card"/>
+
+  <rect x="110" y="250" width="1380" height="70" class="warn"/>
+  <text x="130" y="295" class="h2">STOP: Never tape a live circuit. Confirm power OFF (LOTO).</text>
+
+  <g transform="translate(110,345)">
+    <rect x="0" y="0" width="430" height="430" class="step"/>
+    <text x="24" y="42" class="h2" style="font-size:22px">1) Bottom anchor</text>
+    <text x="24" y="78" class="p">Tape bottom edge to the wall.</text>
+    <rect x="130" y="120" width="170" height="240" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" rx="16"/>
+    <rect x="170" y="160" width="90" height="120" fill="#ffffff" stroke="#94a3b8" stroke-width="2" rx="10"/>
+    <rect x="150" y="330" width="130" height="22" class="tape" rx="6"/>
+
+    <rect x="470" y="0" width="430" height="430" class="step"/>
+    <text x="494" y="42" class="h2" style="font-size:22px">2) Vertical strips</text>
+    <text x="494" y="78" class="p">Bottom → top overlap like shingles.</text>
+    <rect x="600" y="120" width="170" height="240" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" rx="16"/>
+    <rect x="640" y="160" width="90" height="120" fill="#ffffff" stroke="#94a3b8" stroke-width="2" rx="10"/>
+    <rect x="605" y="138" width="18" height="222" class="tape" rx="6"/>
+    <rect x="632" y="138" width="18" height="222" class="tape" rx="6"/>
+    <rect x="659" y="138" width="18" height="222" class="tape" rx="6"/>
+    <rect x="686" y="138" width="18" height="222" class="tape" rx="6"/>
+    <rect x="713" y="138" width="18" height="222" class="tape" rx="6"/>
+
+    <rect x="940" y="0" width="430" height="430" class="step"/>
+    <text x="964" y="42" class="h2" style="font-size:22px">3) Top cap + overlap</text>
+    <text x="964" y="78" class="p">Cap top; horizontal rows bottom → top.</text>
+    <rect x="1070" y="120" width="170" height="240" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2" rx="16"/>
+    <rect x="1110" y="160" width="90" height="120" fill="#ffffff" stroke="#94a3b8" stroke-width="2" rx="10"/>
+    <rect x="1088" y="138" width="134" height="20" class="tape" rx="6"/>
+    <rect x="1088" y="165" width="134" height="20" class="tape" rx="6"/>
+    <rect x="1088" y="192" width="134" height="20" class="tape" rx="6"/>
+    <rect x="1088" y="219" width="134" height="20" class="tape" rx="6"/>
+    <rect x="1088" y="246" width="134" height="20" class="tape" rx="6"/>
+  </g>
+
+  <text x="110" y="835" class="p">After work: remove tape, verify dry, then restore power. When unsure: keep power OFF and call an electrician.</text>
+</svg>
