@@ -16,8 +16,8 @@ export type Lesson = LessonMeta & {
   content: string;
 };
 
-const WORKSPACE_ROOT = path.join(process.cwd(), "..")
-const COURSE_ROOT = path.join(WORKSPACE_ROOT, "tbsoftwash-course", "03_curriculum");
+// Course content is vendored as a git submodule at ./tbsoftwash-course
+const COURSE_ROOT = path.join(process.cwd(), "tbsoftwash-course", "03_curriculum");
 
 function walk(dir: string): string[] {
   const out: string[] = [];
