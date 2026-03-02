@@ -32,6 +32,7 @@ export default async function SpringboardLessonPage({
         title={lesson.title}
         prev={neighbors.prev}
         next={neighbors.next}
+        progress={{ track: "springboard", week, slug }}
       />
 
       <div className="markdown" dangerouslySetInnerHTML={{ __html: contentHtml }} />

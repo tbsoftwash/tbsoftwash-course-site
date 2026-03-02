@@ -34,6 +34,7 @@ export default async function LessonPage({
         title={lesson.title}
         prev={neighbors.prev}
         next={neighbors.next}
+        progress={{ track: "core", module: Number(module), slug }}
       />
 
       <div className="markdown" dangerouslySetInnerHTML={{ __html: contentHtml }} />
