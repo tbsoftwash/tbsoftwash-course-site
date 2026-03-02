@@ -1,43 +1,9 @@
 import Link from "next/link";
-import fs from "fs";
-import path from "path";
-
 import { listLessons, type LessonMeta } from "@/lib/course";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CourseDashboard } from "@/components/CourseDashboard";
-import { CourseAccordion, type LessonWithPreview } from "@/components/CourseAccordion";
-import { remark } from "remark";
-import html from "remark-html";
-import gfm from "remark-gfm";
-
-async function mdToHtml(md: string) {
-  const processed = await remark().use(gfm).use(html).process(md);
-  return processed.toString();
-}
-
-function loadLessonMarkdown(l: LessonMeta): string | undefined {
-  try {
-    const base = path.join(process.cwd(), "tbsoftwash-course", "03_curriculum");
-    const stack: string[] = [base];
-    while (stack.length) {
-      const dir = stack.pop()!;
-      for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-        const full = path.join(dir, entry.name);
-        if (entry.isDirectory()) stack.push(full);
-        else if (entry.isFile() && entry.name.endsWith(".md")) {
-          const raw = fs.readFileSync(full, "utf8");
-          if (raw.includes(`slug: \"${l.slug}\"`) || raw.includes(`slug: "${l.slug}"`)) {
-            return raw.replace(/^---[\s\S]*?---\n/, "");
-          }
-        }
-      }
-    }
-  } catch {
-    // ignore
-  }
-  return undefined;
-}
+import { CourseAccordion } from "@/components/CourseAccordion";
 
 function groupCore(lessons: LessonMeta[]) {
   const byModule = new Map<number, LessonMeta[]>();
@@ -64,32 +30,8 @@ function groupSpringboard(lessons: LessonMeta[]) {
 export default async function CourseIndex() {
   const lessons = listLessons();
 
-  const coreGroupsRaw = groupCore(lessons);
-  const springGroupsRaw = groupSpringboard(lessons);
-
-  const coreGroups: Array<{ label: string; lessons: LessonWithPreview[] }> = [];
-  for (const g of coreGroupsRaw) {
-    const items: LessonWithPreview[] = [];
-    for (const l of g.lessons) {
-      const md = loadLessonMarkdown(l);
-      const previewMd = md ? md.split("\n").slice(0, 120).join("\n") : undefined;
-      const previewHtml = previewMd ? await mdToHtml(previewMd) : undefined;
-      items.push({ ...l, previewHtml });
-    }
-    coreGroups.push({ label: g.label, lessons: items });
-  }
-
-  const springGroups: Array<{ label: string; lessons: LessonWithPreview[] }> = [];
-  for (const g of springGroupsRaw) {
-    const items: LessonWithPreview[] = [];
-    for (const l of g.lessons) {
-      const md = loadLessonMarkdown(l);
-      const previewMd = md ? md.split("\n").slice(0, 120).join("\n") : undefined;
-      const previewHtml = previewMd ? await mdToHtml(previewMd) : undefined;
-      items.push({ ...l, previewHtml });
-    }
-    springGroups.push({ label: g.label, lessons: items });
-  }
+  const coreGroups = groupCore(lessons);
+  const springGroups = groupSpringboard(lessons);
 
   return (
     <main className="mx-auto max-w-4xl">

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import type { LessonMeta } from "@/lib/course";
 import { ModeToggle } from "@/components/ModeToggle";
 import { DiagramStyleToggle } from "@/components/DiagramStyleToggle";
+import { PreviewModeToggle } from "@/components/PreviewModeToggle";
 import { SearchInput } from "@/components/SearchInput";
 import { cn } from "@/lib/utils";
 import { lessonKey, loadCompleted } from "@/lib/progress";
@@ -171,9 +172,17 @@ export function SidebarNav({ lessons }: { lessons: LessonMeta[] }) {
             <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
               Settings
             </h3>
-            <div className="grid gap-2">
-              <div className="text-xs text-muted-foreground">Diagram style</div>
-              <DiagramStyleToggle />
+            <div className="grid gap-3">
+              <div>
+                <div className="mb-1 text-xs text-muted-foreground">Diagram style</div>
+                <DiagramStyleToggle />
+              </div>
+
+              <div>
+                <div className="mb-1 text-xs text-muted-foreground">Accordion reader</div>
+                <PreviewModeToggle />
+              </div>
+
               <NavItem href="/course/figures/psi-vs-gpm" label="Figure demo" />
             </div>
           </section>

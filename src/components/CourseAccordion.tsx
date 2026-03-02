@@ -1,10 +1,9 @@
 import Link from "next/link";
 
 import type { LessonMeta } from "@/lib/course";
+import { LessonInlinePreview } from "@/components/LessonInlinePreview";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-
-export type LessonWithPreview = LessonMeta & { previewHtml?: string };
 
 export function CourseAccordion({
   title,
@@ -12,7 +11,7 @@ export function CourseAccordion({
   makeHref,
 }: {
   title: string;
-  groups: Array<{ label: string; lessons: LessonWithPreview[] }>;
+  groups: Array<{ label: string; lessons: LessonMeta[] }>;
   makeHref: (l: LessonMeta) => string;
 }) {
   return (
@@ -47,16 +46,7 @@ export function CourseAccordion({
                         </div>
                       </summary>
 
-                      {l.previewHtml ? (
-                        <div
-                          className="markdown mt-4 rounded-xl border bg-card/40 p-4"
-                          dangerouslySetInnerHTML={{ __html: l.previewHtml }}
-                        />
-                      ) : (
-                        <div className="mt-3 text-sm text-muted-foreground">
-                          (Preview unavailable)
-                        </div>
-                      )}
+                      <LessonInlinePreview slug={l.slug} />
                     </details>
                   ))}
                 </div>
