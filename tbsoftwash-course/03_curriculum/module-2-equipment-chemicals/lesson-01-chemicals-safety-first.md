@@ -53,6 +53,9 @@ Florida heat changes risk.
 ## Chemical pages
 Use the chemical index as the truth source:
 - `02_chemicals/chemical-index.md`
+
+## FIGURE (how to think about machines)
+FIGURE: mock-fig-103-psi-vs-gpm
 ## Do this next (assignment)
 - [ ] Run this lesson on a real job or a mock walkaround.
 - [ ] Capture a Proof Pack for the scenario.

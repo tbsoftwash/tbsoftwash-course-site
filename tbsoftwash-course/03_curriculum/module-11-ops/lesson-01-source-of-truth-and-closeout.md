@@ -49,6 +49,9 @@ Printables:
 ## SOPs
 - Proof Pack: `04_sops/proof-pack/proof-pack-sop-v1.md`
 - Communication timeline: `05_sales_marketing/communication-timeline-sop.md`
+
+## FIGURE (equipment decisions affect ops)
+FIGURE: mock-fig-103-psi-vs-gpm
 ## Do this next (assignment)
 - [ ] Run this lesson on a real job or a mock walkaround.
 - [ ] Capture a Proof Pack for the scenario.
