@@ -10,6 +10,8 @@ lesson: 5
 ## The easiest content engine
 Don’t invent content.
 
+> **Authority Lens:** Proof content is a trust signal that compounds. Ads are rent. Proof-driven authority is equity.
+
 Document jobs.
 
 Then repurpose.

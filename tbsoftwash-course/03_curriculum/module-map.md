@@ -105,6 +105,7 @@
   - `03_curriculum/module-10-marketing/lesson-03-city-pages-and-topical-authority.md`
   - `03_curriculum/module-10-marketing/lesson-04-resources-hub-and-gating.md`
   - `03_curriculum/module-10-marketing/lesson-05-content-ops-from-proof-pack.md`
+  - `03_curriculum/module-10-marketing/lesson-06-web-authority-as-a-moat.md`
 
 ## Module 11 — Operations & scaling
 - CRM, scheduling, dispatch

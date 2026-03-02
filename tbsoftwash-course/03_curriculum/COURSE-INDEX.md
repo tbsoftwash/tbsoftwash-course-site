@@ -30,13 +30,7 @@ Folder: `03_curriculum/module-1-getting-started/`
 - Module 1 — Getting Started: Your First 7 Days (Springboard Plan) (Lesson) — `03_curriculum/module-1-getting-started/lesson-04-your-first-7-days-springboard.md`
 - Module 1 — Getting Started: File + Folder Discipline (Lesson) — `03_curriculum/module-1-getting-started/lesson-05-file-and-folder-discipline.md`
 
-### Module 10 Marketing
-Folder: `03_curriculum/module-10-marketing/`
-- Module 10 — Marketing Engine: Proof *is* the Marketing (Lesson) — `03_curriculum/module-10-marketing/lesson-01-proof-is-the-marketing.md`
-- Module 10 — Marketing Engine: GBP + Reviews + Voice of Customer (Lesson) — `03_curriculum/module-10-marketing/lesson-02-gbp-reviews-voice-of-customer.md`
-- Module 10 — Marketing Engine: City Pages + Topical Authority (Lesson) — `03_curriculum/module-10-marketing/lesson-03-city-pages-and-topical-authority.md`
-- Module 10 — Marketing Engine: Resources Hub + Gating (Lesson) — `03_curriculum/module-10-marketing/lesson-04-resources-hub-and-gating.md`
-- Module 10 — Marketing Engine: Content Ops from the Proof Pack (Lesson) — `03_curriculum/module-10-marketing/lesson-05-content-ops-from-proof-pack.md`
+\1- Module 10 — Marketing: Web Authority as a Moat (Lesson) — `03_curriculum/module-10-marketing/lesson-06-web-authority-as-a-moat.md`
 
 ### Module 11 Ops
 Folder: `03_curriculum/module-11-ops/`

@@ -22,6 +22,8 @@ Use:
 ## Review responses
 Warm. Specific. Short.
 
+> **Authority Lens:** Reviews aren’t just conversion. They’re a prominence/trust signal. If two companies are equally close and relevant, trust often becomes the tie-breaker.
+
 Mention:
 - the service
 - one detail
