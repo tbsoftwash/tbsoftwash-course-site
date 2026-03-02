@@ -11,6 +11,7 @@ export function lessonKey(opts: {
 }
 
 const STORAGE_KEY = "tbsa.completedLessons.v1";
+const STORAGE_LAST = "tbsa.lastLesson.v1";
 
 export function loadCompleted(): Set<ProgressKey> {
   if (typeof window === "undefined") return new Set();
@@ -31,5 +32,23 @@ export function saveCompleted(keys: Set<ProgressKey>) {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(Array.from(keys)));
   } catch {
     // ignore
+  }
+}
+
+export function setLastLesson(key: ProgressKey) {
+  if (typeof window === "undefined") return;
+  try {
+    window.localStorage.setItem(STORAGE_LAST, key);
+  } catch {
+    // ignore
+  }
+}
+
+export function getLastLesson(): ProgressKey | null {
+  if (typeof window === "undefined") return null;
+  try {
+    return window.localStorage.getItem(STORAGE_LAST);
+  } catch {
+    return null;
   }
 }

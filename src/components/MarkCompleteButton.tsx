@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { Button } from "@/components/ui/button";
-import { lessonKey, loadCompleted, saveCompleted } from "@/lib/progress";
+import { lessonKey, loadCompleted, saveCompleted, setLastLesson } from "@/lib/progress";
 
 export function MarkCompleteButton(props: {
   track: "core" | "springboard";
@@ -16,6 +16,7 @@ export function MarkCompleteButton(props: {
   React.useEffect(() => {
     const set = loadCompleted();
     setDone(set.has(key));
+    setLastLesson(key);
   }, [key]);
 
   function toggle() {
