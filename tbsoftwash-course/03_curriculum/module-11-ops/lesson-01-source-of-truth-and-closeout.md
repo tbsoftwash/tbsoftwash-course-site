@@ -40,6 +40,9 @@ Printables:
 - `03_curriculum/printables/safety-loadout-checklist-v1.md`
 - `03_curriculum/printables/spill-and-exposure-response-card-v1.md`
 
+## FIGURE (electrical hazard control)
+FIGURE: mock-fig-101-outlet-taping-sequence
+
 ## Why this matters
 - prevents disputes
 - powers reviews
