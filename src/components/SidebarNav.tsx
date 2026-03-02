@@ -26,8 +26,8 @@ function NavItem({ href, label }: { href: string; label: string }) {
         padding: "6px 8px",
         borderRadius: 8,
         textDecoration: "none",
-        color: active ? "#111827" : "#374151",
-        background: active ? "rgba(0,0,0,0.06)" : "transparent",
+        color: active ? "hsl(var(--foreground))" : "hsl(var(--muted-foreground))",
+        background: active ? "hsl(var(--accent) / 0.7)" : "transparent",
         fontWeight: active ? 700 : 500,
       }}
     >
@@ -65,13 +65,15 @@ export function SidebarNav({ lessons }: { lessons: LessonMeta[] }) {
   return (
     <aside
       style={{
-        borderRight: "1px solid #e5e7eb",
+        borderRight: "1px solid hsl(var(--border))",
         padding: 16,
         overflowY: "auto",
         position: "sticky",
         top: 0,
         height: "100vh",
-        background: "#fff",
+        background: "hsl(var(--background) / 0.65)",
+        backdropFilter: "blur(14px)",
+        WebkitBackdropFilter: "blur(14px)",
       }}
     >
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
