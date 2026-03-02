@@ -5,7 +5,18 @@ import Link from "next/link";
 import type { LessonMeta } from "@/lib/course";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { loadCompleted, getLastLesson, lessonKey } from "@/lib/progress";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
+import { loadCompleted, getLastLesson, lessonKey, clearProgress } from "@/lib/progress";
 
 function hrefForLesson(l: LessonMeta) {
   if (l.track === "core") return `/course/core/${l.module}/${l.slug}`;
@@ -42,6 +53,38 @@ export function CourseDashboard({ lessons }: { lessons: LessonMeta[] }) {
   }, []);
 
   const overall = lessons.length ? completed.size / lessons.length : 0;
+
+  const overallPct = Math.round(overall * 100);
+
+  const streak = React.useMemo(() => {
+    // lightweight “streak”: count consecutive days (including today) with at least 1 completion
+    // stored in localStorage as a map {"YYYY-MM-DD": count}
+    if (typeof window === "undefined") return { days: 0, today: false };
+    try {
+      const raw = window.localStorage.getItem("tbsa.activityDays.v1");
+      const obj = raw ? JSON.parse(raw) : {};
+      const keys = Object.keys(obj).sort();
+      if (!keys.length) return { days: 0, today: false };
+
+      const today = new Date();
+      const iso = today.toISOString().slice(0, 10);
+      const hasToday = Boolean(obj[iso]);
+
+      // walk backwards from today
+      let days = 0;
+      for (let i = 0; i < 365; i++) {
+        const d = new Date();
+        d.setDate(today.getDate() - i);
+        const k = d.toISOString().slice(0, 10);
+        if (obj[k]) days += 1;
+        else break;
+      }
+
+      return { days, today: hasToday };
+    } catch {
+      return { days: 0, today: false };
+    }
+  }, [completed]);
 
   const byModule = React.useMemo(() => {
     const map = new Map<string, { label: string; total: number; done: number; href?: string }>();
@@ -92,7 +135,7 @@ export function CourseDashboard({ lessons }: { lessons: LessonMeta[] }) {
         <CardHeader>
           <CardTitle>Your progress</CardTitle>
           <CardDescription>
-            {completed.size}/{lessons.length} lessons completed
+            {completed.size}/{lessons.length} lessons completed • {overallPct}% • streak: {streak.days}d
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -107,6 +150,33 @@ export function CourseDashboard({ lessons }: { lessons: LessonMeta[] }) {
           <Button asChild variant="outline">
             <Link href="/course/printables/operator-checklist-pack">Printables</Link>
           </Button>
+
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <Button variant="destructive" size="sm">Reset progress</Button>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>Reset progress?</AlertDialogTitle>
+                <AlertDialogDescription>
+                  This clears your completed checkmarks and your “Continue” position for this browser.
+                </AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogCancel>Cancel</AlertDialogCancel>
+                <AlertDialogAction
+                  onClick={() => {
+                    clearProgress();
+                    setCompleted(new Set());
+                    setLast(null);
+                    window.dispatchEvent(new CustomEvent("tbsa:progress"));
+                  }}
+                >
+                  Reset
+                </AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
         </CardFooter>
       </Card>
 

@@ -23,6 +23,18 @@ export function MarkCompleteButton(props: {
     const set = loadCompleted();
     if (set.has(key)) set.delete(key);
     else set.add(key);
+
+    // activity day tracking for streaks
+    try {
+      const today = new Date().toISOString().slice(0, 10);
+      const raw = window.localStorage.getItem("tbsa.activityDays.v1");
+      const obj = raw ? JSON.parse(raw) : {};
+      obj[today] = (obj[today] ?? 0) + 1;
+      window.localStorage.setItem("tbsa.activityDays.v1", JSON.stringify(obj));
+    } catch {
+      // ignore
+    }
+
     saveCompleted(set);
     setDone(set.has(key));
     window.dispatchEvent(new CustomEvent("tbsa:progress"));

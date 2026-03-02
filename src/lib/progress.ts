@@ -52,3 +52,13 @@ export function getLastLesson(): ProgressKey | null {
     return null;
   }
 }
+
+export function clearProgress() {
+  if (typeof window === "undefined") return;
+  try {
+    window.localStorage.removeItem(STORAGE_KEY);
+    window.localStorage.removeItem(STORAGE_LAST);
+  } catch {
+    // ignore
+  }
+}
