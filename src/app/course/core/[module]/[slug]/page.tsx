@@ -8,6 +8,7 @@ import { buildLessonSections } from "@/lib/lessonSections";
 import { LessonHeader } from "@/components/LessonHeader";
 import { LessonTabs } from "@/components/LessonTabs";
 import { FiguresHydrator } from "@/components/FiguresHydrator";
+import { MdEmbedsHydrator } from "@/components/MdEmbedsHydrator";
 import { Button } from "@/components/ui/button";
 
 export default async function LessonPage({
@@ -24,14 +25,29 @@ export default async function LessonPage({
 
   const sections = await buildLessonSections(lesson.content);
 
-  // Replace FIGURE callouts inside each section.
-  const patched = sections.map((s) => ({
-    ...s,
-    html: s.html.replace(
+  // Replace FIGURE and MD-embed callouts inside each section.
+  const patched = sections.map((s) => {
+    let h = s.html;
+
+    h = h.replace(
       /<p>FIGURE:\s*([^<]+)<\/p>/g,
       (_m, name) => `<div data-figure="${String(name).trim()}"></div>`
-    ),
-  }));
+    );
+
+    // Backticked md paths like: <p><code>04_sops/proof-pack/proof-pack-sop-v1.md</code></p>
+    h = h.replace(
+      /<p><code>([^<]+\.md)<\/code><\/p>/g,
+      (_m, mdPath) => `<div data-md=\"${String(mdPath).trim()}\"></div>`
+    );
+
+    // Markdown links to .md files
+    h = h.replace(
+      /<a href=\"([^\"]+\.md)\">([^<]+)<\/a>/g,
+      (_m, href, _label) => `<div data-md=\"${String(href).replace(/^\.\//, "").trim()}\"></div>`
+    );
+
+    return { ...s, html: h };
+  });
 
   return (
     <main className="mx-auto max-w-4xl px-6">
@@ -47,6 +63,7 @@ export default async function LessonPage({
 
       <LessonTabs sections={patched} />
       <FiguresHydrator />
+      <MdEmbedsHydrator />
 
       <div className="mt-10 flex flex-wrap gap-2">
         {neighbors.prev ? (

@@ -8,6 +8,7 @@ import { buildLessonSections } from "@/lib/lessonSections";
 import { LessonHeader } from "@/components/LessonHeader";
 import { LessonTabs } from "@/components/LessonTabs";
 import { FiguresHydrator } from "@/components/FiguresHydrator";
+import { MdEmbedsHydrator } from "@/components/MdEmbedsHydrator";
 import { Button } from "@/components/ui/button";
 
 export default async function SpringboardLessonPage({
@@ -23,13 +24,26 @@ export default async function SpringboardLessonPage({
   const neighbors = getNeighbors({ track: "springboard", week, slug });
 
   const sections = await buildLessonSections(lesson.content);
-  const patched = sections.map((s) => ({
-    ...s,
-    html: s.html.replace(
+  const patched = sections.map((s) => {
+    let h = s.html;
+
+    h = h.replace(
       /<p>FIGURE:\s*([^<]+)<\/p>/g,
       (_m, name) => `<div data-figure="${String(name).trim()}"></div>`
-    ),
-  }));
+    );
+
+    h = h.replace(
+      /<p><code>([^<]+\.md)<\/code><\/p>/g,
+      (_m, mdPath) => `<div data-md=\"${String(mdPath).trim()}\"></div>`
+    );
+
+    h = h.replace(
+      /<a href=\"([^\"]+\.md)\">([^<]+)<\/a>/g,
+      (_m, href, _label) => `<div data-md=\"${String(href).replace(/^\.\//, "").trim()}\"></div>`
+    );
+
+    return { ...s, html: h };
+  });
 
   return (
     <main className="mx-auto max-w-4xl px-6">
@@ -45,6 +59,7 @@ export default async function SpringboardLessonPage({
 
       <LessonTabs sections={patched} />
       <FiguresHydrator />
+      <MdEmbedsHydrator />
 
       <div className="mt-10 flex flex-wrap gap-2">
         {neighbors.prev ? (
