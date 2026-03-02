@@ -55,3 +55,5 @@ Premium companies operate like they’re going to be audited.
 ## Printables
 - `03_curriculum/printables/safety-loadout-checklist-v1.md`
 - `03_curriculum/printables/spill-and-exposure-response-card-v1.md`
+
+FIGURE: mock-fig-103-psi-vs-gpm
