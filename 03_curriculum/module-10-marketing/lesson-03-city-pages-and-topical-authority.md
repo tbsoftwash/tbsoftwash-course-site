@@ -14,6 +14,8 @@ City pages are your neighborhood map.
 
 ## What wins
 A repeatable template driven by proof:
+
+> **Authority Lens:** Authority isn’t one number. It’s whether Google trusts you as the best answer. Unique proof + helpful detail builds trust. Thin clones reduce it.
 - service explanation
 - common mistakes homeowners make
 - your process
