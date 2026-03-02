@@ -85,6 +85,19 @@ For Tampa Bay Soft Wash, authority:
 - city pages only if unique and useful
 - proof content: before/after, process, FAQs, expectations
 
+## Chain of Custody → Authority (AI Operator alignment)
+Authority isn’t magic. It’s the marketing output of clean handoffs.
+
+Think like a crew:
+1) job completed
+2) Proof Pack captured and named correctly
+3) closeout message sent
+4) review ask scheduled
+5) GBP post + gallery update
+6) internal links connect: service → city → proof
+
+When the Chain of Custody is consistent, Google sees consistency too.
+
 ### C) Earned authority: real links + mentions
 Ignore Fiverr junk.
 
