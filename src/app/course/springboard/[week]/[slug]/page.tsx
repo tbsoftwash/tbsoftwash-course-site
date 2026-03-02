@@ -3,10 +3,11 @@ import { notFound } from "next/navigation";
 
 import { getLesson } from "@/lib/course";
 import { getNeighbors } from "@/lib/nav";
-import { buildLessonSections } from "@/lib/lessonSections";
+import { remark } from "remark";
+import html from "remark-html";
+import gfm from "remark-gfm";
 
 import { LessonHeader } from "@/components/LessonHeader";
-import { LessonTabs } from "@/components/LessonTabs";
 import { FiguresHydrator } from "@/components/FiguresHydrator";
 import { MdEmbedsHydrator } from "@/components/MdEmbedsHydrator";
 import { Button } from "@/components/ui/button";
@@ -23,27 +24,26 @@ export default async function SpringboardLessonPage({
 
   const neighbors = getNeighbors({ track: "springboard", week, slug });
 
-  const sections = await buildLessonSections(lesson.content);
-  const patched = sections.map((s) => {
-    let h = s.html;
+  const processed = await remark().use(gfm).use(html).process(lesson.content);
+  let contentHtml = processed.toString();
 
-    h = h.replace(
-      /<p>FIGURE:\s*([^<]+)<\/p>/g,
-      (_m, name) => `<div data-figure="${String(name).trim()}"></div>`
-    );
+  contentHtml = contentHtml.replace(
+    /<p>FIGURE:\s*([^<]+)<\/p>/g,
+    (_m, name) => `<div data-figure="${String(name).trim()}"></div>`
+  );
 
-    h = h.replace(
-      /<p><code>([^<]+\.md)<\/code><\/p>/g,
-      (_m, mdPath) => `<div data-md=\"${String(mdPath).trim()}\"></div>`
-    );
-
-    h = h.replace(
-      /<a href=\"([^\"]+\.md)\">([^<]+)<\/a>/g,
-      (_m, href, _label) => `<div data-md=\"${String(href).replace(/^\.\//, "").trim()}\"></div>`
-    );
-
-    return { ...s, html: h };
-  });
+  contentHtml = contentHtml.replace(
+    /<p><code>([^<]+\.md)<\/code><\/p>/g,
+    (_m, mdPath) => `<div data-md=\"${String(mdPath).trim()}\"></div>`
+  );
+  contentHtml = contentHtml.replace(
+    /<li><code>([^<]+\.md)<\/code><\/li>/g,
+    (_m, mdPath) => `<li><div data-md=\"${String(mdPath).trim()}\"></div></li>`
+  );
+  contentHtml = contentHtml.replace(
+    /<a href=\"([^\"]+\.md)\">([^<]+)<\/a>/g,
+    (_m, href, _label) => `<div data-md=\"${String(href).replace(/^\.\//, "").trim()}\"></div>`
+  );
 
   return (
     <main className="mx-auto max-w-4xl px-6">
@@ -57,7 +57,7 @@ export default async function SpringboardLessonPage({
         progress={{ track: "springboard", week, slug }}
       />
 
-      <LessonTabs sections={patched} />
+      <div className="markdown" dangerouslySetInnerHTML={{ __html: contentHtml }} />
       <FiguresHydrator />
       <MdEmbedsHydrator />
 

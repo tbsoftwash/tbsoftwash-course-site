@@ -3,10 +3,11 @@ import { notFound } from "next/navigation";
 
 import { getLesson } from "@/lib/course";
 import { getNeighbors } from "@/lib/nav";
-import { buildLessonSections } from "@/lib/lessonSections";
+import { remark } from "remark";
+import html from "remark-html";
+import gfm from "remark-gfm";
 
 import { LessonHeader } from "@/components/LessonHeader";
-import { LessonTabs } from "@/components/LessonTabs";
 import { FiguresHydrator } from "@/components/FiguresHydrator";
 import { MdEmbedsHydrator } from "@/components/MdEmbedsHydrator";
 import { Button } from "@/components/ui/button";
@@ -23,31 +24,28 @@ export default async function LessonPage({
 
   const neighbors = getNeighbors({ track: "core", module: Number(module), slug });
 
-  const sections = await buildLessonSections(lesson.content);
+  const processed = await remark().use(gfm).use(html).process(lesson.content);
+  let contentHtml = processed.toString();
 
-  // Replace FIGURE and MD-embed callouts inside each section.
-  const patched = sections.map((s) => {
-    let h = s.html;
+  // Replace FIGURE callouts.
+  contentHtml = contentHtml.replace(
+    /<p>FIGURE:\s*([^<]+)<\/p>/g,
+    (_m, name) => `<div data-figure="${String(name).trim()}"></div>`
+  );
 
-    h = h.replace(
-      /<p>FIGURE:\s*([^<]+)<\/p>/g,
-      (_m, name) => `<div data-figure="${String(name).trim()}"></div>`
-    );
-
-    // Backticked md paths like: <p><code>04_sops/proof-pack/proof-pack-sop-v1.md</code></p>
-    h = h.replace(
-      /<p><code>([^<]+\.md)<\/code><\/p>/g,
-      (_m, mdPath) => `<div data-md=\"${String(mdPath).trim()}\"></div>`
-    );
-
-    // Markdown links to .md files
-    h = h.replace(
-      /<a href=\"([^\"]+\.md)\">([^<]+)<\/a>/g,
-      (_m, href, _label) => `<div data-md=\"${String(href).replace(/^\.\//, "").trim()}\"></div>`
-    );
-
-    return { ...s, html: h };
-  });
+  // Replace standalone .md references with an inline viewer.
+  contentHtml = contentHtml.replace(
+    /<p><code>([^<]+\.md)<\/code><\/p>/g,
+    (_m, mdPath) => `<div data-md=\"${String(mdPath).trim()}\"></div>`
+  );
+  contentHtml = contentHtml.replace(
+    /<li><code>([^<]+\.md)<\/code><\/li>/g,
+    (_m, mdPath) => `<li><div data-md=\"${String(mdPath).trim()}\"></div></li>`
+  );
+  contentHtml = contentHtml.replace(
+    /<a href=\"([^\"]+\.md)\">([^<]+)<\/a>/g,
+    (_m, href, _label) => `<div data-md=\"${String(href).replace(/^\.\//, "").trim()}\"></div>`
+  );
 
   return (
     <main className="mx-auto max-w-4xl px-6">
@@ -61,7 +59,7 @@ export default async function LessonPage({
         progress={{ track: "core", module: Number(module), slug }}
       />
 
-      <LessonTabs sections={patched} />
+      <div className="markdown" dangerouslySetInnerHTML={{ __html: contentHtml }} />
       <FiguresHydrator />
       <MdEmbedsHydrator />
 
