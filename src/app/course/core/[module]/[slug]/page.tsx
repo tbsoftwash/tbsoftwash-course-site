@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getLesson } from "@/lib/course";
 import { getNeighbors } from "@/lib/nav";
 import { LessonHeader } from "@/components/LessonHeader";
+import { FiguresHydrator } from "@/components/FiguresHydrator";
 import { Button } from "@/components/ui/button";
 import { remark } from "remark";
 import html from "remark-html";
@@ -21,7 +22,13 @@ export default async function LessonPage({
   const neighbors = getNeighbors({ track: "core", module: Number(module), slug });
 
   const processed = await remark().use(gfm).use(html).process(lesson.content);
-  const contentHtml = processed.toString();
+  let contentHtml = processed.toString();
+  // Replace FIGURE callouts with placeholders hydrated on the client.
+  // Expected markdown line: `FIGURE: mock-fig-103-psi-vs-gpm`
+  contentHtml = contentHtml.replace(
+    /<p>FIGURE:\s*([^<]+)<\/p>/g,
+    (_m, name) => `<div data-figure="${String(name).trim()}"></div>`
+  );
 
   return (
     <main className="mx-auto max-w-4xl px-6">
@@ -38,6 +45,7 @@ export default async function LessonPage({
       />
 
       <div className="markdown" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+      <FiguresHydrator />
 
       <div className="mt-10 flex flex-wrap gap-2">
         {neighbors.prev ? (

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getLesson } from "@/lib/course";
 import { getNeighbors } from "@/lib/nav";
 import { LessonHeader } from "@/components/LessonHeader";
+import { FiguresHydrator } from "@/components/FiguresHydrator";
 import { Button } from "@/components/ui/button";
 import { remark } from "remark";
 import html from "remark-html";
@@ -21,7 +22,11 @@ export default async function SpringboardLessonPage({
   const neighbors = getNeighbors({ track: "springboard", week, slug });
 
   const processed = await remark().use(gfm).use(html).process(lesson.content);
-  const contentHtml = processed.toString();
+  let contentHtml = processed.toString();
+  contentHtml = contentHtml.replace(
+    /<p>FIGURE:\s*([^<]+)<\/p>/g,
+    (_m, name) => `<div data-figure="${String(name).trim()}"></div>`
+  );
 
   return (
     <main className="mx-auto max-w-4xl px-6">
@@ -36,6 +41,7 @@ export default async function SpringboardLessonPage({
       />
 
       <div className="markdown" dangerouslySetInnerHTML={{ __html: contentHtml }} />
+      <FiguresHydrator />
 
       <div className="mt-10 flex flex-wrap gap-2">
         {neighbors.prev ? (
