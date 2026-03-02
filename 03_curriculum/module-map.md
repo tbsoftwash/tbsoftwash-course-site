@@ -20,6 +20,7 @@
   - `03_curriculum/module-2-equipment-chemicals/lesson-01-chemicals-safety-first.md`
   - `03_curriculum/module-2-equipment-chemicals/lesson-02-chemical-decision-logic.md`
   - `03_curriculum/module-2-equipment-chemicals/lesson-03-wfp-rodi-equipment-basics.md`
+  - `03_curriculum/module-2-equipment-chemicals/lesson-04-sds-and-truck-safety-loadout.md`
 
 ## Module 3 — Roof cleaning (soft wash)
 - Roof types (tile/shingle/metal)

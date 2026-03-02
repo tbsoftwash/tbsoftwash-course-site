@@ -25,6 +25,21 @@ At minimum, every job gets:
 - completion message sent
 - status updated
 
+## Chemical traceability (public-safe)
+Even if you don’t publish “recipes,” you still need internal traceability.
+
+Minimum standard for the Source of Truth:
+- what category of chemistry was used (e.g., bleach-based wash, alkaline degreaser, acid spot treatment)
+- any special risk notes (oxidation, delicate metals, open windows, sensitive landscaping)
+- where SDS sheets are stored
+
+## Crew readiness standard
+A clean closeout depends on a ready truck.
+
+Printables:
+- `03_curriculum/printables/safety-loadout-checklist-v1.md`
+- `03_curriculum/printables/spill-and-exposure-response-card-v1.md`
+
 ## Why this matters
 - prevents disputes
 - powers reviews
