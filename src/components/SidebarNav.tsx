@@ -4,9 +4,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { LessonMeta } from "@/lib/course";
 import { ModeToggle } from "@/components/ModeToggle";
+import { cn } from "@/lib/utils";
 
 function cleanTitle(t: string) {
-  // remove leading module/week prefixes for sidebar readability
   return t
     .replace(/^Module\s+\d+\s+—\s+/i, "")
     .replace(/^Week\s+\d+\s+—\s+/i, "")
@@ -21,15 +21,12 @@ function NavItem({ href, label }: { href: string; label: string }) {
   return (
     <Link
       href={href}
-      style={{
-        display: "block",
-        padding: "6px 8px",
-        borderRadius: 8,
-        textDecoration: "none",
-        color: active ? "hsl(var(--foreground))" : "hsl(var(--muted-foreground))",
-        background: active ? "hsl(var(--accent) / 0.7)" : "transparent",
-        fontWeight: active ? 700 : 500,
-      }}
+      className={cn(
+        "block rounded-lg px-3 py-2 text-sm transition",
+        active
+          ? "bg-accent/70 text-foreground font-semibold"
+          : "text-muted-foreground hover:bg-accent/40 hover:text-foreground"
+      )}
     >
       {label}
     </Link>
@@ -63,65 +60,71 @@ export function SidebarNav({ lessons }: { lessons: LessonMeta[] }) {
   const springWeeks = groupSpringboard(lessons);
 
   return (
-    <aside
-      style={{
-        borderRight: "1px solid hsl(var(--border))",
-        padding: 16,
-        overflowY: "auto",
-        position: "sticky",
-        top: 0,
-        height: "100vh",
-        background: "hsl(var(--background) / 0.65)",
-        backdropFilter: "blur(14px)",
-        WebkitBackdropFilter: "blur(14px)",
-      }}
-    >
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
-        <NavItem href="/" label="TBSoftWash" />
-        <ModeToggle />
-      </div>
-
-      <div style={{ marginBottom: 12 }}>
-        <NavItem href="/course" label="Course Index" />
-      </div>
-
-      <h3 style={{ margin: "16px 0 8px" }}>Core Modules</h3>
-      {coreModules.map(([module, items]) => (
-        <div key={module} style={{ marginBottom: 12 }}>
-          <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 6 }}>
-            Module {module}
-          </div>
-          <div style={{ display: "grid", gap: 4 }}>
-            {items.map((l) => (
-              <NavItem
-                key={`c-${module}-${l.slug}`}
-                href={`/course/core/${module}/${l.slug}`}
-                label={cleanTitle(l.title)}
-              />
-            ))}
-          </div>
+    <aside className="sticky top-0 h-screen overflow-y-auto border-r bg-background/60 backdrop-blur-xl">
+      <div className="p-4">
+        <div className="mb-3 flex items-center justify-between gap-3">
+          <NavItem href="/" label="TBSoftWash" />
+          <ModeToggle />
         </div>
-      ))}
 
-      <h3 style={{ margin: "16px 0 8px" }}>Springboard</h3>
-      {springWeeks.map(([week, items]) => (
-        <div key={week} style={{ marginBottom: 12 }}>
-          <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 6 }}>{week}</div>
-          <div style={{ display: "grid", gap: 4 }}>
-            {items.map((l) => (
-              <NavItem
-                key={`s-${week}-${l.slug}`}
-                href={`/course/springboard/${week}/${l.slug}`}
-                label={cleanTitle(l.title)}
-              />
-            ))}
-          </div>
+        <div className="mb-4">
+          <NavItem href="/course" label="Course Index" />
         </div>
-      ))}
 
-      <h3 style={{ margin: "16px 0 8px" }}>Printables</h3>
-      <div style={{ display: "grid", gap: 4 }}>
-        <NavItem href="/course/printables/operator-checklist-pack" label="Operator Checklist Pack" />
+        <div className="space-y-6">
+          <section>
+            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+              Core Modules
+            </h3>
+            <div className="space-y-4">
+              {coreModules.map(([module, items]) => (
+                <div key={module}>
+                  <div className="mb-2 text-xs font-semibold text-foreground/90">Module {module}</div>
+                  <div className="grid gap-1">
+                    {items.map((l) => (
+                      <NavItem
+                        key={`c-${module}-${l.slug}`}
+                        href={`/course/core/${module}/${l.slug}`}
+                        label={cleanTitle(l.title)}
+                      />
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section>
+            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+              Springboard
+            </h3>
+            <div className="space-y-4">
+              {springWeeks.map(([week, items]) => (
+                <div key={week}>
+                  <div className="mb-2 text-xs font-semibold text-foreground/90">{week}</div>
+                  <div className="grid gap-1">
+                    {items.map((l) => (
+                      <NavItem
+                        key={`s-${week}-${l.slug}`}
+                        href={`/course/springboard/${week}/${l.slug}`}
+                        label={cleanTitle(l.title)}
+                      />
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section>
+            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+              Printables
+            </h3>
+            <div className="grid gap-1">
+              <NavItem href="/course/printables/operator-checklist-pack" label="Operator Checklist Pack" />
+            </div>
+          </section>
+        </div>
       </div>
     </aside>
   );
