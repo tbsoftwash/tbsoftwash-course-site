@@ -59,12 +59,12 @@ export default async function CourseIndex() {
         <CourseAccordion
           title="Core Modules (accordion reader)"
           groups={coreGroups}
-          makeHref={(l) => `/course/core/${l.module}/${l.slug}`}
+          hrefTemplate="/course/core/{module}/{slug}"
         />
         <CourseAccordion
           title="Springboard (accordion reader)"
           groups={springGroups}
-          makeHref={(l) => `/course/springboard/${l.week}/${l.slug}`}
+          hrefTemplate="/course/springboard/{week}/{slug}"
         />
       </div>
     </main>
