@@ -3,6 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
 import type { LessonMeta } from "@/lib/course";
 import { ModeToggle } from "@/components/ModeToggle";
 import { DiagramStyleToggle } from "@/components/DiagramStyleToggle";
@@ -10,6 +11,7 @@ import { PreviewModeToggle } from "@/components/PreviewModeToggle";
 import { SearchInput } from "@/components/SearchInput";
 import { cn } from "@/lib/utils";
 import { lessonKey, loadCompleted } from "@/lib/progress";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 
 function cleanTitle(t: string) {
   return t
@@ -42,9 +44,7 @@ function NavItem({
       )}
     >
       <span className="min-w-0 truncate">{label}</span>
-      {done ? (
-        <span className="shrink-0 text-xs font-semibold text-primary">✓</span>
-      ) : null}
+      {done ? <span className="shrink-0 text-xs font-semibold text-primary">✓</span> : null}
     </Link>
   );
 }
@@ -71,9 +71,24 @@ function groupSpringboard(lessons: LessonMeta[]) {
   return weeks;
 }
 
+const OPEN_KEY = "tbsa.sidebarOpen.v1";
+function loadOpen(): Record<string, boolean> {
+  if (typeof window === "undefined") return {};
+  try {
+    return JSON.parse(window.localStorage.getItem(OPEN_KEY) || "{}") || {};
+  } catch {
+    return {};
+  }
+}
+function saveOpen(state: Record<string, boolean>) {
+  if (typeof window === "undefined") return;
+  window.localStorage.setItem(OPEN_KEY, JSON.stringify(state));
+}
+
 export function SidebarNav({ lessons }: { lessons: LessonMeta[] }) {
   const [query, setQuery] = React.useState("");
   const [completed, setCompleted] = React.useState<Set<string>>(new Set());
+  const [open, setOpen] = React.useState<Record<string, boolean>>({});
 
   React.useEffect(() => {
     const refresh = () => setCompleted(loadCompleted());
@@ -86,6 +101,10 @@ export function SidebarNav({ lessons }: { lessons: LessonMeta[] }) {
     };
   }, []);
 
+  React.useEffect(() => {
+    setOpen(loadOpen());
+  }, []);
+
   const filtered = React.useMemo(() => {
     const q = query.trim().toLowerCase();
     if (!q) return lessons;
@@ -94,6 +113,12 @@ export function SidebarNav({ lessons }: { lessons: LessonMeta[] }) {
 
   const coreModules = groupCore(filtered);
   const springWeeks = groupSpringboard(filtered);
+
+  const toggle = (key: string, value: boolean) => {
+    const next = { ...open, [key]: value };
+    setOpen(next);
+    saveOpen(next);
+  };
 
   return (
     <aside className="sticky top-0 h-screen overflow-y-auto border-r bg-background/60 backdrop-blur-xl">
@@ -114,22 +139,33 @@ export function SidebarNav({ lessons }: { lessons: LessonMeta[] }) {
             <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
               Core Modules
             </h3>
-            <div className="space-y-4">
-              {coreModules.map(([module, items]) => (
-                <div key={module}>
-                  <div className="mb-2 text-xs font-semibold text-foreground/90">Module {module}</div>
-                  <div className="grid gap-1">
-                    {items.map((l) => (
-                      <NavItem
-                        key={`c-${module}-${l.slug}`}
-                        href={`/course/core/${module}/${l.slug}`}
-                        label={cleanTitle(l.title)}
-                        done={completed.has(lessonKey({ track: "core", module, slug: l.slug }))}
-                      />
-                    ))}
+            <div className="space-y-2">
+              {coreModules.map(([module, items]) => {
+                const key = `core:${module}`;
+                const isOpen = open[key] ?? false;
+                return (
+                  <div key={module} className="rounded-xl border bg-background/30">
+                    <Collapsible open={isOpen} onOpenChange={(v) => toggle(key, v)}>
+                      <CollapsibleTrigger>
+                        <span>Module {module}</span>
+                        <span className="text-xs text-muted-foreground">{isOpen ? "Hide" : "Show"}</span>
+                      </CollapsibleTrigger>
+                      <CollapsibleContent>
+                        <div className="grid gap-1 px-2 pb-2">
+                          {items.map((l) => (
+                            <NavItem
+                              key={`c-${module}-${l.slug}`}
+                              href={`/course/core/${module}/${l.slug}`}
+                              label={cleanTitle(l.title)}
+                              done={completed.has(lessonKey({ track: "core", module, slug: l.slug }))}
+                            />
+                          ))}
+                        </div>
+                      </CollapsibleContent>
+                    </Collapsible>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </section>
 
@@ -137,22 +173,33 @@ export function SidebarNav({ lessons }: { lessons: LessonMeta[] }) {
             <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
               Springboard
             </h3>
-            <div className="space-y-4">
-              {springWeeks.map(([week, items]) => (
-                <div key={week}>
-                  <div className="mb-2 text-xs font-semibold text-foreground/90">{week}</div>
-                  <div className="grid gap-1">
-                    {items.map((l) => (
-                      <NavItem
-                        key={`s-${week}-${l.slug}`}
-                        href={`/course/springboard/${week}/${l.slug}`}
-                        label={cleanTitle(l.title)}
-                        done={completed.has(lessonKey({ track: "springboard", week, slug: l.slug }))}
-                      />
-                    ))}
+            <div className="space-y-2">
+              {springWeeks.map(([week, items]) => {
+                const key = `spring:${week}`;
+                const isOpen = open[key] ?? false;
+                return (
+                  <div key={week} className="rounded-xl border bg-background/30">
+                    <Collapsible open={isOpen} onOpenChange={(v) => toggle(key, v)}>
+                      <CollapsibleTrigger>
+                        <span className="truncate">{week}</span>
+                        <span className="text-xs text-muted-foreground">{isOpen ? "Hide" : "Show"}</span>
+                      </CollapsibleTrigger>
+                      <CollapsibleContent>
+                        <div className="grid gap-1 px-2 pb-2">
+                          {items.map((l) => (
+                            <NavItem
+                              key={`s-${week}-${l.slug}`}
+                              href={`/course/springboard/${week}/${l.slug}`}
+                              label={cleanTitle(l.title)}
+                              done={completed.has(lessonKey({ track: "springboard", week, slug: l.slug }))}
+                            />
+                          ))}
+                        </div>
+                      </CollapsibleContent>
+                    </Collapsible>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </section>
 
