@@ -1,11 +1,95 @@
 import Link from "next/link";
-import { listLessons } from "@/lib/course";
+import fs from "fs";
+import path from "path";
+
+import { listLessons, type LessonMeta } from "@/lib/course";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CourseDashboard } from "@/components/CourseDashboard";
+import { CourseAccordion, type LessonWithPreview } from "@/components/CourseAccordion";
+import { remark } from "remark";
+import html from "remark-html";
+import gfm from "remark-gfm";
 
-export default function CourseIndex() {
+async function mdToHtml(md: string) {
+  const processed = await remark().use(gfm).use(html).process(md);
+  return processed.toString();
+}
+
+function loadLessonMarkdown(l: LessonMeta): string | undefined {
+  try {
+    const base = path.join(process.cwd(), "tbsoftwash-course", "03_curriculum");
+    const stack: string[] = [base];
+    while (stack.length) {
+      const dir = stack.pop()!;
+      for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+        const full = path.join(dir, entry.name);
+        if (entry.isDirectory()) stack.push(full);
+        else if (entry.isFile() && entry.name.endsWith(".md")) {
+          const raw = fs.readFileSync(full, "utf8");
+          if (raw.includes(`slug: \"${l.slug}\"`) || raw.includes(`slug: "${l.slug}"`)) {
+            return raw.replace(/^---[\s\S]*?---\n/, "");
+          }
+        }
+      }
+    }
+  } catch {
+    // ignore
+  }
+  return undefined;
+}
+
+function groupCore(lessons: LessonMeta[]) {
+  const byModule = new Map<number, LessonMeta[]>();
+  for (const l of lessons.filter((x) => x.track === "core")) {
+    const m = l.module ?? 0;
+    byModule.set(m, [...(byModule.get(m) ?? []), l]);
+  }
+  const modules = Array.from(byModule.entries()).sort((a, b) => a[0] - b[0]);
+  for (const [, items] of modules) items.sort((a, b) => (a.lesson ?? 999) - (b.lesson ?? 999));
+  return modules.map(([module, items]) => ({ label: `Module ${module}`, lessons: items }));
+}
+
+function groupSpringboard(lessons: LessonMeta[]) {
+  const byWeek = new Map<string, LessonMeta[]>();
+  for (const l of lessons.filter((x) => x.track === "springboard")) {
+    const w = l.week ?? "springboard";
+    byWeek.set(w, [...(byWeek.get(w) ?? []), l]);
+  }
+  const weeks = Array.from(byWeek.entries()).sort((a, b) => a[0].localeCompare(b[0]));
+  for (const [, items] of weeks) items.sort((a, b) => (a.lesson ?? 999) - (b.lesson ?? 999));
+  return weeks.map(([week, items]) => ({ label: week, lessons: items }));
+}
+
+export default async function CourseIndex() {
   const lessons = listLessons();
+
+  const coreGroupsRaw = groupCore(lessons);
+  const springGroupsRaw = groupSpringboard(lessons);
+
+  const coreGroups: Array<{ label: string; lessons: LessonWithPreview[] }> = [];
+  for (const g of coreGroupsRaw) {
+    const items: LessonWithPreview[] = [];
+    for (const l of g.lessons) {
+      const md = loadLessonMarkdown(l);
+      const previewMd = md ? md.split("\n").slice(0, 120).join("\n") : undefined;
+      const previewHtml = previewMd ? await mdToHtml(previewMd) : undefined;
+      items.push({ ...l, previewHtml });
+    }
+    coreGroups.push({ label: g.label, lessons: items });
+  }
+
+  const springGroups: Array<{ label: string; lessons: LessonWithPreview[] }> = [];
+  for (const g of springGroupsRaw) {
+    const items: LessonWithPreview[] = [];
+    for (const l of g.lessons) {
+      const md = loadLessonMarkdown(l);
+      const previewMd = md ? md.split("\n").slice(0, 120).join("\n") : undefined;
+      const previewHtml = previewMd ? await mdToHtml(previewMd) : undefined;
+      items.push({ ...l, previewHtml });
+    }
+    springGroups.push({ label: g.label, lessons: items });
+  }
 
   return (
     <main className="mx-auto max-w-4xl">
@@ -23,12 +107,24 @@ export default function CourseIndex() {
             <Link href="/course/springboard/week-1-gutters/gutters-overview">Start Springboard</Link>
           </Button>
           <Button asChild variant="outline">
-            <Link href="/course/printables/operator-checklist-pack">Printables</Link>
+            <Link href="/course/printables">Printables</Link>
           </Button>
         </div>
       </div>
 
-      <CourseDashboard lessons={lessons} />
+      <div className="grid gap-6">
+        <CourseDashboard lessons={lessons} />
+        <CourseAccordion
+          title="Core Modules (accordion reader)"
+          groups={coreGroups}
+          makeHref={(l) => `/course/core/${l.module}/${l.slug}`}
+        />
+        <CourseAccordion
+          title="Springboard (accordion reader)"
+          groups={springGroups}
+          makeHref={(l) => `/course/springboard/${l.week}/${l.slug}`}
+        />
+      </div>
     </main>
   );
 }
