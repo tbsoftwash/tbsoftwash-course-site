@@ -44,6 +44,12 @@
 ## Module 5 — Windows (inside/out)
 - Tools, technique, upsells
 - Protecting interiors, track cleaning
+- Core lesson pages:
+  - `03_curriculum/module-5-windows/lesson-01-windows-method-selection-and-safety.md`
+  - `03_curriculum/module-5-windows/lesson-02-traditional-window-cleaning-workflow.md`
+  - `03_curriculum/module-5-windows/lesson-03-screens-tracks-and-addons.md`
+  - `03_curriculum/module-5-windows/lesson-04-wfp-pure-water-and-rodi.md`
+  - `03_curriculum/module-5-windows/lesson-05-pricing-bundles-and-expectations.md`
 - Springboard mini-course assets:
   - `03_curriculum/springboard/week-2-traditional-windows/lesson-01-windows-overview.md`
   - `03_curriculum/springboard/week-2-traditional-windows/lesson-02-windows-workflow-and-qa.md`

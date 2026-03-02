@@ -30,7 +30,14 @@ Folder: `03_curriculum/module-1-getting-started/`
 - Module 1 — Getting Started: Your First 7 Days (Springboard Plan) (Lesson) — `03_curriculum/module-1-getting-started/lesson-04-your-first-7-days-springboard.md`
 - Module 1 — Getting Started: File + Folder Discipline (Lesson) — `03_curriculum/module-1-getting-started/lesson-05-file-and-folder-discipline.md`
 
-\1- Module 10 — Marketing: Web Authority as a Moat (Lesson) — `03_curriculum/module-10-marketing/lesson-06-web-authority-as-a-moat.md`
+### Module 10 Marketing
+Folder: `03_curriculum/module-10-marketing/`
+- Module 10 — Marketing Engine: Proof *is* the Marketing (Lesson) — `03_curriculum/module-10-marketing/lesson-01-proof-is-the-marketing.md`
+- Module 10 — Marketing Engine: GBP + Reviews + Voice of Customer (Lesson) — `03_curriculum/module-10-marketing/lesson-02-gbp-reviews-voice-of-customer.md`
+- Module 10 — Marketing Engine: City Pages + Topical Authority (Lesson) — `03_curriculum/module-10-marketing/lesson-03-city-pages-and-topical-authority.md`
+- Module 10 — Marketing Engine: Resources Hub + Gating (Lesson) — `03_curriculum/module-10-marketing/lesson-04-resources-hub-and-gating.md`
+- Module 10 — Marketing Engine: Content Ops from the Proof Pack (Lesson) — `03_curriculum/module-10-marketing/lesson-05-content-ops-from-proof-pack.md`
+- Module 10 — Marketing: Web Authority as a Moat (Lesson) — `03_curriculum/module-10-marketing/lesson-06-web-authority-as-a-moat.md`
 
 ### Module 11 Ops
 Folder: `03_curriculum/module-11-ops/`
@@ -58,6 +65,14 @@ Folder: `03_curriculum/module-4-house/`
 - Module 4 — House Wash: Diagnose Before You Spray (Lesson) — `03_curriculum/module-4-house/lesson-01-housewash-diagnosis.md`
 - Module 4 — House Wash: Workflow + QA (Lesson) — `03_curriculum/module-4-house/lesson-02-housewash-workflow-and-qa.md`
 - Module 4 — House Wash: Bundles That Sell (Lesson) — `03_curriculum/module-4-house/lesson-03-housewash-bundles.md`
+
+### Module 5 Windows
+Folder: `03_curriculum/module-5-windows/`
+- Module 5 — Windows: Method Selection + Safety (Lesson) — `03_curriculum/module-5-windows/lesson-01-windows-method-selection-and-safety.md`
+- Module 5 — Windows: Traditional Workflow + Quality Control (Lesson) — `03_curriculum/module-5-windows/lesson-02-traditional-window-cleaning-workflow.md`
+- Module 5 — Windows: Screens, Tracks + High-Value Add-ons (Lesson) — `03_curriculum/module-5-windows/lesson-03-screens-tracks-and-addons.md`
+- Module 5 — Windows: WFP (Pure Water) + RO/DI Basics (Lesson) — `03_curriculum/module-5-windows/lesson-04-wfp-pure-water-and-rodi.md`
+- Module 5 — Windows: Pricing, Bundles + Expectations (Lesson) — `03_curriculum/module-5-windows/lesson-05-pricing-bundles-and-expectations.md`
 
 ### Module 6 Gutters Advanced
 Folder: `03_curriculum/module-6-gutters-advanced/`
@@ -91,3 +106,5 @@ Location: `03_curriculum/printables/`
 
 - `03_curriculum/printables/operator-checklist-pack-v1.md`
 - `03_curriculum/printables/operator-checklist-pack.md`
+- `03_curriculum/printables/safety-loadout-checklist-v1.md`
+- `03_curriculum/printables/spill-and-exposure-response-card-v1.md`
