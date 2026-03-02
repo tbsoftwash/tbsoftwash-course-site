@@ -17,7 +17,9 @@ export type Lesson = LessonMeta & {
 };
 
 // Course content is vendored as a git submodule at ./tbsoftwash-course
-const COURSE_ROOT = path.join(process.cwd(), "tbsoftwash-course", "03_curriculum");
+// On Vercel, process.cwd() during prerender can differ; prefer VERCEL_PROJECT_DIR when available.
+const PROJECT_ROOT = process.env.VERCEL_PROJECT_DIR || process.cwd();
+const COURSE_ROOT = path.join(PROJECT_ROOT, "tbsoftwash-course", "03_curriculum");
 
 function walk(dir: string): string[] {
   const out: string[] = [];
@@ -30,8 +32,12 @@ function walk(dir: string): string[] {
 }
 
 export function listLessons(): LessonMeta[] {
-  const mdFiles = walk(COURSE_ROOT)
-    .filter((p) => /lesson-\d+-.*\.md$/.test(p));
+  if (!fs.existsSync(COURSE_ROOT)) {
+    console.warn(`[course] COURSE_ROOT missing: ${COURSE_ROOT}`);
+    return [];
+  }
+
+  const mdFiles = walk(COURSE_ROOT).filter((p) => /lesson-\d+-.*\.md$/.test(p));
 
   const metas: LessonMeta[] = [];
   for (const filePath of mdFiles) {
@@ -71,6 +77,11 @@ export function listLessons(): LessonMeta[] {
 
 export function getLesson(track: string, moduleOrWeek: string, slug: string): Lesson | null {
   // We don’t trust filenames; we search for matching frontmatter.
+  if (!fs.existsSync(COURSE_ROOT)) {
+    console.warn(`[course] COURSE_ROOT missing: ${COURSE_ROOT}`);
+    return null;
+  }
+
   const mdFiles = walk(COURSE_ROOT).filter((p) => /lesson-\d+-.*\.md$/.test(p));
   for (const filePath of mdFiles) {
     const raw = fs.readFileSync(filePath, "utf8");
