@@ -7,24 +7,36 @@ export default function CourseIndex() {
   const core = lessons.filter((l) => l.track === "core");
   const springboard = lessons.filter((l) => l.track === "springboard");
 
+  const coreModules = Array.from(new Set(core.map((l) => l.module).filter(Boolean))) as number[];
+  coreModules.sort((a, b) => a - b);
+
   const springboardWeeks = Array.from(
     new Set(springboard.map((l) => l.week).filter(Boolean))
   ) as string[];
   springboardWeeks.sort();
 
   return (
-    <main style={{ padding: 24, maxWidth: 900, margin: "0 auto" }}>
-      <h1>TBSoftWash Operator Course</h1>
-      <p>Auto-generated index from the course repo.</p>
+    <main style={{ maxWidth: 900 }}>
+      <h1>Course Index</h1>
+      <p>
+        This index is generated from the lesson frontmatter. Use the sidebar for fast navigation.
+      </p>
 
       <h2>Core Modules</h2>
-      <ul>
-        {core.map((l) => (
-          <li key={`c-${l.module}-${l.lesson}-${l.slug}`}>
-            <Link href={`/course/core/${l.module}/${l.slug}`}>{l.title}</Link>
-          </li>
-        ))}
-      </ul>
+      {coreModules.map((m) => (
+        <section key={m} style={{ marginBottom: 16 }}>
+          <h3>Module {m}</h3>
+          <ul>
+            {core
+              .filter((l) => l.module === m)
+              .map((l) => (
+                <li key={`c-${m}-${l.lesson}-${l.slug}`}>
+                  <Link href={`/course/core/${m}/${l.slug}`}>{l.title}</Link>
+                </li>
+              ))}
+          </ul>
+        </section>
+      ))}
 
       <h2>Springboard Track</h2>
       <p>
@@ -33,7 +45,7 @@ export default function CourseIndex() {
 
       {springboardWeeks.map((week) => (
         <section key={week} style={{ marginBottom: 16 }}>
-          <h3 style={{ marginBottom: 8 }}>{week}</h3>
+          <h3>{week}</h3>
           <ul>
             {springboard
               .filter((l) => l.week === week)
@@ -45,6 +57,13 @@ export default function CourseIndex() {
           </ul>
         </section>
       ))}
+
+      <h2>Printables</h2>
+      <ul>
+        <li>
+          <Link href="/course/printables/operator-checklist-pack">Operator Checklist Pack</Link>
+        </li>
+      </ul>
     </main>
   );
 }
