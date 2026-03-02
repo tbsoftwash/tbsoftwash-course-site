@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050816"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="0%" r="70%">
+      <stop offset="0" stop-color="rgba(59,130,246,0.35)"/>
+      <stop offset="0.65" stop-color="rgba(59,130,246,0)"/>
+    </radialGradient>
+    <style>
+      .h1{font:700 44px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;fill:#e5e7eb}
+      .h2{font:700 24px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;fill:#e5e7eb}
+      .p{font:400 20px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;fill:rgba(229,231,235,0.78)}
+      .muted{fill:rgba(229,231,235,0.60)}
+      .card{fill:rgba(255,255,255,0.06);stroke:rgba(255,255,255,0.12);stroke-width:2;rx:22}
+      .step{fill:rgba(255,255,255,0.05);stroke:rgba(255,255,255,0.12);stroke-width:2;rx:18}
+      .warn{fill:rgba(239,68,68,0.12);stroke:rgba(239,68,68,0.35);stroke-width:2;rx:16}
+      .tape{fill:rgba(251,191,36,0.20);stroke:rgba(251,191,36,0.45);stroke-width:2}
+      .num{font:800 22px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;fill:#e5e7eb}
+      .chip{fill:rgba(59,130,246,0.16);stroke:rgba(59,130,246,0.45);stroke-width:2;rx:999}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="520" fill="url(#glow)"/>
+
+  <rect x="78" y="66" width="220" height="34" class="chip"/>
+  <text x="94" y="91" class="p" style="font-weight:600">TBSoftWash Academy</text>
+
+  <text x="80" y="160" class="h1">Taping Off Electrical Outlets (Water-Shedding Pattern)</text>
+  <text x="80" y="205" class="p">Last resort. Avoid spraying near electricity. Only after safe shutdown (LOTO).</text>
+
+  <rect x="80" y="240" width="1440" height="560" class="card"/>
+
+  <rect x="110" y="270" width="1380" height="72" class="warn"/>
+  <text x="130" y="316" class="h2">STOP: Never tape or cover a live circuit. Confirm power is OFF.</text>
+
+  <g transform="translate(110,370)">
+    <!-- step 1 -->
+    <rect x="0" y="0" width="430" height="410" class="step"/>
+    <text x="24" y="42" class="num">1</text>
+    <text x="60" y="42" class="h2" style="font-size:22px">Bottom anchor</text>
+    <text x="24" y="78" class="p">Tape the bottom edge to the wall.</text>
+
+    <rect x="130" y="120" width="170" height="230" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.14)" stroke-width="2" rx="16"/>
+    <rect x="170" y="155" width="90" height="110" fill="rgba(0,0,0,0.10)" stroke="rgba(255,255,255,0.16)" stroke-width="2" rx="10"/>
+    <rect x="150" y="318" width="130" height="22" class="tape" rx="6"/>
+    <text x="215" y="340" class="muted" text-anchor="middle" style="font-size:16px">tape</text>
+
+    <!-- step 2 -->
+    <rect x="470" y="0" width="430" height="410" class="step"/>
+    <text x="494" y="42" class="num">2</text>
+    <text x="530" y="42" class="h2" style="font-size:22px">Vertical strips</text>
+    <text x="494" y="78" class="p">Bottom → top, overlap like shingles.</text>
+
+    <rect x="600" y="120" width="170" height="230" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.14)" stroke-width="2" rx="16"/>
+    <rect x="640" y="155" width="90" height="110" fill="rgba(0,0,0,0.10)" stroke="rgba(255,255,255,0.16)" stroke-width="2" rx="10"/>
+    <rect x="605" y="140" width="18" height="210" class="tape" rx="6"/>
+    <rect x="632" y="140" width="18" height="210" class="tape" rx="6"/>
+    <rect x="659" y="140" width="18" height="210" class="tape" rx="6"/>
+    <rect x="686" y="140" width="18" height="210" class="tape" rx="6"/>
+    <rect x="713" y="140" width="18" height="210" class="tape" rx="6"/>
+    <text x="685" y="385" class="muted" text-anchor="middle" style="font-size:16px">overlap</text>
+
+    <!-- step 3 -->
+    <rect x="940" y="0" width="430" height="410" class="step"/>
+    <text x="964" y="42" class="num">3</text>
+    <text x="1000" y="42" class="h2" style="font-size:22px">Top cap + final overlap</text>
+    <text x="964" y="78" class="p">Cap top, then horizontal rows bottom → top.</text>
+
+    <rect x="1070" y="120" width="170" height="230" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.14)" stroke-width="2" rx="16"/>
+    <rect x="1110" y="155" width="90" height="110" fill="rgba(0,0,0,0.10)" stroke="rgba(255,255,255,0.16)" stroke-width="2" rx="10"/>
+    <rect x="1088" y="138" width="134" height="20" class="tape" rx="6"/>
+    <rect x="1088" y="165" width="134" height="20" class="tape" rx="6"/>
+    <rect x="1088" y="192" width="134" height="20" class="tape" rx="6"/>
+    <rect x="1088" y="219" width="134" height="20" class="tape" rx="6"/>
+    <rect x="1088" y="246" width="134" height="20" class="tape" rx="6"/>
+    <text x="1155" y="385" class="muted" text-anchor="middle" style="font-size:16px">shed water</text>
+  </g>
+
+  <text x="110" y="835" class="p">After work: remove tape, verify dry, then restore power. When unsure: keep power OFF and call an electrician.</text>
+</svg>
