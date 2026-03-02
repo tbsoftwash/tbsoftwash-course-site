@@ -159,7 +159,10 @@ export function SidebarNav({ lessons }: { lessons: LessonMeta[] }) {
               Printables
             </h3>
             <div className="grid gap-1">
+              <NavItem href="/course/printables" label="Printables (Index)" />
               <NavItem href="/course/printables/operator-checklist-pack" label="Operator Checklist Pack" />
+              <NavItem href="/course/printables/safety-loadout-checklist-v1" label="Safety Loadout Checklist" />
+              <NavItem href="/course/printables/spill-and-exposure-response-card-v1" label="Spill + Exposure Card" />
             </div>
           </section>
         </div>
