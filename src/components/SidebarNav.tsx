@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { LessonMeta } from "@/lib/course";
+import { ModeToggle } from "@/components/ModeToggle";
 
 function cleanTitle(t: string) {
   // remove leading module/week prefixes for sidebar readability
@@ -73,8 +74,9 @@ export function SidebarNav({ lessons }: { lessons: LessonMeta[] }) {
         background: "#fff",
       }}
     >
-      <div style={{ marginBottom: 12 }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
         <NavItem href="/" label="TBSoftWash" />
+        <ModeToggle />
       </div>
 
       <div style={{ marginBottom: 12 }}>
