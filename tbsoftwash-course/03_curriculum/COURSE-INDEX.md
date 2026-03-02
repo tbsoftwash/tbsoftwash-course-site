@@ -74,6 +74,12 @@ Folder: `03_curriculum/module-5-windows/`
 - Module 5 — Windows: WFP (Pure Water) + RO/DI Basics (Lesson) — `03_curriculum/module-5-windows/lesson-04-wfp-pure-water-and-rodi.md`
 - Module 5 — Windows: Pricing, Bundles + Expectations (Lesson) — `03_curriculum/module-5-windows/lesson-05-pricing-bundles-and-expectations.md`
 
+#### Module 5 — Homeowner lane (public-safe)
+- `03_curriculum/module-5-windows-homeowner/lesson-01-homeowner-what-to-expect.md`
+- `03_curriculum/module-5-windows-homeowner/lesson-02-hard-water-vs-etching-vs-seal-failure.md`
+- `03_curriculum/module-5-windows-homeowner/lesson-03-screens-and-tracks-expectations.md`
+- `03_curriculum/module-5-windows-homeowner/lesson-04-wfp-pure-water-explained.md`
+
 ### Module 6 Gutters Advanced
 Folder: `03_curriculum/module-6-gutters-advanced/`
 - Module 6 (Advanced) — Gutters: Brightening vs Cleaning (Lesson) — `03_curriculum/module-6-gutters-advanced/lesson-01-gutter-brightening-vs-cleaning.md`
