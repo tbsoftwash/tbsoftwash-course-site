@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { getLesson } from "@/lib/course";
+import { getCoreModuleTitles } from "@/lib/moduleTitles";
 import { getNeighbors } from "@/lib/nav";
 import { remark } from "remark";
 import html from "remark-html";
@@ -25,6 +26,8 @@ export default async function LessonPage({
   if (!lesson) return notFound();
 
   const neighbors = getNeighbors({ track: "core", module: Number(module), slug });
+  const moduleTitles = getCoreModuleTitles();
+  const moduleTitle = moduleTitles?.[Number(module)];
 
   const processed = await remark().use(gfm).use(html).process(lesson.content);
   let contentHtml = processed.toString();
@@ -94,7 +97,7 @@ export default async function LessonPage({
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.18),transparent_55%)]" />
 
       <LessonHeader
-        kicker={`Core • Module ${module}`}
+        kicker={`Core • Module ${module}${moduleTitle ? ` — ${moduleTitle}` : ""}`}
         title={lesson.title}
         prev={neighbors.prev}
         next={neighbors.next}

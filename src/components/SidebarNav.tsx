@@ -104,10 +104,12 @@ function RailButton({
 
 export function SidebarNav({
   lessons,
+  moduleTitles,
   collapsed,
   setCollapsed,
 }: {
   lessons: LessonMeta[];
+  moduleTitles: Record<number, string>;
   collapsed: boolean;
   setCollapsed: (v: boolean) => void;
 }) {
@@ -202,7 +204,15 @@ export function SidebarNav({
     <aside className="flex h-screen flex-col">
       <div className="p-4">
         <div className="mb-3 flex items-center justify-between gap-3">
-          <NavItem href="/" label="TBSoftWash" />
+          <Link href="/" className="flex items-center gap-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/brand-icon.png"
+              alt="Tampa Bay Soft Wash & Pressure Cleaning"
+              className="h-7 w-7"
+            />
+            <span className="text-sm font-semibold">@tbsoftwash</span>
+          </Link>
           <button
             title="Close sidebar"
             onClick={() => setCollapsed(true)}
@@ -233,7 +243,10 @@ export function SidebarNav({
                   <div key={module} className="rounded-xl border bg-background/30">
                     <Collapsible open={isOpen} onOpenChange={(v) => toggle(key, v)}>
                       <CollapsibleTrigger>
-                        <span>Module {module}</span>
+                        <span className="truncate">
+                          Module {module}
+                          {moduleTitles?.[module] ? ` — ${moduleTitles[module]}` : ""}
+                        </span>
                         <span className="text-xs text-muted-foreground">{isOpen ? "Hide" : "Show"}</span>
                       </CollapsibleTrigger>
                       <CollapsibleContent>

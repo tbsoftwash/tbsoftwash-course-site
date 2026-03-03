@@ -5,7 +5,9 @@ import { Badge } from "@/components/ui/badge";
 import { CourseDashboard } from "@/components/CourseDashboard";
 import { CourseAccordion } from "@/components/CourseAccordion";
 
-function groupCore(lessons: LessonMeta[]) {
+import { getCoreModuleTitles } from "@/lib/moduleTitles";
+
+function groupCore(lessons: LessonMeta[], moduleTitles: Record<number, string>) {
   const byModule = new Map<number, LessonMeta[]>();
   for (const l of lessons.filter((x) => x.track === "core")) {
     const m = l.module ?? 0;
@@ -13,7 +15,10 @@ function groupCore(lessons: LessonMeta[]) {
   }
   const modules = Array.from(byModule.entries()).sort((a, b) => a[0] - b[0]);
   for (const [, items] of modules) items.sort((a, b) => (a.lesson ?? 999) - (b.lesson ?? 999));
-  return modules.map(([module, items]) => ({ label: `Module ${module}`, lessons: items }));
+  return modules.map(([module, items]) => ({
+    label: moduleTitles?.[module] ? `Module ${module} — ${moduleTitles[module]}` : `Module ${module}`,
+    lessons: items,
+  }));
 }
 
 function groupSpringboard(lessons: LessonMeta[]) {
@@ -29,8 +34,9 @@ function groupSpringboard(lessons: LessonMeta[]) {
 
 export default async function CourseIndex() {
   const lessons = listLessons();
+  const moduleTitles = getCoreModuleTitles();
 
-  const coreGroups = groupCore(lessons);
+  const coreGroups = groupCore(lessons, moduleTitles);
   const springGroups = groupSpringboard(lessons);
 
   return (

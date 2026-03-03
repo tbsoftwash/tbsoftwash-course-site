@@ -16,7 +16,13 @@ function saveCollapsed(v: boolean) {
   window.localStorage.setItem(KEY, v ? "1" : "0");
 }
 
-export function SidebarShell({ lessons }: { lessons: LessonMeta[] }) {
+export function SidebarShell({
+  lessons,
+  moduleTitles,
+}: {
+  lessons: LessonMeta[];
+  moduleTitles: Record<number, string>;
+}) {
   const [collapsed, setCollapsed] = React.useState(false);
 
   React.useEffect(() => {
@@ -49,7 +55,12 @@ export function SidebarShell({ lessons }: { lessons: LessonMeta[] }) {
           : "w-80 border-r bg-background/60 backdrop-blur-xl transition-[width] duration-200"
       }
     >
-      <SidebarNav lessons={lessons} collapsed={collapsed} setCollapsed={set} />
+      <SidebarNav
+        lessons={lessons}
+        moduleTitles={moduleTitles}
+        collapsed={collapsed}
+        setCollapsed={set}
+      />
     </div>
   );
 }
