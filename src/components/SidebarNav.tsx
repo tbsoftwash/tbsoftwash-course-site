@@ -199,7 +199,7 @@ export function SidebarNav({
   }
 
   return (
-    <aside className="h-screen overflow-y-auto">
+    <aside className="flex h-screen flex-col">
       <div className="p-4">
         <div className="mb-3 flex items-center justify-between gap-3">
           <NavItem href="/" label="TBSoftWash" />
@@ -218,6 +218,10 @@ export function SidebarNav({
           <NavItem href="/course" label="Course Index" />
         </div>
 
+      </div>
+
+      {/* Scroll area (independent of pinned user card) */}
+      <div className="flex-1 overflow-y-auto px-4 pb-4">
         <div className="space-y-6">
           <section>
             <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Core Modules</h3>
@@ -300,10 +304,12 @@ export function SidebarNav({
             </div>
           </section>
 
-          <div className="pt-2">
-            <UserCardMenu />
-          </div>
         </div>
+      </div>
+
+      {/* Pinned user card */}
+      <div className="border-t bg-background/60 p-3 backdrop-blur-xl">
+        <UserCardMenu />
       </div>
     </aside>
   );
