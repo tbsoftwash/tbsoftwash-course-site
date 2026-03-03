@@ -8,7 +8,7 @@ function renderFigure(el: Element, style: string) {
   if (!name) return;
   const src = `/api/figure?name=${encodeURIComponent(name)}&style=${encodeURIComponent(style)}`;
   el.innerHTML = `
-    <div class="overflow-hidden rounded-2xl border bg-card/40">
+    <div class="overflow-hidden rounded-2xl glass-panel">
       <img src="${src}" alt="${name}" class="h-auto w-full" />
     </div>
   `;

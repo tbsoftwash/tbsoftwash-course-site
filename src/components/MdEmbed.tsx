@@ -50,7 +50,7 @@ export function MdEmbed({ path }: { path: string }) {
   }
 
   return (
-    <div className="my-4 rounded-2xl border bg-card/40">
+    <div className="my-4 rounded-2xl glass-panel">
       <Collapsible
         open={open}
         onOpenChange={async (v) => {
@@ -75,7 +75,7 @@ export function MdEmbed({ path }: { path: string }) {
               <div className="text-sm text-muted-foreground">Loading…</div>
             ) : (
               <div
-                className="markdown rounded-xl border bg-background/40 p-4"
+                className="markdown rounded-xl glass-panel p-4"
                 dangerouslySetInnerHTML={{ __html: contentHtml ?? "" }}
               />
             )}
