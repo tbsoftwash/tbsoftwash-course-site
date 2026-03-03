@@ -12,6 +12,13 @@ We are not the cheapest.
 
 We are the cleanest process.
 
+And here’s the part most beginners miss: this trade is easy to overcomplicate on Day 1.
+
+Start simple. Build momentum. Protect your body.
+
+Undercharging isn’t hustle — it’s a liability plan. Ladders don’t care what the customer paid.
+Price so you can work safely, show up professionally, and still be here next year.
+
 That means we win with:
 - safe methods
 - protection

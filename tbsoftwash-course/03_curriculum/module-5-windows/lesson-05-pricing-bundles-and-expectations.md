@@ -8,7 +8,13 @@ lesson: 5
 # Module 5 — Windows: Pricing, Bundles + Expectations (Lesson)
 
 ## What we sell
-We sell a result and an experience:
+We sell a result and an experience.
+
+Clean windows are a premium service when done right.
+Dress like it. Protect the home (booties/gloves). Communicate clearly. Deliver a consistent finish.
+The customer isn’t paying for soap — they’re paying for certainty.
+
+What that means on a real job:
 - clear glass
 - clean edges
 - no mess
