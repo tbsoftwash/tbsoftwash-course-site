@@ -99,26 +99,32 @@
     --radius: 1.1rem;
   }
 
-  /* Cool Light: MacLight */
+  /* Cool Light: MacLight (higher contrast, readable) */
   html[data-preset="maclight"]:root {
-    --background: 210 20% 98%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 210 20% 97%;
+    --foreground: 222 47% 11%;
 
-    --primary: 210 100% 55%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 210 100% 45%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 25% 94%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 25% 93%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 210 25% 94%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 25% 93%;
+    --muted-foreground: 215 18% 34%;
 
-    --accent: 210 25% 94%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 25% 93%;
+    --accent-foreground: 222 47% 11%;
 
-    --border: 214 24% 88%;
-    --input: 214 24% 88%;
-    --ring: 210 100% 55%;
+    --border: 214 24% 84%;
+    --input: 214 24% 84%;
+    --ring: 210 100% 45%;
 
     --radius: 1.25rem;
   }
@@ -130,6 +136,26 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Glassy feel (theme-level): subtle translucent panels + soft borders */
+.glass-panel {
+  background: hsl(var(--card) / 0.70);
+  border: 1px solid hsl(var(--border) / 0.55);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(14px);
+}
+
+.dark .glass-panel {
+  background: hsl(var(--card) / 0.45);
+  border-color: hsl(var(--border) / 0.55);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* Upgrade common surfaces globally (keeps your existing classes working) */
+[data-radix-popper-content-wrapper] > * {
+  /* popovers/menus */
+  border-radius: calc(var(--radius) + 4px);
 }
 
 /* Scrollbar (match theme) */
