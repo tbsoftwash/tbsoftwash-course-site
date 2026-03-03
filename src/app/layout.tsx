@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TBSoftWash Academy",
+  title: "Tampa Bay Soft Wash Academy",
   description: "Operator training: SOPs, QA checklists, Proof Packs, and systems.",
 };
 

@@ -1,6 +1,6 @@
-# TBSoftWash Academy (Course Site)
+# Tampa Bay Soft Wash Academy (Course Site)
 
-This repo is the **Next.js “Academy” web app** that renders the TBSoftWash operator course content as a modern, app-like training portal.
+This repo is the **Next.js “Academy” web app** that renders the Tampa Bay Soft Wash operator course content as a modern, app-like training portal.
 
 - **Live domain (production):** `academy.tbsoftwash.com`
 - **Repo (site/app):** `tbsoftwash-course-site`

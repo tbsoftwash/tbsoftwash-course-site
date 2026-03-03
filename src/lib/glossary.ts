@@ -17,8 +17,13 @@ export const GLOSSARY: GlossaryEntry[] = [
     def: "How long the solution sits on the surface before you rinse. Too short = weak results; too long on sensitive surfaces can cause damage.",
   },
   {
+    term: "DS",
+    aliases: ["ds"],
+    def: "Downstream. Usually referring to applying chemical through a downstream injector (after the pump).",
+  },
+  {
     term: "downstream injector",
-    aliases: ["DS injector", "downstream", "DS"],
+    aliases: ["DS injector", "downstream"],
     def: "A device that pulls chemical into the pressure line AFTER the pump. Safer/easier for many house washes because strong bleach doesn’t go through the pump.",
   },
   {

@@ -71,11 +71,13 @@ function wrapTermsInTextNode(textNode: Text) {
       continue;
     }
 
-    // Acronyms should not trigger on lowercase word fragments.
-    // Example: "waSH" could be valid, but "wash" should not underline "sh".
+    // Acronyms must be standalone tokens (fixes SH/DS triggering inside words like "wash" or "standards").
     const matchedEntry = entries.find((e) => e.display.toLowerCase() === hit.toLowerCase());
-    if (matchedEntry?.isAcronym && hit === hit.toLowerCase()) {
-      continue;
+    if (matchedEntry?.isAcronym) {
+      // Do not match when immediately attached to letters/numbers on either side.
+      if (isAlphaNum.test(before) || isAlphaNum.test(after)) {
+        continue;
+      }
     }
 
     if (start > last) frag.appendChild(document.createTextNode(s.slice(last, start)));

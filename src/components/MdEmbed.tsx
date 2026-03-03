@@ -14,7 +14,7 @@ async function mdToHtml(md: string) {
 }
 
 const INLINE_CODE_ALLOWED =
-  "(?:04_sops|02_chemicals|03_curriculum\\/printables|06_ops|05_sales_marketing|01_business_profile)";
+  "(?:04_sops|02_chemicals|03_curriculum|06_ops|05_sales_marketing|01_business_profile)";
 
 function patchHtmlForMdEmbeds(input: string) {
   let out = input;
@@ -44,7 +44,7 @@ function patchHtmlForMdEmbeds(input: string) {
 
   // Plain text occurrences only inside text nodes (avoid attribute corruption).
   const mdPathRegex =
-    /(04_sops\/[^\s<]+\.md|02_chemicals\/[^\s<]+\.md|03_curriculum\/printables\/[^\s<]+\.md|06_ops\/[^\s<]+\.md|05_sales_marketing\/[^\s<]+\.md|01_business_profile\/[^\s<]+\.md)/g;
+    /(04_sops\/[^\s<]+\.md|02_chemicals\/[^\s<]+\.md|03_curriculum\/[^\s<]+\.md|06_ops\/[^\s<]+\.md|05_sales_marketing\/[^\s<]+\.md|01_business_profile\/[^\s<]+\.md)/g;
 
   out = out.replace(/>([^<]+)</g, (full, text) => {
     const replaced = String(text).replace(mdPathRegex, (m) => `<span data-md="${m}"></span>`);

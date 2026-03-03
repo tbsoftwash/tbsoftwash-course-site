@@ -1,4 +1,4 @@
-# Project Overview — TBSoftWash Academy
+# Project Overview — Tampa Bay Soft Wash Academy
 
 This doc exists so a new developer/agent can understand the entire project quickly.
 

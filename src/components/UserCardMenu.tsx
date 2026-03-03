@@ -79,7 +79,7 @@ export function UserCardMenu({ collapsed }: { collapsed?: boolean }) {
 
         {open ? (
           <div className="absolute bottom-12 left-0 z-50 w-64 rounded-xl border bg-background/95 p-3 shadow-xl backdrop-blur">
-            <div className="mb-2 text-sm font-semibold">TBSoftWash</div>
+            <div className="mb-2 text-sm font-semibold">@tbsoftwash</div>
             <div className="grid gap-3">
               <div>
                 <div className="mb-1 text-xs text-muted-foreground">Theme</div>
@@ -121,7 +121,7 @@ export function UserCardMenu({ collapsed }: { collapsed?: boolean }) {
         )}
       >
         <div className="min-w-0">
-          <div className="truncate text-sm font-semibold">TBSoftWash Operator</div>
+          <div className="truncate text-sm font-semibold">Tampa Bay Soft Wash</div>
           <div className="truncate text-xs text-muted-foreground">
             Theme: {theme} • Style: {friendlyDiagramStyle(diagramStyle)} • Reader: {readerMode}
           </div>

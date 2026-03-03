@@ -56,7 +56,7 @@ function renderVideo(el: Element) {
         <div style="position:relative;padding-top:56.25%;">
           <iframe
             src="${embed}"
-            title="TBSoftWash video"
+            title="@tbsoftwash video"
             style="position:absolute;inset:0;width:100%;height:100%;"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
