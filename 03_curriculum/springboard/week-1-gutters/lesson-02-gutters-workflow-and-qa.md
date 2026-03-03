@@ -24,6 +24,10 @@ Use: `04_sops/gutters/gutter-cleaning-sop-v2.md` (QA section)
 Follow: `04_sops/proof-pack/proof-pack-sop-v1.md`
 
 ## Common problems and how we prevent them
+Undercharging isn’t hustle — it’s a liability plan.
+This work costs your body when you do it wrong, and ladders don’t care what the customer paid.
+Price so you can work safely, show up professionally, and still be here next year.
+
 - Mess in beds/patios → containment system
 - Missed downspout restriction → treat outlets as a checklist item
 - Ladder marks/damage → stabilizer + careful placement

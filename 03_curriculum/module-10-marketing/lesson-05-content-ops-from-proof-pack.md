@@ -10,6 +10,9 @@ lesson: 5
 ## The easiest content engine
 Don’t invent content.
 
+The newest toys don’t create calls. Marketing creates calls.
+Your job is to build a simple offer, show proof, and get in front of the right homeowners — then deliver.
+
 > **Authority Lens:** Proof content is a trust signal that compounds. Ads are rent. Proof-driven authority is equity.
 
 Document jobs.
