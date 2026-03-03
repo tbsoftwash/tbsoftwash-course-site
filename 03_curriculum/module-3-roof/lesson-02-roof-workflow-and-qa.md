@@ -31,6 +31,7 @@ VIDEO: https://www.youtube.com/watch?v=0106axwJgvc | No-walk roof wash example (
 - rushing plant protection
 - spraying in wind
 - skipping pre-condition photos
+- forgetting paint risk: overspray/runoff can still affect certain paints (test first if you’re unsure)
 ## Do this next (assignment)
 - [ ] Run this lesson on a real job or a mock walkaround.
 - [ ] Capture a Proof Pack for the scenario.
