@@ -7,40 +7,90 @@ lesson: 1
 ---
 # Module 3 — Roof Soft Wash: Why It’s Soft Wash (Lesson)
 
-## The one rule
+## What you’re doing today
+You’re learning the non-negotiable roof rule and the “why” behind it — so you can explain it to customers and keep yourself out of trouble.
+
+## The rule (non‑negotiable)
 We do **not** pressure wash roofs.
 
-This isn’t a preference.
+That isn’t a preference. It’s a safety and damage-prevention standard.
 
-It’s a safety and damage-prevention standard.
+## Why this matters
+Roof work is where a small mistake becomes a big bill.
+
+Your job is to control:
+- fall risk
+- overspray/runoff
+- plant stress
+- water intrusion
+- paint risk (house walls, soffits, trim)
+
+## Tools & materials (minimum viable)
+- PPE: gloves + eye protection (minimum)
+- Hose + working water supply (for rinsing plants and controlling runoff)
+- An application method you can control (don’t rely on chaos)
+- Proof Pack: phone camera
+
+Optional but recommended:
+- low-pressure rinse control (ball valve / gentle rinse)
 
 ## What the customer is really buying
 They’re not buying “bleach.”
 
 They’re buying:
 - roof-life protection
-- clean curb appeal
-- proof that it was done right
+- curb appeal
+- a clean closeout (photos + communication)
 
-## The risks you must control
-- fall risk
-- overspray
-- plant stress
-- water intrusion
-
-## The promise
+## The promise (simple)
 Chemistry + dwell + gentle rinse.
 
-## SOPs
+No blasting.
+
+## Decision points (foreman rules)
+- If a roof isn’t safe to walk:
+  - don’t walk it. Use a no-walk approach.
+
+- If wind is pushing toward plants/windows:
+  - slow down and build a protection plan first.
+
+- If you’re unsure about paint/coatings nearby:
+  - test first. Overspray/runoff can still create paint problems.
+
+## Common mistakes + fixes
+- Mistake: “It’s faster if I just blast it.”
+  - Fix: roof damage is not worth speed.
+
+- Mistake: treating plant protection as optional
+  - Fix: plants get protected before chemical goes down.
+
+- Mistake: skipping proof
+  - Fix: proof is part of the product.
+
+## What good looks like
+- Customer can repeat back the process in one sentence.
+- Plants look the same after the job as before.
+- Roof looks even (no blast marks).
+- Proof Pack is complete.
+
+## How to prove it (Proof Pack)
+Minimum shots:
+- front elevation before/after
+- worst area close-up before/after
+- gutters/downspouts where runoff matters
+
+Add notes:
+- roof type
+- any limitations
+
+## Do this next (assignment)
+- [ ] Practice the 20-second roof explanation out loud.
+- [ ] List 3 roof hazards you’ll check before any application.
+
+## References (SOPs + checklists)
 - Operator SOP: `04_sops/roofs/roof-soft-wash-sop-v2.md`
 - QA checklist: `04_sops/roofs/roof-soft-wash-qa-checklist-v1.md`
 - Homeowner explainer: `04_sops/roofs/roof-soft-wash-homeowner-explainer-v1.md`
-## Do this next (assignment)
-- [ ] Run this lesson on a real job or a mock walkaround.
-- [ ] Capture a Proof Pack for the scenario.
-- [ ] Do the Final Walk.
-
-## References (SOPs + checklists)
 - Proof Pack SOP: `04_sops/proof-pack/proof-pack-sop-v1.md`
 - Final Walk checklist: `04_sops/universal/final-walk-checklist-v1.md`
 
