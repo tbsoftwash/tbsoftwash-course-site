@@ -62,21 +62,26 @@ export function CourseDashboard({
 
   const overallPct = Math.round(overall * 100);
 
-  const streak = React.useMemo(() => {
-    // lightweight “streak”: count consecutive days (including today) with at least 1 completion
-    // stored in localStorage as a map {"YYYY-MM-DD": count}
-    if (typeof window === "undefined") return { days: 0, today: false };
+  const [streak, setStreak] = React.useState<{ days: number; today: boolean }>({
+    days: 0,
+    today: false,
+  });
+
+  React.useEffect(() => {
+    // Avoid hydration mismatch: streak depends on localStorage + current date.
     try {
       const raw = window.localStorage.getItem("tbsa.activityDays.v1");
       const obj = raw ? JSON.parse(raw) : {};
       const keys = Object.keys(obj).sort();
-      if (!keys.length) return { days: 0, today: false };
+      if (!keys.length) {
+        setStreak({ days: 0, today: false });
+        return;
+      }
 
       const today = new Date();
       const iso = today.toISOString().slice(0, 10);
       const hasToday = Boolean(obj[iso]);
 
-      // walk backwards from today
       let days = 0;
       for (let i = 0; i < 365; i++) {
         const d = new Date();
@@ -86,9 +91,9 @@ export function CourseDashboard({
         else break;
       }
 
-      return { days, today: hasToday };
+      setStreak({ days, today: hasToday });
     } catch {
-      return { days: 0, today: false };
+      setStreak({ days: 0, today: false });
     }
   }, [completed]);
 
