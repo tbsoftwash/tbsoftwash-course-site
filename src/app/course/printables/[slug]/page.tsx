@@ -56,6 +56,11 @@ export default async function PrintablePage({
     }
   );
 
+  contentHtml = contentHtml.replace(
+    /<p><a href=\"(https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=[^\"&]+|youtu\.be\/[^\"?&]+|youtube\.com\/shorts\/[^\"?&]+)[^\"]*)\"[^>]*>[^<]*<\/a><\/p>/g,
+    (_m, href) => `<div data-video=\"${String(href).trim()}\" data-caption=\"\"></div>`
+  );
+
   // Backticked md paths (inline or standalone)
   contentHtml = contentHtml.replace(
     /<p><code>([^<]+\.md)<\/code><\/p>/g,

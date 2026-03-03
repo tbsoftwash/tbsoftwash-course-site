@@ -19,6 +19,22 @@ const INLINE_CODE_ALLOWED =
 function patchHtmlForMdEmbeds(input: string) {
   let out = input;
 
+  // Embed raw YouTube links even if author didn't use VIDEO:.
+  out = out.replace(
+    /<p><a href=\"(https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=[^\"&]+|youtu\.be\/[^\"?&]+|youtube\.com\/shorts\/[^\"?&]+)[^\"]*)\"[^>]*>[^<]*<\/a><\/p>/g,
+    (_m, href) => `<div data-video=\"${String(href).trim()}\" data-caption=\"\"></div>`
+  );
+
+  // Also support VIDEO: callouts inside embedded markdown.
+  out = out.replace(
+    /<p>VIDEO:\s*([^<|]+?)(?:\s*\|\s*([^<]+))?<\/p>/g,
+    (_m, url, cap) => {
+      const u = String(url).trim();
+      const c = String(cap ?? "").trim();
+      return `<div data-video=\"${u}\" data-caption=\"${c.replace(/\"/g, "&quot;")}\"></div>`;
+    }
+  );
+
   // Standalone code blocks that are exactly a path.
   out = out.replace(
     /<p><code>([^<]+\.md)<\/code><\/p>/g,
@@ -63,6 +79,51 @@ function hydrateNestedMdEmbeds(container: HTMLElement) {
     (el as any).__mdMounted = true;
     const root = createRoot(el);
     root.render(<MdEmbed path={p} />);
+  }
+
+  // Hydrate nested videos too (so embedded docs can contain videos).
+  const vids = Array.from(container.querySelectorAll("[data-video]") as any as HTMLElement[]);
+  for (const el of vids) {
+    if ((el as any).__videoMounted) continue;
+    (el as any).__videoMounted = true;
+    const raw = el.getAttribute("data-video") || "";
+    const caption = el.getAttribute("data-caption") || "";
+
+    // Build a nocookie embed URL.
+    let id = "";
+    try {
+      if (raw.includes("youtube.com") || raw.includes("youtu.be")) {
+        const u = new URL(raw);
+        if (u.hostname.includes("youtu.be")) id = u.pathname.replace("/", "");
+        else if (u.pathname.startsWith("/shorts/")) id = u.pathname.split("/shorts/")[1] || "";
+        else id = u.searchParams.get("v") || "";
+      } else {
+        id = raw;
+      }
+    } catch {
+      id = raw;
+    }
+    id = String(id).trim();
+    if (!id) continue;
+    const embed = `https://www.youtube-nocookie.com/embed/${id}`;
+
+    el.innerHTML = `
+      <figure class="my-6">
+        <div class="overflow-hidden rounded-2xl glass-panel">
+          <div style="position:relative;padding-top:56.25%;">
+            <iframe
+              src="${embed}"
+              title="@tbsoftwash video"
+              style="position:absolute;inset:0;width:100%;height:100%;"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        ${caption ? `<figcaption class="mt-2 text-xs text-muted-foreground">${caption}</figcaption>` : ""}
+      </figure>
+    `;
   }
 }
 

@@ -53,6 +53,11 @@ export default async function SpringboardLessonPage({
     }
   );
 
+  contentHtml = contentHtml.replace(
+    /<p><a href=\"(https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=[^\"&]+|youtu\.be\/[^\"?&]+|youtube\.com\/shorts\/[^\"?&]+)[^\"]*)\"[^>]*>[^<]*<\/a><\/p>/g,
+    (_m, href) => `<div data-video=\"${String(href).trim()}\" data-caption=\"\"></div>`
+  );
+
   // Replace .md references with an inline viewer.
   // Standalone backticked paths
   contentHtml = contentHtml.replace(

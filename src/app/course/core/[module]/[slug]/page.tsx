@@ -61,6 +61,13 @@ export default async function LessonPage({
     }
   );
 
+  // If a user pasted a raw YouTube link instead of VIDEO:, embed it anyway.
+  // Matches: <p><a href="https://www.youtube.com/watch?v=...">...</a></p>
+  contentHtml = contentHtml.replace(
+    /<p><a href=\"(https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=[^\"&]+|youtu\.be\/[^\"?&]+|youtube\.com\/shorts\/[^\"?&]+)[^\"]*)\"[^>]*>[^<]*<\/a><\/p>/g,
+    (_m, href) => `<div data-video=\"${String(href).trim()}\" data-caption=\"\"></div>`
+  );
+
   // Replace .md references with an inline viewer.
   // 1) Backticked .md paths (inline or standalone)
   // Standalone lines
