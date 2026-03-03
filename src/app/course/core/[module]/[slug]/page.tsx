@@ -34,7 +34,8 @@ export default async function LessonPage({
   );
 
   // Replace .md references with an inline viewer.
-  // 1) Standalone backticked paths
+  // 1) Backticked .md paths (inline or standalone)
+  // Standalone lines
   contentHtml = contentHtml.replace(
     /<p><code>([^<]+\.md)<\/code><\/p>/g,
     (_m, mdPath) => `<div data-md=\"${String(mdPath).trim()}\"></div>`
@@ -42,6 +43,11 @@ export default async function LessonPage({
   contentHtml = contentHtml.replace(
     /<li><code>([^<]+\.md)<\/code><\/li>/g,
     (_m, mdPath) => `<li><div data-md=\"${String(mdPath).trim()}\"></div></li>`
+  );
+  // Inline occurrences like: "Source: <code>...md</code>"
+  contentHtml = contentHtml.replace(
+    /<code>((?:04_sops|02_chemicals|03_curriculum\/printables|06_ops|05_sales_marketing|01_business_profile)\/[^<\s]+\.md)<\/code>/g,
+    (_m, mdPath) => `<span data-md=\"${String(mdPath).trim()}\"></span>`
   );
 
   // 2) Markdown links to .md files

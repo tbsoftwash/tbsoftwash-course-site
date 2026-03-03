@@ -33,6 +33,7 @@ export default async function SpringboardLessonPage({
   );
 
   // Replace .md references with an inline viewer.
+  // Standalone backticked paths
   contentHtml = contentHtml.replace(
     /<p><code>([^<]+\.md)<\/code><\/p>/g,
     (_m, mdPath) => `<div data-md=\"${String(mdPath).trim()}\"></div>`
@@ -41,10 +42,17 @@ export default async function SpringboardLessonPage({
     /<li><code>([^<]+\.md)<\/code><\/li>/g,
     (_m, mdPath) => `<li><div data-md=\"${String(mdPath).trim()}\"></div></li>`
   );
+  // Inline code paths
+  contentHtml = contentHtml.replace(
+    /<code>((?:04_sops|02_chemicals|03_curriculum\/printables|06_ops|05_sales_marketing|01_business_profile)\/[^<\s]+\.md)<\/code>/g,
+    (_m, mdPath) => `<span data-md=\"${String(mdPath).trim()}\"></span>`
+  );
+  // Links
   contentHtml = contentHtml.replace(
     /<a href=\"([^\"]+\.md)\">([^<]+)<\/a>/g,
     (_m, href, _label) => `<div data-md=\"${String(href).replace(/^\.\//, "").trim()}\"></div>`
   );
+  // Plain-text occurrences
   contentHtml = contentHtml.replace(
     /(04_sops\/[^\s<]+\.md|02_chemicals\/[^\s<]+\.md|03_curriculum\/printables\/[^\s<]+\.md|06_ops\/[^\s<]+\.md|05_sales_marketing\/[^\s<]+\.md|01_business_profile\/[^\s<]+\.md)/g,
     (m) => `<span data-md=\"${m}\"></span>`
