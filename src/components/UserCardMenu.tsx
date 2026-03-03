@@ -6,6 +6,7 @@ import { ModeToggle } from "@/components/ModeToggle";
 import { DiagramStyleToggle } from "@/components/DiagramStyleToggle";
 import { PreviewModeToggle } from "@/components/PreviewModeToggle";
 import { clearProgress } from "@/lib/progress";
+import { downloadExport, applyImportPayload } from "@/lib/progressExport";
 import { cn } from "@/lib/utils";
 import {
   applyThemePreset,
@@ -206,6 +207,39 @@ export function UserCardMenu({ collapsed }: { collapsed?: boolean }) {
               <div className="mb-1 text-xs text-muted-foreground">Accordion reader</div>
               <PreviewModeToggle />
             </div>
+            <div className="grid gap-2 sm:grid-cols-2">
+              <button
+                onClick={() => downloadExport()}
+                className="rounded-lg border bg-background/30 px-3 py-2 text-sm text-muted-foreground hover:bg-accent/40 hover:text-foreground"
+              >
+                Export progress (JSON)
+              </button>
+
+              <label className="cursor-pointer rounded-lg border bg-background/30 px-3 py-2 text-sm text-muted-foreground hover:bg-accent/40 hover:text-foreground">
+                <input
+                  type="file"
+                  accept="application/json"
+                  className="hidden"
+                  onChange={async (e) => {
+                    const file = e.target.files?.[0];
+                    if (!file) return;
+                    const text = await file.text();
+                    try {
+                      const payload = JSON.parse(text);
+                      applyImportPayload(payload);
+                      alert("Imported. Reloading…");
+                      window.location.reload();
+                    } catch (err: any) {
+                      alert(`Import failed: ${String(err?.message || err)}`);
+                    } finally {
+                      e.target.value = "";
+                    }
+                  }}
+                />
+                Import progress (JSON)
+              </label>
+            </div>
+
             <button
               onClick={() => {
                 if (confirm("Reset course progress on this device?")) {
