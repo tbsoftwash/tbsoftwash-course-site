@@ -7,36 +7,108 @@ lesson: 2
 ---
 # Module 4 — House Wash: Workflow + QA (Lesson)
 
-## Workflow
+## What you’re doing today
+You’re going to run a house wash the way we run it: **protect first, apply top-down, control rinse, and close out with proof**.
+
+This is the “bread and butter” job — and it’s where rookies accidentally create damage.
+
+## Why this matters
+A good house wash doesn’t just clean. It protects your business:
+- fewer disputes
+- fewer callbacks
+- better reviews
+- cleaner bundles and upsells
+
+## Tools & materials (minimum viable)
+- PPE: gloves + eye protection (minimum)
+- Hose + working water supply
+- Plant pre-wet + rinse ability (you need water control)
+- Application method (choose one):
+  - DS (downstream)
+  - 12V pump
+  - pump-up sprayer (small spots)
+- Rinse tool: low-pressure rinse / ball valve control
+- Proof Pack: phone camera
+
+## Quick Start (the 60-second version)
+1) Photos
+2) Pre-wet plants
+3) Apply top-down
+4) Dwell while rinsing plants
+5) Controlled rinse
+6) Proof Pack + Final Walk
+
 VIDEO: https://www.youtube.com/watch?v=onn2hosJwY8 | House wash workflow with 12V pump (1 min). Shows application + rinse discipline.
 
-1) Pre-condition photos
-2) Plant protection
-3) Top-down application
-4) Dwell + plant rinse
-5) Controlled rinse
-6) Proof Pack + closeout
+## Step-by-step workflow (foreman sequence)
+1) **Pre-condition photos**
+   - front wide + worst wall close-ups
+2) **Plant protection**
+   - pre-wet everything you might overspray
+   - keep plants wet during dwell
+3) **Top-down application**
+   - consistent coverage beats “hot spots”
+4) **Dwell + plant rinse loop**
+   - solution works while you manage plant safety
+5) **Controlled rinse**
+   - rinse top-down
+   - don’t drive water behind siding/vents
+6) **Proof Pack + closeout**
+   - after photos + exception notes
+   - closeout message
 
-## QA
-- `04_sops/houses/house-wash-qa-checklist-v1.md`
+## Decision points (if X, do Y)
+- If you see oxidation risk:
+  - stop promising restoration
+  - test in an inconspicuous spot
 
-## Proof Pack
-- `04_sops/proof-pack/proof-pack-sop-v1.md`
+- If wind is pushing toward plants/windows:
+  - adjust angle, reduce overspray, increase plant rinse
 
-## Common mistakes
+- If the surface is delicate/old:
+  - lower aggression; let chemistry + time do the work
+
+## Common mistakes + fixes
+- Spraying into vents/soffit gaps
+  - Fix: change angle and keep pressure for controlled rinsing only.
+- Striping from uneven coverage
+  - Fix: overlap passes and keep a steady pace.
+- Leaving residue on windows/fixtures
+  - Fix: rinse glass/fixtures as part of your checklist.
+
+### Paint risk (non-negotiable)
 If you’re unsure, don’t guess.
 
-Test painted surfaces in an inconspicuous spot. Some paints (often dark blues and tans) can fail fast. Testing is cheap. Repainting an entire house is not.
+Test painted surfaces in an inconspicuous spot. Some paints (often dark blues and tans) can fail fast.
+Testing is cheap. Repainting an entire house is not.
 
-- spraying into vents/soffit gaps
-- striping from uneven coverage
-- leaving residue on windows/fixtures
+## What good looks like
+- Even finish (no stripes)
+- No dead plants
+- Glass/fixtures rinsed
+- Customer understands what changed and what didn’t
+
+## How to prove it (Proof Pack)
+Minimum shots:
+- before/after: front elevation
+- before/after: worst wall
+- close-ups of exceptions (oxidation, hard water, failed paint)
+
+Add notes:
+- dwell time range used (no recipes)
+- sensitive areas protected
+
+## Time & pricing reality (quick)
+- A house wash is priced like a premium service when it’s done professionally.
+- If you cut price, you cut safety and you cut time — and that’s how you buy yourself callbacks.
+
 ## Do this next (assignment)
-- [ ] Run this lesson on a real job or a mock walkaround.
-- [ ] Capture a Proof Pack for the scenario.
-- [ ] Do the Final Walk.
+- [ ] Run a mock house wash walkaround and write a 6-step checklist in your own words.
+- [ ] Practice the oxidation expectation script out loud.
 
 ## References (SOPs + checklists)
+- House SOP: `04_sops/houses/house-wash-softwash-sop-v2.md`
+- QA checklist: `04_sops/houses/house-wash-qa-checklist-v1.md`
 - Proof Pack SOP: `04_sops/proof-pack/proof-pack-sop-v1.md`
 - Final Walk checklist: `04_sops/universal/final-walk-checklist-v1.md`
 
