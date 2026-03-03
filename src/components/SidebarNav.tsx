@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 import type { LessonMeta } from "@/lib/course";
 import { ModeToggle } from "@/components/ModeToggle";
@@ -21,15 +21,7 @@ function cleanTitle(t: string) {
     .trim();
 }
 
-function NavItem({
-  href,
-  label,
-  done,
-}: {
-  href: string;
-  label: string;
-  done?: boolean;
-}) {
+function NavItem({ href, label, done }: { href: string; label: string; done?: boolean }) {
   const pathname = usePathname();
   const active = pathname === href;
 
@@ -85,7 +77,42 @@ function saveOpen(state: Record<string, boolean>) {
   window.localStorage.setItem(OPEN_KEY, JSON.stringify(state));
 }
 
-export function SidebarNav({ lessons }: { lessons: LessonMeta[] }) {
+function RailButton({
+  label,
+  onClick,
+  active,
+  glyph,
+}: {
+  label: string;
+  onClick: () => void;
+  active?: boolean;
+  glyph: string;
+}) {
+  return (
+    <button
+      title={label}
+      onClick={onClick}
+      className={cn(
+        "flex h-10 w-10 items-center justify-center rounded-xl border bg-background/30 text-sm text-foreground/80 hover:bg-accent/40",
+        active ? "bg-accent/60" : ""
+      )}
+    >
+      {glyph}
+    </button>
+  );
+}
+
+export function SidebarNav({
+  lessons,
+  collapsed,
+  setCollapsed,
+}: {
+  lessons: LessonMeta[];
+  collapsed: boolean;
+  setCollapsed: (v: boolean) => void;
+}) {
+  const router = useRouter();
+  const pathname = usePathname();
   const [query, setQuery] = React.useState("");
   const [completed, setCompleted] = React.useState<Set<string>>(new Set());
   const [open, setOpen] = React.useState<Record<string, boolean>>({});
@@ -120,12 +147,69 @@ export function SidebarNav({ lessons }: { lessons: LessonMeta[] }) {
     saveOpen(next);
   };
 
+  // Collapsed rail
+  if (collapsed) {
+    return (
+      <div className="flex h-screen flex-col items-center gap-3 p-3">
+        <RailButton
+          label="Open sidebar"
+          glyph="⟩"
+          onClick={() => setCollapsed(false)}
+        />
+        <div className="h-px w-full bg-border" />
+
+        <RailButton
+          label="Course"
+          glyph="⌂"
+          active={pathname === "/course"}
+          onClick={() => {
+            setCollapsed(false);
+            router.push("/course");
+          }}
+        />
+        <RailButton
+          label="Search"
+          glyph="⌕"
+          onClick={() => {
+            setCollapsed(false);
+            // focus will be manual after open
+          }}
+        />
+        <RailButton
+          label="Printables"
+          glyph="⎙"
+          onClick={() => {
+            setCollapsed(false);
+            router.push("/course/printables");
+          }}
+        />
+        <RailButton
+          label="Settings"
+          glyph="⚙"
+          onClick={() => {
+            setCollapsed(false);
+            // settings live in sidebar; open it
+          }}
+        />
+      </div>
+    );
+  }
+
   return (
-    <aside className="sticky top-0 h-screen overflow-y-auto border-r bg-background/60 backdrop-blur-xl">
+    <aside className="h-screen overflow-y-auto">
       <div className="p-4">
         <div className="mb-3 flex items-center justify-between gap-3">
           <NavItem href="/" label="TBSoftWash" />
-          <ModeToggle />
+          <div className="flex items-center gap-2">
+            <button
+              title="Close sidebar"
+              onClick={() => setCollapsed(true)}
+              className="rounded-lg border bg-background/30 px-2 py-1 text-xs text-muted-foreground hover:bg-accent/40"
+            >
+              ⟨
+            </button>
+            <ModeToggle />
+          </div>
         </div>
 
         <SearchInput value={query} onChange={setQuery} placeholder="Search lessons…" />
@@ -136,9 +220,7 @@ export function SidebarNav({ lessons }: { lessons: LessonMeta[] }) {
 
         <div className="space-y-6">
           <section>
-            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-              Core Modules
-            </h3>
+            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Core Modules</h3>
             <div className="space-y-2">
               {coreModules.map(([module, items]) => {
                 const key = `core:${module}`;
@@ -170,9 +252,7 @@ export function SidebarNav({ lessons }: { lessons: LessonMeta[] }) {
           </section>
 
           <section>
-            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-              Springboard
-            </h3>
+            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Springboard</h3>
             <div className="space-y-2">
               {springWeeks.map(([week, items]) => {
                 const key = `spring:${week}`;
@@ -204,9 +284,7 @@ export function SidebarNav({ lessons }: { lessons: LessonMeta[] }) {
           </section>
 
           <section>
-            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-              Printables
-            </h3>
+            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Printables</h3>
             <div className="grid gap-1">
               <NavItem href="/course/printables" label="Printables (Index)" />
               <NavItem href="/course/printables/operator-checklist-pack" label="Operator Checklist Pack" />
@@ -216,9 +294,7 @@ export function SidebarNav({ lessons }: { lessons: LessonMeta[] }) {
           </section>
 
           <section>
-            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-              Settings
-            </h3>
+            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Settings</h3>
             <div className="grid gap-3">
               <div>
                 <div className="mb-1 text-xs text-muted-foreground">Diagram style</div>
