@@ -1,7 +1,7 @@
 # Operator Rant Capture — “Simple Path, Entry Services, and the Marketing Reality”
 
 Date captured: 2026-03-02
-Source: Brian (TBSoftWash)
+Source: Brian (Tampa Bay Soft Wash)
 Status: raw capture → structured extraction complete
 
 ---

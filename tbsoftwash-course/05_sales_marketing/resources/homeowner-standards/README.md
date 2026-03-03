@@ -1,4 +1,4 @@
-# Homeowner Standards Guide (TBSoftWash)
+# Homeowner Standards Guide (Tampa Bay Soft Wash)
 
 This is a homeowner-safe guide to understanding:
 - good vs bad practices in exterior cleaning

@@ -55,7 +55,7 @@ Example:
 Each includes:
 - overview
 - common mistakes
-- what TBSoftWash does differently
+- what Tampa Bay Soft Wash does differently
 - proof pack examples
 - FAQ
 - CTA to estimate

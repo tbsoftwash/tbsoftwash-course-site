@@ -1,4 +1,4 @@
-# Power Washing / Flatwork Pressure Cleaning — TBSoftWash (site extraction)
+# Power Washing / Flatwork Pressure Cleaning — Tampa Bay Soft Wash (site extraction)
 Source: https://tbsoftwash.com/power-washing-service/
 
 ## Positioning

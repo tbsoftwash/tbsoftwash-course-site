@@ -7,7 +7,7 @@ Exterior house wash using **soft wash** methods (low pressure) for:
 - painted surfaces
 - soffits/fascia/trim
 
-> Operator principle (TBSoftWash standard): **Don’t blast houses.** Pressure is for controlled rinsing only when appropriate. Chemistry + dwell does the cleaning.
+> Operator principle (Tampa Bay Soft Wash standard): **Don’t blast houses.** Pressure is for controlled rinsing only when appropriate. Chemistry + dwell does the cleaning.
 
 ## Goal (definition of done)
 - Organic growth and general soil removed to the agreed standard without damaging finishes.

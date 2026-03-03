@@ -15,5 +15,5 @@ Use this to avoid cheap work that turns into expensive damage.
 - No written scope or expectations.
 - No before/after documentation.
 
-## The TBSoftWash standard
+## The Tampa Bay Soft Wash standard
 Proof Pack + Final Walk are part of delivery.

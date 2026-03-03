@@ -1,6 +1,6 @@
-# TBSoftWash Blog — Deep Dive (ideas & themes)
+# Tampa Bay Soft Wash Blog — Deep Dive (ideas & themes)
 
-This doc summarizes recurring themes, “signature ideas,” and course-worthy frameworks found across TBSoftWash blog posts.
+This doc summarizes recurring themes, “signature ideas,” and course-worthy frameworks found across Tampa Bay Soft Wash blog posts.
 
 ## Posts reviewed (sample)
 - Difference between pressure washing and soft washing: https://tbsoftwash.com/what-is-the-difference-between-pressure-washing-and-soft-washing/
@@ -79,4 +79,4 @@ You explicitly set expectations:
 ## Gaps / opportunities in blog → course upgrades
 - Convert DIY posts into: “DIY vs Pro” decision guides (risk, time, results, warranty).
 - Add more: plant protection chemistry specifics, runoff control, and QA scorecards.
-- Standardize a TBSoftWash “inspection + proposal” template tied to these risks.
+- Standardize a Tampa Bay Soft Wash “inspection + proposal” template tied to these risks.

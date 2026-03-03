@@ -3,7 +3,7 @@
 ## Service
 Roof Soft Wash (asphalt shingle, tile, metal) — exterior-only cleaning focused on organic growth removal (algae/mildew/moss/lichen) using **low pressure** application and rinse.
 
-> Operator principle (TBSoftWash standard): **Never pressure wash roofs.** Chemistry + dwell + gentle rinse. Protect landscaping. Document everything.
+> Operator principle (Tampa Bay Soft Wash standard): **Never pressure wash roofs.** Chemistry + dwell + gentle rinse. Protect landscaping. Document everything.
 
 ## Goal (definition of done)
 - Visible organic growth is removed to the agreed standard **without surface damage**.

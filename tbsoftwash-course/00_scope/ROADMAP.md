@@ -1,9 +1,9 @@
-# TBSoftWash Course — Roadmap & Direction (document-heavy working plan)
+# Tampa Bay Soft Wash Course — Roadmap & Direction (document-heavy working plan)
 
 This is a *living* roadmap. It’s intentionally verbose; we can prune later.
 
 ## North Star
-Build a comprehensive exterior cleaning course that captures TBSoftWash end-to-end and teaches a **top 50–75% pricing** operator model: higher price justified by documented process, attention to detail, risk reduction, communication, and results.
+Build a comprehensive exterior cleaning course that captures Tampa Bay Soft Wash end-to-end and teaches a **top 50–75% pricing** operator model: higher price justified by documented process, attention to detail, risk reduction, communication, and results.
 
 ## Guiding principles
 1) **Process over personality:** course must be executable by a new hire/owner-operator.
@@ -39,8 +39,8 @@ We can add a new service/competitor/post and reliably output:
 - QA checklist
 - upsell/bundle notes
 
-## Phase 2 — TBSoftWash business profiling (TRUTH SOURCE)
-**Goal:** extract TBSoftWash “house style” and turn it into repeatable SOPs.
+## Phase 2 — Tampa Bay Soft Wash business profiling (TRUTH SOURCE)
+**Goal:** extract Tampa Bay Soft Wash “house style” and turn it into repeatable SOPs.
 
 ### Workstreams
 1) **Service SOPs (core):** roof, house wash, windows, gutters, brightening, flatwork.

@@ -28,7 +28,7 @@
 
   <g>
     <rect x="78" y="66" width="220" height="34" class="chip"/>
-    <text x="94" y="91" class="p" style="font-weight:600">TBSoftWash Academy</text>
+    <text x="94" y="91" class="p" style="font-weight:600">Tampa Bay Soft Wash Academy</text>
   </g>
 
   <text x="80" y="160" class="h1">PSI vs GPM (Tradeoff)</text>
@@ -72,7 +72,7 @@
   </g>
 
   <!-- side card content -->
-  <text x="1140" y="305" class="h2">TBSoftWash takeaways</text>
+  <text x="1140" y="305" class="h2">Tampa Bay Soft Wash takeaways</text>
   <text x="1140" y="350" class="p">• Diagnose soil + substrate first</text>
   <text x="1140" y="382" class="p">• GPM controls speed + water use</text>
   <text x="1140" y="414" class="p">• PSI controls bite + risk</text>

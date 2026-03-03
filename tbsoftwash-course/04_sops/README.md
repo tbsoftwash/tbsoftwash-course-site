@@ -1,6 +1,6 @@
 # SOPs
 
-This folder will contain polished field SOPs derived from TBSoftWash processes + competitor best practices.
+This folder will contain polished field SOPs derived from Tampa Bay Soft Wash processes + competitor best practices.
 
 Start with:
 - Roof soft wash SOP

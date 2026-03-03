@@ -1,6 +1,6 @@
 # YouTube → Course Mapping (Draft)
 
-Goal: embed TBSoftWash-owned videos into the operator course where they *reduce confusion* and show the real workflow.
+Goal: embed Tampa Bay Soft Wash-owned videos into the operator course where they *reduce confusion* and show the real workflow.
 
 Embedding format:
 - `VIDEO: https://www.youtube.com/watch?v=<id> | Optional caption`

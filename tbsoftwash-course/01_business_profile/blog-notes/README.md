@@ -1,6 +1,6 @@
-# TBSoftWash Blog Notes (Deep Dive)
+# Tampa Bay Soft Wash Blog Notes (Deep Dive)
 
-Goal: capture operator-grade takeaways from every TBSoftWash blog post, with hyperlinks back to the original post as sources, and explicit “how to integrate into the course” notes.
+Goal: capture operator-grade takeaways from every Tampa Bay Soft Wash blog post, with hyperlinks back to the original post as sources, and explicit “how to integrate into the course” notes.
 
 ## Format (per-post)
 Each post gets a file:

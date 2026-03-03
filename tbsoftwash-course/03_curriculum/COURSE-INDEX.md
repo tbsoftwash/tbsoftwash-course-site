@@ -1,4 +1,4 @@
-# TBSoftWash Operator Course — Course Index (Rebuilt)
+# Tampa Bay Soft Wash Operator Course — Course Index (Rebuilt)
 
 This file is auto-rebuilt from the current folder structure under `03_curriculum/`.
 

@@ -1,4 +1,4 @@
-# Bid / Estimate Template (TBSoftWash style)
+# Bid / Estimate Template (Tampa Bay Soft Wash style)
 
 ## Header
 - Customer name:

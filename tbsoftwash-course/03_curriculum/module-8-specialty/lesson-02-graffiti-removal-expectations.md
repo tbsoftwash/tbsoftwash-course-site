@@ -17,7 +17,7 @@ Graffiti removal depends on:
 
 That honesty is a premium signal.
 
-## TBSoftWash positioning notes
+## Tampa Bay Soft Wash positioning notes
 Source: `01_business_profile/services/graffiti-removal.md`
 
 ## Workflow (high level)

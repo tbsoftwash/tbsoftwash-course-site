@@ -15,7 +15,7 @@ It’s not magic.
 
 If the drain is collapsed or compromised, jetting can make it worse.
 
-## TBSoftWash positioning notes
+## Tampa Bay Soft Wash positioning notes
 Source: `01_business_profile/services/hydro-jetting-drains.md`
 
 ## When to sell it

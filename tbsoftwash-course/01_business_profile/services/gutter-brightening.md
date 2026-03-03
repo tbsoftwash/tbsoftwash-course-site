@@ -1,4 +1,4 @@
-# Gutter Brightening (“Whitening”) — TBSoftWash (site extraction)
+# Gutter Brightening (“Whitening”) — Tampa Bay Soft Wash (site extraction)
 Source: https://tbsoftwash.com/gutter-brightening-service/
 
 ## Positioning / what it is

@@ -1,4 +1,4 @@
-# Wood Stain & Seal (Fences/Decks) — TBSoftWash (site extraction)
+# Wood Stain & Seal (Fences/Decks) — Tampa Bay Soft Wash (site extraction)
 Source: https://tbsoftwash.com/wood-stain-and-seal-service/
 
 ## Positioning

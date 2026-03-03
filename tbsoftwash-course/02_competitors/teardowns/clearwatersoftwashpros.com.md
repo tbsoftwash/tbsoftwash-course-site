@@ -32,12 +32,12 @@
 - After-hours availability
 - “Transparent pricing” and discounts
 
-## What we should steal (TBSoftWash integration)
+## What we should steal (Tampa Bay Soft Wash integration)
 - Multi-CTA quote flow: phone + form + quick quote.
 - Service area page strategy (city pages).
 
 ## What we should avoid
-- “Best price guarantee” if TBSoftWash is staying top 50–75% pricing.
+- “Best price guarantee” if Tampa Bay Soft Wash is staying top 50–75% pricing.
 - Overstuffed claims without matching proof artifacts.
 
 ## Course lesson ideas

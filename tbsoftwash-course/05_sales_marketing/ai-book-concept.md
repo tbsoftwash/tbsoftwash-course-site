@@ -14,7 +14,7 @@ A practical guide for exterior cleaning businesses to use AI to win more jobs, d
 - Marketing-leaning operators who want systems
 
 ## What makes it different
-- Written by a real operator brand (TBSoftWash) with SOP mindset.
+- Written by a real operator brand (Tampa Bay Soft Wash) with SOP mindset.
 - Not generic “AI is coming” — it is **workflows, templates, and guardrails**.
 
 ## Core thesis
@@ -63,6 +63,6 @@ It turns knowledge into repeatable SOPs, faster quoting, better communication, a
 - Cross-link lightly from operator academy pages
 
 ## Next research needed
-- What CRM/booking/invoicing tools TBSoftWash uses today
+- What CRM/booking/invoicing tools Tampa Bay Soft Wash uses today
 - What volume and team size the typical student has
 - Your actual internal workflows to map 1:1

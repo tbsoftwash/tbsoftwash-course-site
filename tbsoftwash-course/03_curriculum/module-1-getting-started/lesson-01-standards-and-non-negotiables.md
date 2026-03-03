@@ -7,7 +7,7 @@ lesson: 1
 ---
 # Module 1 — Getting Started: Standards + Non‑Negotiables (Lesson)
 
-## The TBSoftWash standard
+## The Tampa Bay Soft Wash standard
 We are not the cheapest.
 
 We are the cleanest process.

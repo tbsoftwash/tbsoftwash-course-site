@@ -1,8 +1,8 @@
-# AI Book — Personal Experience Angle (TBSoftWash)
+# AI Book — Personal Experience Angle (Tampa Bay Soft Wash)
 
 ## Positioning (what this book *is*)
 A first-person, operator-written book about how adopting AI helped you:
-- grow TBSoftWash
+- grow Tampa Bay Soft Wash
 - protect premium positioning (top 50–75% pricing)
 - stay relevant as search changes ("dying search engines" → LLM answers / AI search)
 

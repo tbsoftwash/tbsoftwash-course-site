@@ -1,4 +1,4 @@
-# Paver Cleaning & Sealing — TBSoftWash (site extraction)
+# Paver Cleaning & Sealing — Tampa Bay Soft Wash (site extraction)
 Source: https://tbsoftwash.com/paver-sealing-service/
 
 ## Positioning
