@@ -65,6 +65,64 @@
     --ring: 221.2 83.2% 53.3%;
   }
 
+  /* Theme Presets (applied via <html data-preset="...">)
+     These do not replace light/dark/system; they "skin" the app.
+  */
+
+  /* Cool Dark: Midnight */
+  html[data-preset="midnight"].dark {
+    --background: 224 71% 4%;
+    --foreground: 210 40% 98%;
+
+    --card: 224 71% 6%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 224 71% 6%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 190 95% 60%;
+    --primary-foreground: 224 71% 4%;
+
+    --secondary: 223 38% 14%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 223 38% 14%;
+    --muted-foreground: 215 20% 70%;
+
+    --accent: 223 38% 18%;
+    --accent-foreground: 210 40% 98%;
+
+    --border: 223 38% 18%;
+    --input: 223 38% 18%;
+    --ring: 190 95% 60%;
+
+    --radius: 1.1rem;
+  }
+
+  /* Cool Light: MacLight */
+  html[data-preset="maclight"]:root {
+    --background: 210 20% 98%;
+    --foreground: 222.2 84% 4.9%;
+
+    --primary: 210 100% 55%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 25% 94%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 25% 94%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 25% 94%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214 24% 88%;
+    --input: 214 24% 88%;
+    --ring: 210 100% 55%;
+
+    --radius: 1.25rem;
+  }
+
   * {
     @apply border-border;
   }
