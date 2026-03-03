@@ -46,41 +46,61 @@ VIDEO: https://www.youtube.com/watch?v=onn2hosJwY8 | House wash workflow with 12
 2) **Plant protection**
    - pre-wet everything you might overspray
    - keep plants wet during dwell
-3) **Top-down application**
-   - consistent coverage beats “hot spots”
+3) **Application (bottom-up, then work up)**
+   - Start low and work up the wall in controlled passes.
+   - Why: if you start at the top, runoff can “track” and dry unevenly in heat/sun, creating streaks.
+   - Consistent coverage beats “hot spots.”
 4) **Dwell + plant rinse loop**
    - solution works while you manage plant safety
-5) **Controlled rinse**
+5) **Controlled rinse (top-down)**
    - rinse top-down
+   - rinse windows/fixtures early and often (don’t let solution dry on glass)
    - don’t drive water behind siding/vents
 6) **Proof Pack + closeout**
    - after photos + exception notes
    - closeout message
 
 ## Decision points (if X, do Y)
-- If you see oxidation risk:
+- If you see oxidation risk (or unknown paint/coating):
   - stop promising restoration
   - test in an inconspicuous spot
 
-- If wind is pushing toward plants/windows:
-  - adjust angle, reduce overspray, increase plant rinse
+- If wind/sun is pushing toward windows or drying things fast:
+  - reduce overspray and **rinse glass more frequently**
+  - keep plants wet during dwell
+
+- If you see mud dauber / dirt dobber nests or “mud” stains:
+  - treat it as a small specialty spot-clean (gentle)
+  - if the surface is heavily oxidized: set expectations before scrubbing
+
+- If you notice a dirty roof (especially HOA neighborhoods):
+  - mention roof wash as a separate service (don’t pressure; plant the seed)
 
 - If the surface is delicate/old:
   - lower aggression; let chemistry + time do the work
 
 ## Common mistakes + fixes
+- Starting application at the top
+  - Fix: apply bottom-up, then work up; rinse top-down.
 - Spraying into vents/soffit gaps
   - Fix: change angle and keep pressure for controlled rinsing only.
 - Striping from uneven coverage
   - Fix: overlap passes and keep a steady pace.
 - Leaving residue on windows/fixtures
-  - Fix: rinse glass/fixtures as part of your checklist.
+  - Fix: rinse glass/fixtures early and often; don’t let solution dry on glass.
+
+### Mud nest stains (dirt dobber / mud wasp)
+Often removable with a gentle spot-clean approach.
+
+Rule: don’t scrub aggressively on heavily oxidized surfaces unless the customer understands the risk.
 
 ### Paint risk (non-negotiable)
 If you’re unsure, don’t guess.
 
 Test painted surfaces in an inconspicuous spot. Some paints (often dark blues and tans) can fail fast.
 Testing is cheap. Repainting an entire house is not.
+
+Running theme: if SH is involved anywhere on the property (house wash, roof overspray/runoff, etc.), test first.
 
 ## What good looks like
 - Even finish (no stripes)
