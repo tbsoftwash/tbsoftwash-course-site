@@ -12,6 +12,13 @@ function renderFigure(el: Element, style: string) {
       <img src="${src}" alt="${name}" class="h-auto w-full" />
     </div>
   `;
+  // Force reload even if the browser is aggressively caching.
+  const img = el.querySelector('img');
+  if (img) {
+    const current = img.getAttribute('src');
+    img.setAttribute('src', current || src);
+  }
+
 }
 
 export function FiguresHydrator() {
