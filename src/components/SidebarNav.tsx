@@ -5,10 +5,10 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 
 import type { LessonMeta } from "@/lib/course";
-import { ModeToggle } from "@/components/ModeToggle";
 import { DiagramStyleToggle } from "@/components/DiagramStyleToggle";
 import { PreviewModeToggle } from "@/components/PreviewModeToggle";
 import { SearchInput } from "@/components/SearchInput";
+import { UserCardMenu } from "@/components/UserCardMenu";
 import { cn } from "@/lib/utils";
 import { lessonKey, loadCompleted } from "@/lib/progress";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
@@ -188,9 +188,12 @@ export function SidebarNav({
           glyph="⚙"
           onClick={() => {
             setCollapsed(false);
-            // settings live in sidebar; open it
           }}
         />
+
+        <div className="mt-auto pt-2">
+          <UserCardMenu collapsed />
+        </div>
       </div>
     );
   }
@@ -200,16 +203,13 @@ export function SidebarNav({
       <div className="p-4">
         <div className="mb-3 flex items-center justify-between gap-3">
           <NavItem href="/" label="TBSoftWash" />
-          <div className="flex items-center gap-2">
-            <button
-              title="Close sidebar"
-              onClick={() => setCollapsed(true)}
-              className="rounded-lg border bg-background/30 px-2 py-1 text-xs text-muted-foreground hover:bg-accent/40"
-            >
-              ⟨
-            </button>
-            <ModeToggle />
-          </div>
+          <button
+            title="Close sidebar"
+            onClick={() => setCollapsed(true)}
+            className="rounded-lg border bg-background/30 px-2 py-1 text-xs text-muted-foreground hover:bg-accent/40"
+          >
+            ⟨
+          </button>
         </div>
 
         <SearchInput value={query} onChange={setQuery} placeholder="Search lessons…" />
@@ -294,21 +294,15 @@ export function SidebarNav({
           </section>
 
           <section>
-            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Settings</h3>
-            <div className="grid gap-3">
-              <div>
-                <div className="mb-1 text-xs text-muted-foreground">Diagram style</div>
-                <DiagramStyleToggle />
-              </div>
-
-              <div>
-                <div className="mb-1 text-xs text-muted-foreground">Accordion reader</div>
-                <PreviewModeToggle />
-              </div>
-
+            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Tools</h3>
+            <div className="grid gap-1">
               <NavItem href="/course/figures/psi-vs-gpm" label="Figure demo" />
             </div>
           </section>
+
+          <div className="pt-2">
+            <UserCardMenu />
+          </div>
         </div>
       </div>
     </aside>
