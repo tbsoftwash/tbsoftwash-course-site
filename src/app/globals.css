@@ -99,8 +99,10 @@
     --radius: 1.1rem;
   }
 
-  /* Cool Light: MacLight (higher contrast, readable) */
-  html[data-preset="maclight"]:root {
+  /* Cool Light: MacLight (higher contrast, readable)
+     IMPORTANT: only apply when NOT in dark mode.
+  */
+  html[data-preset="maclight"]:root:not(.dark) {
     --background: 210 20% 97%;
     --foreground: 222 47% 11%;
 

@@ -136,6 +136,14 @@ export function UserCardMenu({ collapsed }: { collapsed?: boolean }) {
             <span className="text-foreground">{preset}</span> • Style{" "}
             <span className="text-foreground">{friendlyDiagramStyle(diagramStyle)}</span> • Reader{" "}
             <span className="text-foreground">{readerMode}</span>
+            {theme === "dark" && preset === "maclight" ? (
+              <>
+                <br />
+                <span className="text-xs text-destructive">
+                  Note: Mac Light is a light-only preset. Switch Theme to Light/System to use it.
+                </span>
+              </>
+            ) : null}
           </div>
 
           <div className="grid gap-3">
