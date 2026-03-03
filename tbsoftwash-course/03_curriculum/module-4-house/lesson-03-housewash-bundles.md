@@ -16,11 +16,17 @@ Bundles increase ticket size without feeling pushy — *if* you can show proof a
 ## Tools & materials (minimum viable)
 - Proof Pack photos (before/after)
 - A simple bundle menu (3 options)
+- A default application lane you can explain simply:
+  - DS is the recommended baseline for most house wash work
+  - 12V can work to start, but it’s not the endgame for most operators
 
 ## The easy bundles (start here)
 - House wash + windows
 - House wash + gutters
 - House wash + flatwork
+- House wash + roof wash (when it’s clearly needed)
+
+HOA note: in a lot of neighborhoods, roof cleanliness is enforced. If you see a dirty roof, don’t ignore it — mention it professionally as a separate service.
 
 ## Step-by-step: how to present bundles (foreman script)
 1) Start with the result: “Full exterior refresh.”
@@ -38,6 +44,10 @@ Bundles increase ticket size without feeling pushy — *if* you can show proof a
 
 - If there’s oxidation risk:
   - do not promise restoration; document exceptions.
+
+- If you’re tempted to buy a new tool to “close the job”:
+  - sanity check it: would that money be better spent on leads this week?
+  - rent what you can’t afford yet; graduate your equipment as the work proves itself
 
 ## Common mistakes + fixes
 - Selling “pressure washing” as the product
