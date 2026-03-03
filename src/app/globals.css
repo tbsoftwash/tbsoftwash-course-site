@@ -192,6 +192,22 @@
   @apply prose prose-slate dark:prose-invert max-w-none;
 }
 
+/* Glossary hover terms */
+.glossary-term {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+  cursor: help;
+  color: hsl(var(--foreground));
+  background: linear-gradient(
+    to bottom,
+    transparent 60%,
+    hsl(var(--primary) / 0.15) 60%
+  );
+  border-radius: 4px;
+  padding: 0 2px;
+}
+
 .markdown a {
   @apply text-primary underline-offset-4 hover:underline;
 }

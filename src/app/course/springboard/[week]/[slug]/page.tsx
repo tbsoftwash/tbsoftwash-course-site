@@ -12,6 +12,7 @@ import { FiguresHydrator } from "@/components/FiguresHydrator";
 import { PhotosHydrator } from "@/components/PhotosHydrator";
 import { VideosHydrator } from "@/components/VideosHydrator";
 import { MdEmbedsHydrator } from "@/components/MdEmbedsHydrator";
+import { GlossaryHydrator } from "@/components/GlossaryHydrator";
 import { Button } from "@/components/ui/button";
 
 export default async function SpringboardLessonPage({
@@ -98,6 +99,7 @@ export default async function SpringboardLessonPage({
       <PhotosHydrator />
       <VideosHydrator />
       <MdEmbedsHydrator />
+      <GlossaryHydrator />
 
       <div className="mt-10 flex flex-wrap gap-2">
         {neighbors.prev ? (
