@@ -7,14 +7,25 @@ lesson: 1
 ---
 # Module 2 — Equipment & Chemicals: Safety First (Lesson)
 
-## The rule
+## What you’re doing today
+You’re setting your baseline for chemicals and equipment: **safe handling, testing discipline, and a simple toolkit**.
+
+This is the difference between “I cleaned a house” and “I can do this trade for years without buying myself a lawsuit.”
+
+## Why this matters
 Chemicals are tools.
 
 They can also be liabilities.
 
-Most stains and tasks are handled with a short list: SH, a couple acids (oxalic and muriatic), and a degreaser.
+Most damage in this industry is preventable — but only if you build the habit *before* you’re rushed on a real job.
 
-The trick isn’t owning 30 bottles — it’s knowing when to *not* touch a surface until you’ve tested it.
+## The simple chemical toolkit (public-safe)
+Most stains and tasks are handled with a short list:
+- SH
+- a couple acids (oxalic and muriatic)
+- a degreaser
+
+The trick isn’t owning 30 bottles — it’s knowing when to **not** touch a surface until you’ve tested it.
 
 We do not publish reckless recipes.
 
@@ -24,26 +35,37 @@ We teach:
 - testing
 - customer expectation language
 
+## Tools & materials (minimum viable)
+- PPE: gloves + eye protection (minimum)
+- A plan for protecting plants and glass
+- Phone camera for Proof Pack
+- A printed spill/exposure plan
+
 ## PPE is not optional
 PHOTO: crew_ppe_multi_task.jpg | Real jobsite PPE + workflow: respirator, eye protection, gloves, and boots.
 
-Use the PPE Gear Box and enforce it.
+If you touch SH, ladders, or traffic — PPE is part of the job.
 
-- Gear library: `05_sales_marketing/affiliate/gearbox-library.md`
+Gear library:
+- `05_sales_marketing/affiliate/gearbox-library.md`
 
 ## SDS habit (public-safe)
 Your best “recipe” is the SDS.
 
 Minimum standard:
-- [ ] Know where SDS sheets live (crew can pull them in 60 seconds)
-- [ ] Read first aid + incompatibilities for anything new
-- [ ] Treat labels as the law
+- Know where SDS sheets live (crew can pull them in 60 seconds)
+- Read first aid + incompatibilities for anything new
+- Treat labels as the law
 
-## Truck safety loadout (non-negotiable)
-This isn’t optional. If you touch chemicals, ladders, or traffic—this gear is part of the job.
+## Decision points (if X, do Y)
+- If you’re unsure what the stain is:
+  - stop and test (or exclude)
 
-Printable:
-- `03_curriculum/printables/safety-loadout-checklist-v1.md`
+- If you’re unsure how a surface will react:
+  - test in an inconspicuous area first
+
+- If you can’t explain the risk to the customer:
+  - don’t gamble their property
 
 ## Spill + exposure response
 We don’t operate without a plan.
@@ -51,10 +73,25 @@ We don’t operate without a plan.
 Printable:
 - `03_curriculum/printables/spill-and-exposure-response-card-v1.md`
 
+## Truck safety loadout (non-negotiable)
+Printable:
+- `03_curriculum/printables/safety-loadout-checklist-v1.md`
+
 ## Heat matters
 Florida heat changes risk.
 
 - `04_sops/safety/heat-sun-hydration.md`
+
+## What good looks like
+- PPE is worn without arguing.
+- Crew can pull SDS in 60 seconds.
+- Test spots are routine.
+- Plants and glass stay safe.
+
+## How to prove it (Proof Pack)
+Add at least one safety-proof photo per week:
+- spill kit stocked
+- PPE ready
 
 ## Chemical pages
 Use the chemical index as the truth source:
@@ -62,12 +99,13 @@ Use the chemical index as the truth source:
 
 ## FIGURE (how to think about machines)
 FIGURE: mock-fig-103-psi-vs-gpm
-## Do this next (assignment)
-- [ ] Run this lesson on a real job or a mock walkaround.
-- [ ] Capture a Proof Pack for the scenario.
-- [ ] Do the Final Walk.
 
-## References (SOPs + checklists)
+## Do this next (assignment)
+- [ ] Print the spill/exposure response card.
+- [ ] Print the safety loadout checklist.
+- [ ] Decide where your SDS library will live.
+
+## References
 - Proof Pack SOP: `04_sops/proof-pack/proof-pack-sop-v1.md`
 - Final Walk checklist: `04_sops/universal/final-walk-checklist-v1.md`
 
