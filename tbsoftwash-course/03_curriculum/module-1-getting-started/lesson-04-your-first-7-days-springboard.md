@@ -7,6 +7,12 @@ lesson: 4
 ---
 # Module 1 — Getting Started: Your First 7 Days (Springboard Plan) (Lesson)
 
+You don’t need everything to start.
+
+Rent what you can’t afford, reinvest off real jobs, and put early money into leads — not obscure tools you’ll use twice a year.
+
+This 7-day plan is a simple momentum builder: one SOP, one proof pack, one checklist, one real job at a time.
+
 ## Day 1
 - Read Proof Pack SOP.
 - Print the Operator Checklist Pack.

@@ -24,6 +24,10 @@ VIDEO: https://www.youtube.com/watch?v=onn2hosJwY8 | House wash workflow with 12
 - `04_sops/proof-pack/proof-pack-sop-v1.md`
 
 ## Common mistakes
+If you’re unsure, don’t guess.
+
+Test painted surfaces in an inconspicuous spot. Some paints (often dark blues and tans) can fail fast. Testing is cheap. Repainting an entire house is not.
+
 - spraying into vents/soffit gaps
 - striping from uneven coverage
 - leaving residue on windows/fixtures

@@ -22,6 +22,10 @@ Use:
 ## Review responses
 Warm. Specific. Short.
 
+We don’t run on “the customer is always right.” But we do run on math.
+
+Ask yourself: is a negative Google review really worth refusing a small fix that takes five minutes — even if it wasn’t in the original scope?
+
 > **Authority Lens:** Reviews aren’t just conversion. They’re a prominence/trust signal. If two companies are equally close and relevant, trust often becomes the tie-breaker.
 
 Mention:

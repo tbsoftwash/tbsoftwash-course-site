@@ -46,6 +46,12 @@ Printables:
 FIGURE: mock-fig-101-outlet-taping-sequence
 
 ## Why this matters
+Sometimes the best closeout decision is a value decision.
+
+We don’t run on “the customer is always right.” But we do run on math:
+
+Is a negative Google review really worth refusing a small fix that takes five minutes — even if it wasn’t in the original scope?
+
 - prevents disputes
 - powers reviews
 - powers content
