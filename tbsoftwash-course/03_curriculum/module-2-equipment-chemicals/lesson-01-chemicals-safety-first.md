@@ -12,6 +12,10 @@ Chemicals are tools.
 
 They can also be liabilities.
 
+Most stains and tasks are handled with a short list: SH, a couple acids (oxalic and muriatic), and a degreaser.
+
+The trick isn’t owning 30 bottles — it’s knowing when to *not* touch a surface until you’ve tested it.
+
 We do not publish reckless recipes.
 
 We teach:
