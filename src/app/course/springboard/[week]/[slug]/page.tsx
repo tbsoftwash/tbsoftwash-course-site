@@ -10,6 +10,7 @@ import gfm from "remark-gfm";
 import { LessonHeader } from "@/components/LessonHeader";
 import { FiguresHydrator } from "@/components/FiguresHydrator";
 import { PhotosHydrator } from "@/components/PhotosHydrator";
+import { VideosHydrator } from "@/components/VideosHydrator";
 import { MdEmbedsHydrator } from "@/components/MdEmbedsHydrator";
 import { Button } from "@/components/ui/button";
 
@@ -39,6 +40,15 @@ export default async function SpringboardLessonPage({
       const f = String(file).trim();
       const c = String(cap ?? "").trim();
       return `<div data-photo="${f}" data-caption="${c.replace(/\"/g, "&quot;")}"></div>`;
+    }
+  );
+
+  contentHtml = contentHtml.replace(
+    /<p>VIDEO:\s*([^<|]+?)(?:\s*\|\s*([^<]+))?<\/p>/g,
+    (_m, url, cap) => {
+      const u = String(url).trim();
+      const c = String(cap ?? "").trim();
+      return `<div data-video="${u}" data-caption="${c.replace(/\"/g, "&quot;")}"></div>`;
     }
   );
 
@@ -86,6 +96,7 @@ export default async function SpringboardLessonPage({
       <div className="markdown" dangerouslySetInnerHTML={{ __html: contentHtml }} />
       <FiguresHydrator />
       <PhotosHydrator />
+      <VideosHydrator />
       <MdEmbedsHydrator />
 
       <div className="mt-10 flex flex-wrap gap-2">
