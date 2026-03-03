@@ -26,6 +26,8 @@ Source: `01_business_profile/services/hydro-jetting-drains.md`
 ## Safety + expectation script
 - “We can clear debris and buildup. If the line is damaged, we’ll document and recommend the next step.”
 
+VIDEO: https://www.youtube.com/watch?v=Sy1Rg09SiNc | Hydro-jetting example: deck drain unclogging (short). Focus: access points + before/after.
+
 ## Proof
 Document access points and outcomes.
 

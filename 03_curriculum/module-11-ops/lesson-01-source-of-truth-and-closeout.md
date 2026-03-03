@@ -36,6 +36,8 @@ Minimum standard for the Source of Truth:
 ## Crew readiness standard
 A clean closeout depends on a ready truck.
 
+PHOTO: irrigation_valve_box_hazard.jpg | Pre-walk hazard scan: irrigation valve boxes + exposed lines near concrete edges.
+
 Printables:
 - `03_curriculum/printables/safety-loadout-checklist-v1.md`
 - `03_curriculum/printables/spill-and-exposure-response-card-v1.md`

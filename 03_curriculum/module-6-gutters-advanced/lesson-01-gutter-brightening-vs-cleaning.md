@@ -8,6 +8,8 @@ lesson: 1
 # Module 6 (Advanced) — Gutters: Brightening vs Cleaning (Lesson)
 
 ## The rule
+VIDEO: https://www.youtube.com/watch?v=mOjbUvlr8s8 | Gutter brightening example (short). Watch for: dwell, agitation, rinse, and expectation setting.
+
 Gutter cleaning ≠ gutter brightening.
 
 Brightening is restoration work.

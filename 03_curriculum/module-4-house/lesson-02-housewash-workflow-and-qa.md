@@ -8,6 +8,8 @@ lesson: 2
 # Module 4 — House Wash: Workflow + QA (Lesson)
 
 ## Workflow
+VIDEO: https://www.youtube.com/watch?v=onn2hosJwY8 | House wash workflow with 12V pump (1 min). Shows application + rinse discipline.
+
 1) Pre-condition photos
 2) Plant protection
 3) Top-down application

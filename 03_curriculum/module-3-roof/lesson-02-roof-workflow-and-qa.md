@@ -16,12 +16,16 @@ lesson: 2
 6) Proof Pack + closeout
 
 ## QA
+PHOTO: roof_tile_after_clean.jpg | Roof “after” standard (tile): clean, even, no blast marks, no broken mortar.
+
 Use the one-page checklist:
 - `04_sops/roofs/roof-soft-wash-qa-checklist-v1.md`
 
 ## Proof Pack
 Follow:
 - `04_sops/proof-pack/proof-pack-sop-v1.md`
+
+VIDEO: https://www.youtube.com/watch?v=0106axwJgvc | No-walk roof wash example (quick). Watch for: setup, application pattern, dwell monitoring, gentle rinse.
 
 ## Common mistakes
 - rushing plant protection

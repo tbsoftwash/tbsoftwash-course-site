@@ -18,6 +18,8 @@ Your method changes before you ever pull the trigger.
 ## FIGURE (pressure vs flow mindset)
 FIGURE: mock-fig-103-psi-vs-gpm
 
+PHOTO: flatwork_before_after_walkway.jpg | Flatwork before/after (consistent angle). Use this as your documentation standard.
+
 ## Customer expectation setting
 Old stains are not the same as organic growth.
 
