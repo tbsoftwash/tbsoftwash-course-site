@@ -52,11 +52,14 @@ export default async function SpringboardLessonPage({
     /<a href=\"([^\"]+\.md)\">([^<]+)<\/a>/g,
     (_m, href, _label) => `<div data-md=\"${String(href).replace(/^\.\//, "").trim()}\"></div>`
   );
-  // Plain-text occurrences
-  contentHtml = contentHtml.replace(
-    /(04_sops\/[^\s<]+\.md|02_chemicals\/[^\s<]+\.md|03_curriculum\/printables\/[^\s<]+\.md|06_ops\/[^\s<]+\.md|05_sales_marketing\/[^\s<]+\.md|01_business_profile\/[^\s<]+\.md)/g,
-    (m) => `<span data-md=\"${m}\"></span>`
-  );
+  // Plain-text occurrences (ONLY in text nodes, not inside attributes)
+  const mdPathRegex =
+    /(04_sops\/[^\s<]+\.md|02_chemicals\/[^\s<]+\.md|03_curriculum\/printables\/[^\s<]+\.md|06_ops\/[^\s<]+\.md|05_sales_marketing\/[^\s<]+\.md|01_business_profile\/[^\s<]+\.md)/g;
+
+  contentHtml = contentHtml.replace(/>([^<]+)</g, (full, text) => {
+    const replaced = String(text).replace(mdPathRegex, (m) => `<span data-md="${m}"></span>`);
+    return `>${replaced}<`;
+  });
 
   return (
     <main className="mx-auto max-w-4xl px-6">

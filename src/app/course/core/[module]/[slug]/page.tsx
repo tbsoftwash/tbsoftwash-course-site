@@ -56,12 +56,14 @@ export default async function LessonPage({
     (_m, href, _label) => `<div data-md=\"${String(href).replace(/^\.\//, "").trim()}\"></div>`
   );
 
-  // 3) Inline plain-text paths like: "Proof Pack SOP: 04_sops/...md"
-  // Only match our allowlisted folders.
-  contentHtml = contentHtml.replace(
-    /(04_sops\/[^\s<]+\.md|02_chemicals\/[^\s<]+\.md|03_curriculum\/printables\/[^\s<]+\.md|06_ops\/[^\s<]+\.md|05_sales_marketing\/[^\s<]+\.md|01_business_profile\/[^\s<]+\.md)/g,
-    (m) => `<span data-md=\"${m}\"></span>`
-  );
+  // 3) Inline plain-text paths (ONLY in text nodes, not inside attributes)
+  const mdPathRegex =
+    /(04_sops\/[^\s<]+\.md|02_chemicals\/[^\s<]+\.md|03_curriculum\/printables\/[^\s<]+\.md|06_ops\/[^\s<]+\.md|05_sales_marketing\/[^\s<]+\.md|01_business_profile\/[^\s<]+\.md)/g;
+
+  contentHtml = contentHtml.replace(/>([^<]+)</g, (full, text) => {
+    const replaced = String(text).replace(mdPathRegex, (m) => `<span data-md="${m}"></span>`);
+    return `>${replaced}<`;
+  });
 
   return (
     <main className="mx-auto max-w-4xl px-6">
