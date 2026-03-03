@@ -9,6 +9,7 @@ import gfm from "remark-gfm";
 
 import { LessonHeader } from "@/components/LessonHeader";
 import { FiguresHydrator } from "@/components/FiguresHydrator";
+import { PhotosHydrator } from "@/components/PhotosHydrator";
 import { MdEmbedsHydrator } from "@/components/MdEmbedsHydrator";
 import { Button } from "@/components/ui/button";
 
@@ -31,6 +32,17 @@ export default async function LessonPage({
   contentHtml = contentHtml.replace(
     /<p>FIGURE:\s*([^<]+)<\/p>/g,
     (_m, name) => `<div data-figure="${String(name).trim()}"></div>`
+  );
+
+  // Replace PHOTO callouts.
+  // Format: PHOTO: file.jpg | Optional caption
+  contentHtml = contentHtml.replace(
+    /<p>PHOTO:\s*([^<|]+?)(?:\s*\|\s*([^<]+))?<\/p>/g,
+    (_m, file, cap) => {
+      const f = String(file).trim();
+      const c = String(cap ?? "").trim();
+      return `<div data-photo="${f}" data-caption="${c.replace(/\"/g, "&quot;")}"></div>`;
+    }
   );
 
   // Replace .md references with an inline viewer.
@@ -79,6 +91,7 @@ export default async function LessonPage({
 
       <div className="markdown" dangerouslySetInnerHTML={{ __html: contentHtml }} />
       <FiguresHydrator />
+      <PhotosHydrator />
       <MdEmbedsHydrator />
 
       <div className="mt-10 flex flex-wrap gap-2">
