@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { MarkCompleteButton } from "@/components/MarkCompleteButton";
+import { CompleteAndNextButton } from "@/components/CompleteAndNextButton";
 
 export function LessonHeader({
   kicker,
@@ -33,9 +34,11 @@ export function LessonHeader({
             </Button>
           ) : null}
           {next ? (
-            <Button asChild variant="default" size="sm">
-              <Link href={next.href}>Next →</Link>
-            </Button>
+            <CompleteAndNextButton
+              nextHref={next.href}
+              nextLabel={next.label}
+              progress={progress}
+            />
           ) : null}
         </div>
       </div>
