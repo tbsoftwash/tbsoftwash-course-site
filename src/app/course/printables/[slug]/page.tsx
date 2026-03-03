@@ -10,6 +10,7 @@ import { PhotosHydrator } from "@/components/PhotosHydrator";
 import { VideosHydrator } from "@/components/VideosHydrator";
 import { MdEmbedsHydrator } from "@/components/MdEmbedsHydrator";
 import { GlossaryHydrator } from "@/components/GlossaryHydrator";
+import { PrintableActions } from "@/components/PrintableActions";
 
 function slugToFilename(slug: string) {
   if (slug === "operator-checklist-pack") return "operator-checklist-pack-v1.md";
@@ -24,13 +25,8 @@ export default async function PrintablePage({
   const { slug } = await params;
 
   const filename = slugToFilename(slug);
-  const filePath = path.join(
-    process.cwd(),
-    "tbsoftwash-course",
-    "03_curriculum",
-    "printables",
-    filename
-  );
+  const relPath = path.posix.join("03_curriculum", "printables", filename);
+  const filePath = path.join(process.cwd(), "tbsoftwash-course", relPath);
 
   if (!fs.existsSync(filePath)) return notFound();
 
@@ -88,6 +84,7 @@ export default async function PrintablePage({
   return (
     <main className="mx-auto max-w-4xl">
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.14),transparent_55%)]" />
+      <PrintableActions downloadUrl={`/api/md?path=${encodeURIComponent(relPath)}&download=1`} />
       <div className="markdown" dangerouslySetInnerHTML={{ __html: contentHtml }} />
       <FiguresHydrator />
       <PhotosHydrator />

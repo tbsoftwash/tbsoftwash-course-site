@@ -2,6 +2,11 @@ import Link from "next/link";
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
+function slugToFilename(slug: string) {
+  if (slug === "operator-checklist-pack") return "operator-checklist-pack-v1.md";
+  return `${slug}.md`;
+}
+
 const PRINTABLES = [
   {
     slug: "operator-checklist-pack",
@@ -37,9 +42,18 @@ export default function PrintablesIndexPage() {
               <CardTitle>{p.title}</CardTitle>
               <CardDescription>{p.desc}</CardDescription>
             </CardHeader>
-            <CardFooter>
+            <CardFooter className="flex flex-wrap gap-2">
               <Button asChild>
                 <Link href={`/course/printables/${p.slug}`}>Open</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <a
+                  href={`/api/md?path=${encodeURIComponent(
+                    `03_curriculum/printables/${slugToFilename(p.slug)}`
+                  )}&download=1`}
+                >
+                  Download
+                </a>
               </Button>
             </CardFooter>
           </Card>

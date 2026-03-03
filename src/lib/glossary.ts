@@ -67,6 +67,11 @@ export const GLOSSARY: GlossaryEntry[] = [
     def: "Total Dissolved Solids. A water quality number—lower TDS means fewer minerals that can spot glass.",
   },
   {
+    term: "SOP",
+    aliases: ["standard operating procedure"],
+    def: "A set of step-by-step written instructions used to perform routine work safely, consistently, and efficiently.",
+  },
+  {
     term: "Proof Pack",
     def: "Your before/after photos + notes that prove what was done and protect you from disputes. Also fuels reviews and marketing.",
   },
