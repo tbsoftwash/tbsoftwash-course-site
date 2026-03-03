@@ -7,6 +7,12 @@ import { DiagramStyleToggle } from "@/components/DiagramStyleToggle";
 import { PreviewModeToggle } from "@/components/PreviewModeToggle";
 import { clearProgress } from "@/lib/progress";
 import { cn } from "@/lib/utils";
+import {
+  applyThemePreset,
+  loadThemePreset,
+  saveThemePreset,
+  type ThemePreset,
+} from "@/lib/themePreset";
 
 function readLS(key: string, fallback: string) {
   if (typeof window === "undefined") return fallback;
@@ -26,6 +32,7 @@ export function UserCardMenu({ collapsed }: { collapsed?: boolean }) {
   const [theme, setTheme] = React.useState("dark");
   const [diagramStyle, setDiagramStyle] = React.useState("B-dark-glassy");
   const [readerMode, setReaderMode] = React.useState("preview");
+  const [preset, setPreset] = React.useState<ThemePreset>("default");
   const ref = React.useRef<HTMLDivElement | null>(null);
 
   React.useEffect(() => {
@@ -34,6 +41,7 @@ export function UserCardMenu({ collapsed }: { collapsed?: boolean }) {
       setTheme(readLS("theme", "dark"));
       setDiagramStyle(readLS("tbsa.diagramStyle.v1", "B-dark-glassy"));
       setReaderMode(readLS("tbsa.previewMode.v1", "preview"));
+      setPreset(loadThemePreset());
     };
 
     refresh();
@@ -46,9 +54,11 @@ export function UserCardMenu({ collapsed }: { collapsed?: boolean }) {
 
     window.addEventListener("mousedown", onDown);
     window.addEventListener("storage", refresh);
+    window.addEventListener("tbsa:themePreset", refresh as any);
     return () => {
       window.removeEventListener("mousedown", onDown);
       window.removeEventListener("storage", refresh);
+      window.removeEventListener("tbsa:themePreset", refresh as any);
     };
   }, []);
 
@@ -122,11 +132,68 @@ export function UserCardMenu({ collapsed }: { collapsed?: boolean }) {
         <div className="absolute bottom-14 left-0 z-50 w-full rounded-xl border bg-background/95 p-3 shadow-xl backdrop-blur">
           <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Settings</div>
           <div className="mb-3 text-xs text-muted-foreground">
-            Current: Theme <span className="text-foreground">{theme}</span> • Style{" "}
+            Current: Theme <span className="text-foreground">{theme}</span> • Preset{" "}
+            <span className="text-foreground">{preset}</span> • Style{" "}
             <span className="text-foreground">{friendlyDiagramStyle(diagramStyle)}</span> • Reader{" "}
             <span className="text-foreground">{readerMode}</span>
+            {theme === "dark" && preset === "maclight" ? (
+              <>
+                <br />
+                <span className="text-xs text-destructive">
+                  Note: Mac Light is a light-only preset. Switch Theme to Light/System to use it.
+                </span>
+              </>
+            ) : null}
           </div>
+
           <div className="grid gap-3">
+            <div>
+              <div className="mb-1 text-xs text-muted-foreground">Theme preset</div>
+              <div className="grid grid-cols-3 gap-2">
+                <button
+                  onClick={() => {
+                    setPreset("default");
+                    saveThemePreset("default");
+                    applyThemePreset("default");
+                  }}
+                  className={cn(
+                    "rounded-lg border bg-background/30 px-2 py-2 text-xs hover:bg-accent/40",
+                    preset === "default" ? "bg-accent/60" : ""
+                  )}
+                >
+                  Default
+                </button>
+                <button
+                  onClick={() => {
+                    setPreset("midnight");
+                    saveThemePreset("midnight");
+                    applyThemePreset("midnight");
+                  }}
+                  className={cn(
+                    "rounded-lg border bg-background/30 px-2 py-2 text-xs hover:bg-accent/40",
+                    preset === "midnight" ? "bg-accent/60" : ""
+                  )}
+                >
+                  Midnight
+                </button>
+                <button
+                  onClick={() => {
+                    setPreset("maclight");
+                    saveThemePreset("maclight");
+                    applyThemePreset("maclight");
+                  }}
+                  className={cn(
+                    "rounded-lg border bg-background/30 px-2 py-2 text-xs hover:bg-accent/40",
+                    preset === "maclight" ? "bg-accent/60" : ""
+                  )}
+                >
+                  Mac Light
+                </button>
+              </div>
+              <div className="mt-1 text-[11px] text-muted-foreground">
+                Presets skin the UI (buttons/rounding/contrast) on top of Light/Dark/System.
+              </div>
+            </div>
             <div>
               <div className="mb-1 text-xs text-muted-foreground">Theme</div>
               <ModeToggle />

@@ -9,7 +9,10 @@ import gfm from "remark-gfm";
 
 import { LessonHeader } from "@/components/LessonHeader";
 import { FiguresHydrator } from "@/components/FiguresHydrator";
+import { PhotosHydrator } from "@/components/PhotosHydrator";
+import { VideosHydrator } from "@/components/VideosHydrator";
 import { MdEmbedsHydrator } from "@/components/MdEmbedsHydrator";
+import { GlossaryHydrator } from "@/components/GlossaryHydrator";
 import { Button } from "@/components/ui/button";
 
 export default async function SpringboardLessonPage({
@@ -32,7 +35,26 @@ export default async function SpringboardLessonPage({
     (_m, name) => `<div data-figure="${String(name).trim()}"></div>`
   );
 
+  contentHtml = contentHtml.replace(
+    /<p>PHOTO:\s*([^<|]+?)(?:\s*\|\s*([^<]+))?<\/p>/g,
+    (_m, file, cap) => {
+      const f = String(file).trim();
+      const c = String(cap ?? "").trim();
+      return `<div data-photo="${f}" data-caption="${c.replace(/\"/g, "&quot;")}"></div>`;
+    }
+  );
+
+  contentHtml = contentHtml.replace(
+    /<p>VIDEO:\s*([^<|]+?)(?:\s*\|\s*([^<]+))?<\/p>/g,
+    (_m, url, cap) => {
+      const u = String(url).trim();
+      const c = String(cap ?? "").trim();
+      return `<div data-video="${u}" data-caption="${c.replace(/\"/g, "&quot;")}"></div>`;
+    }
+  );
+
   // Replace .md references with an inline viewer.
+  // Standalone backticked paths
   contentHtml = contentHtml.replace(
     /<p><code>([^<]+\.md)<\/code><\/p>/g,
     (_m, mdPath) => `<div data-md=\"${String(mdPath).trim()}\"></div>`
@@ -41,14 +63,24 @@ export default async function SpringboardLessonPage({
     /<li><code>([^<]+\.md)<\/code><\/li>/g,
     (_m, mdPath) => `<li><div data-md=\"${String(mdPath).trim()}\"></div></li>`
   );
+  // Inline code paths
+  contentHtml = contentHtml.replace(
+    /<code>((?:04_sops|02_chemicals|03_curriculum\/printables|06_ops|05_sales_marketing|01_business_profile)\/[^<\s]+\.md)<\/code>/g,
+    (_m, mdPath) => `<span data-md=\"${String(mdPath).trim()}\"></span>`
+  );
+  // Links
   contentHtml = contentHtml.replace(
     /<a href=\"([^\"]+\.md)\">([^<]+)<\/a>/g,
     (_m, href, _label) => `<div data-md=\"${String(href).replace(/^\.\//, "").trim()}\"></div>`
   );
-  contentHtml = contentHtml.replace(
-    /(04_sops\/[^\s<]+\.md|02_chemicals\/[^\s<]+\.md|03_curriculum\/printables\/[^\s<]+\.md|06_ops\/[^\s<]+\.md|05_sales_marketing\/[^\s<]+\.md)/g,
-    (m) => `<span data-md=\"${m}\"></span>`
-  );
+  // Plain-text occurrences (ONLY in text nodes, not inside attributes)
+  const mdPathRegex =
+    /(04_sops\/[^\s<]+\.md|02_chemicals\/[^\s<]+\.md|03_curriculum\/printables\/[^\s<]+\.md|06_ops\/[^\s<]+\.md|05_sales_marketing\/[^\s<]+\.md|01_business_profile\/[^\s<]+\.md)/g;
+
+  contentHtml = contentHtml.replace(/>([^<]+)</g, (full, text) => {
+    const replaced = String(text).replace(mdPathRegex, (m) => `<span data-md="${m}"></span>`);
+    return `>${replaced}<`;
+  });
 
   return (
     <main className="mx-auto max-w-4xl px-6">
@@ -64,7 +96,10 @@ export default async function SpringboardLessonPage({
 
       <div className="markdown" dangerouslySetInnerHTML={{ __html: contentHtml }} />
       <FiguresHydrator />
+      <PhotosHydrator />
+      <VideosHydrator />
       <MdEmbedsHydrator />
+      <GlossaryHydrator />
 
       <div className="mt-10 flex flex-wrap gap-2">
         {neighbors.prev ? (

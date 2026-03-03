@@ -8,6 +8,8 @@ lesson: 4
 # Module 5 — Windows: WFP (Pure Water) + RO/DI Basics (Lesson)
 
 ## What WFP is
+VIDEO: https://www.youtube.com/watch?v=GNkP5djASNc | Water-fed pole window cleaning example (real jobsite).
+
 Water-fed pole (WFP) cleaning uses purified water so the window can dry spot-free when done correctly.
 
 ## When WFP wins

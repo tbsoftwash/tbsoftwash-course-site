@@ -30,9 +30,9 @@ export function FigureClient({ baseName }: { baseName: string }) {
   const href = `/api/figure?name=${encodeURIComponent(baseName)}&style=${encodeURIComponent(style)}`;
 
   return (
-    <div className="overflow-hidden rounded-2xl border bg-card/40">
+    <div className="overflow-hidden rounded-2xl glass-panel">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={href} alt={baseName} className="h-auto w-full" />
+      <img key={href} src={href} alt={baseName} className="h-auto w-full" />
     </div>
   );
 }

@@ -13,6 +13,8 @@ function safeResolve(relPath: string) {
     "03_curriculum/printables/",
     "06_ops/",
     "05_sales_marketing/",
+    // internal citations / sources
+    "01_business_profile/",
   ];
   if (!allowedPrefixes.some((p) => cleaned.startsWith(p))) {
     throw new Error("path not allowed");

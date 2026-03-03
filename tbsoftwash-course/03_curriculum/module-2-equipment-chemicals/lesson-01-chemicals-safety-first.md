@@ -21,6 +21,8 @@ We teach:
 - customer expectation language
 
 ## PPE is not optional
+PHOTO: crew_ppe_multi_task.jpg | Real jobsite PPE + workflow: respirator, eye protection, gloves, and boots.
+
 Use the PPE Gear Box and enforce it.
 
 - Gear library: `05_sales_marketing/affiliate/gearbox-library.md`

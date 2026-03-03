@@ -28,7 +28,7 @@ export async function GET(req: Request) {
     status: 200,
     headers: {
       "Content-Type": "image/svg+xml; charset=utf-8",
-      "Cache-Control": "public, max-age=60",
+      "Cache-Control": "no-store", 
     },
   });
 }
