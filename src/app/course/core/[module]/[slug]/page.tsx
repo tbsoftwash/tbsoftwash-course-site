@@ -33,7 +33,8 @@ export default async function LessonPage({
     (_m, name) => `<div data-figure="${String(name).trim()}"></div>`
   );
 
-  // Replace standalone .md references with an inline viewer.
+  // Replace .md references with an inline viewer.
+  // 1) Standalone backticked paths
   contentHtml = contentHtml.replace(
     /<p><code>([^<]+\.md)<\/code><\/p>/g,
     (_m, mdPath) => `<div data-md=\"${String(mdPath).trim()}\"></div>`
@@ -42,9 +43,18 @@ export default async function LessonPage({
     /<li><code>([^<]+\.md)<\/code><\/li>/g,
     (_m, mdPath) => `<li><div data-md=\"${String(mdPath).trim()}\"></div></li>`
   );
+
+  // 2) Markdown links to .md files
   contentHtml = contentHtml.replace(
     /<a href=\"([^\"]+\.md)\">([^<]+)<\/a>/g,
     (_m, href, _label) => `<div data-md=\"${String(href).replace(/^\.\//, "").trim()}\"></div>`
+  );
+
+  // 3) Inline plain-text paths like: "Proof Pack SOP: 04_sops/...md"
+  // Only match our allowlisted folders.
+  contentHtml = contentHtml.replace(
+    /(04_sops\/[^\s<]+\.md|02_chemicals\/[^\s<]+\.md|03_curriculum\/printables\/[^\s<]+\.md|06_ops\/[^\s<]+\.md|05_sales_marketing\/[^\s<]+\.md)/g,
+    (m) => `<span data-md=\"${m}\"></span>`
   );
 
   return (

@@ -32,6 +32,7 @@ export default async function SpringboardLessonPage({
     (_m, name) => `<div data-figure="${String(name).trim()}"></div>`
   );
 
+  // Replace .md references with an inline viewer.
   contentHtml = contentHtml.replace(
     /<p><code>([^<]+\.md)<\/code><\/p>/g,
     (_m, mdPath) => `<div data-md=\"${String(mdPath).trim()}\"></div>`
@@ -43,6 +44,10 @@ export default async function SpringboardLessonPage({
   contentHtml = contentHtml.replace(
     /<a href=\"([^\"]+\.md)\">([^<]+)<\/a>/g,
     (_m, href, _label) => `<div data-md=\"${String(href).replace(/^\.\//, "").trim()}\"></div>`
+  );
+  contentHtml = contentHtml.replace(
+    /(04_sops\/[^\s<]+\.md|02_chemicals\/[^\s<]+\.md|03_curriculum\/printables\/[^\s<]+\.md|06_ops\/[^\s<]+\.md|05_sales_marketing\/[^\s<]+\.md)/g,
+    (m) => `<span data-md=\"${m}\"></span>`
   );
 
   return (
