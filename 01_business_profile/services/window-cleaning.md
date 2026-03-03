@@ -1,4 +1,4 @@
-# Window Cleaning — TBSoftWash (site extraction)
+# Window Cleaning — Tampa Bay Soft Wash (site extraction)
 Source: https://tbsoftwash.com/window-cleaning-service/
 
 ## Positioning / tools

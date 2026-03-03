@@ -1,6 +1,6 @@
-# TBSoftWash YouTube Index
+# Tampa Bay Soft Wash YouTube Index
 
-This folder maps TBSoftWash YouTube videos/shorts to course insertion points.
+This folder maps Tampa Bay Soft Wash YouTube videos/shorts to course insertion points.
 
 - Channel: https://www.youtube.com/@tampabaysoftwashpressurecl2339
 - Policy: No faces requirement applies to **photos**. Videos may contain faces by nature; if you want a no-faces policy for embeds too, flag specific videos.

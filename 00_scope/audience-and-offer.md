@@ -13,7 +13,7 @@
 - May DIY small items but will hire out roofs and high-risk work
 
 ## Offer structure (recommended)
-### Product 1: Free gated Operator Course (TBSoftWash Academy)
+### Product 1: Free gated Operator Course (Tampa Bay Soft Wash Academy)
 - Operators get the full SOPs + checklists + scripts
 - Homeowners get “how to hire right” + safety/expectations pages
 
@@ -23,7 +23,7 @@
 
 ## Success metrics
 - Operator: can quote, execute, and deliver repeatable results without callbacks
-- Homeowner: can evaluate a contractor confidently and understand why TBSoftWash costs more
+- Homeowner: can evaluate a contractor confidently and understand why Tampa Bay Soft Wash costs more
 
 ## Content policy (safety)
 - Teach chemical handling and safety.

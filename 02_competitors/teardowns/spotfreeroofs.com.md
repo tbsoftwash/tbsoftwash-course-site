@@ -29,7 +29,7 @@
 - “Fast, reliable, professional”
 - Emphasis on professional service
 
-## What we should steal (TBSoftWash integration)
+## What we should steal (Tampa Bay Soft Wash integration)
 - Climate specificity: “humid coastal climate” framing.
 - Eco-friendly “tough yet gentle” phrasing (align with soft-wash safety).
 

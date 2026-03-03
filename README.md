@@ -1,6 +1,6 @@
-# TBSoftWash Course (Public Content)
+# Tampa Bay Soft Wash Course (Public Content)
 
-This repo contains the **public operator-course content** for TBSoftWash Academy.
+This repo contains the **public operator-course content** for Tampa Bay Soft Wash Academy.
 
 - Primary consumer: the Next.js course site (`tbsoftwash-course-site`) which vendors this repo via **git subtree**.
 - Content types: lessons, SOPs, printables, diagrams, and owned photos.

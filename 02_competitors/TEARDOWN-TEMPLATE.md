@@ -40,7 +40,7 @@
 - Response time claims:
 - Uniforms/trucks/branding:
 
-## What we should steal (TBSoftWash integration)
+## What we should steal (Tampa Bay Soft Wash integration)
 - 3–10 actionable ideas
 
 ## What we should avoid

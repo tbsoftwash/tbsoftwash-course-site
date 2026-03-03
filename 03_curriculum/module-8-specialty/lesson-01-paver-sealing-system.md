@@ -23,7 +23,7 @@ You’re selling:
 4) Apply sealer evenly
 5) Cure + protect from weather/traffic
 
-## TBSoftWash positioning notes
+## Tampa Bay Soft Wash positioning notes
 Source: `01_business_profile/services/paver-sealing.md`
 
 ## Tie-ins

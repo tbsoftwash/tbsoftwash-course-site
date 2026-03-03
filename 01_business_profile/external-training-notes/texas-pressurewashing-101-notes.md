@@ -1,8 +1,8 @@
 # External Training Notes — Texas Pressure Washing (Pressure Washing 101)
 
-Purpose: extract high-signal frameworks and checklists we can **re-express in TBSoftWash voice** and integrate into the course (operator lane + homeowner lane). These notes include source links for internal provenance only.
+Purpose: extract high-signal frameworks and checklists we can **re-express in Tampa Bay Soft Wash voice** and integrate into the course (operator lane + homeowner lane). These notes include source links for internal provenance only.
 
-> Internal note: When we convert these into course content, we will write original TBSoftWash explanations and avoid copying unique phrasing/structure.
+> Internal note: When we convert these into course content, we will write original Tampa Bay Soft Wash explanations and avoid copying unique phrasing/structure.
 
 ## Sources
 - Pressure Washing 101 hub: https://www.texas-pressurewashing.com/pressure-washing-101-guide
@@ -22,7 +22,7 @@ This is a “free training library” style hub that points to:
 ### 1) Safety equipment as a non-negotiable truck standard
 **What to extract:** the concept of a fixed safety loadout that’s always on the truck.
 
-**TBSoftWash integration:**
+**Tampa Bay Soft Wash integration:**
 - Add/upgrade Module 1 or Module 11 lesson: “Truck Safety Loadout (Non‑Negotiables)”
 - Add a printable: “Safety Loadout Checklist (pre-trip)”
 - Tie to our Proof Pack + Final Walk discipline (document incidents and near-misses)
@@ -32,22 +32,22 @@ This is a “free training library” style hub that points to:
 ### 2) Surface/material chemical strength chart (laminated crew aid)
 **What to extract:** the idea of a laminated “strength by substrate” reference that prevents over-cooking surfaces.
 
-**TBSoftWash integration:**
-- Module 2 (chemicals): create TBSoftWash “Surface Risk Matrix” (already partially exists in `02_chemicals/pages/*risk*.md`)
-- Create a TBSoftWash printable: “Substrate × Soil Type × Risk → Method”
+**Tampa Bay Soft Wash integration:**
+- Module 2 (chemicals): create Tampa Bay Soft Wash “Surface Risk Matrix” (already partially exists in `02_chemicals/pages/*risk*.md`)
+- Create a Tampa Bay Soft Wash printable: “Substrate × Soil Type × Risk → Method”
 - For public pages: present as decision logic + stop conditions, not exact recipes.
 
 ### 3) SDS-first discipline
 **What to extract:** making SDS review a standard part of training + onboarding.
 
-**TBSoftWash integration:**
+**Tampa Bay Soft Wash integration:**
 - Module 2: add “SDS Habit” micro-lesson + quiz
 - Module 11: add “Where SDS lives” in Source of Truth + how to document chemicals used per job
 
 ### 4) Bulk SH transfer / chemical handling infrastructure
 **What to extract:** chemical logistics is an operations problem (pumps, parts lists, repeatability).
 
-**TBSoftWash integration:**
+**Tampa Bay Soft Wash integration:**
 - Module 2 Equipment: add a lesson “Bulk Chemical Handling (transfer, storage, spill plan)”
 - Ops: add a simple “spill response” playbook and storage/secondary containment reminders
 
@@ -70,5 +70,5 @@ Teach homeowners:
 
 ## Notes about attribution
 These notes are sourced internally for provenance. When publishing, we should not copy or closely paraphrase unique charts/text; instead:
-- generate our own TBSoftWash matrix (based on our chemistry library and SOPs)
+- generate our own Tampa Bay Soft Wash matrix (based on our chemistry library and SOPs)
 - write our own safety loadout checklist (based on our actual truck standard)

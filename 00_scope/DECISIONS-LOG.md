@@ -3,7 +3,7 @@
 (Short, high-signal record of key choices.)
 
 ## Positioning
-- TBSoftWash course teaches a **top 50–75% pricing** operator model.
+- Tampa Bay Soft Wash course teaches a **top 50–75% pricing** operator model.
 - Differentiation: experience + attention to detail + safety + documentation + customer experience.
 
 ## Research workflow

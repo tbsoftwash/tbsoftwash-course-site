@@ -40,7 +40,7 @@ Includes:
 
 ### Email 5: Case study + CTA
 - before/after + review excerpt
-- CTA: book an estimate / follow TBSoftWash / share
+- CTA: book an estimate / follow Tampa Bay Soft Wash / share
 
 ## Email sequence (homeowners) — 3 emails
 1) Delivery + what to expect

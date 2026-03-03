@@ -29,7 +29,7 @@ Good for:
 - unrealistic expectations
 - unsafe access
 
-## Variables that change pricing (TBSoftWash)
+## Variables that change pricing (Tampa Bay Soft Wash)
 Source: `01_business_profile/pricing-notes.md`
 - pitch/height
 - water access

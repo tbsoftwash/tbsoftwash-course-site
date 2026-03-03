@@ -1,4 +1,4 @@
-# TBSoftWash.com — business profile (initial capture)
+# Tampa Bay Soft Wash.com — business profile (initial capture)
 
 ## Snapshot
 - Brand: **Tampa Bay Soft Wash**

@@ -1,7 +1,7 @@
 # Scope (draft)
 
 ## Objective
-Create a comprehensive exterior cleaning course that captures the TBSoftWash business end-to-end: service delivery + sales + marketing + operations — positioned as a **top 50–75% pricing** operator (not the most expensive, but clearly above “kid with a pressure washer” pricing). Higher price point is justified by experience, attention to detail, safety, documentation, and a consistently better customer experience.
+Create a comprehensive exterior cleaning course that captures the Tampa Bay Soft Wash business end-to-end: service delivery + sales + marketing + operations — positioned as a **top 50–75% pricing** operator (not the most expensive, but clearly above “kid with a pressure washer” pricing). Higher price point is justified by experience, attention to detail, safety, documentation, and a consistently better customer experience.
 
 ## Target learners (fill)
 - New owner-operators in Florida

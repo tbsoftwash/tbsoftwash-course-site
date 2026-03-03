@@ -17,7 +17,7 @@ Heat exhaustion and heat stroke are real jobsite risks in Florida. This is a *pr
 - Confusion/irritability
 - Stopping sweating (late/danger)
 
-## The TBSoftWash standard (draft)
+## The Tampa Bay Soft Wash standard (draft)
 - Pre-hydrate before the first job
 - Water + electrolytes on every truck
 - Scheduled shade breaks

@@ -13,7 +13,7 @@ The catalog structure reinforces the key coverage areas for a well-rounded windo
 - Add-on services (screens, tracks, stain removal)
 - Business/marketing (storefront, recurring, systems)
 
-## TBSoftWash integration
+## Tampa Bay Soft Wash integration
 We built Module 5 as:
 1) Method selection + safety
 2) Traditional workflow + QC

@@ -1,6 +1,6 @@
 # Safety Loadout Checklist v1 (Printable)
 
-This is the “non‑negotiable” safety loadout for TBSoftWash work.
+This is the “non‑negotiable” safety loadout for Tampa Bay Soft Wash work.
 
 **Rule:** If we touch chemicals, ladders, or traffic—this gear is part of the job.
 

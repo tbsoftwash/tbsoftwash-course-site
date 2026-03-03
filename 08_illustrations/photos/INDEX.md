@@ -1,4 +1,4 @@
-# TBSoftWash Academy — Photo Assets (No-Faces Set)
+# Tampa Bay Soft Wash Academy — Photo Assets (No-Faces Set)
 
 Rule: **No faces**. These assets are selected to be safe for internal/external training use.
 

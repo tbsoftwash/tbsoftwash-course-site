@@ -1,6 +1,6 @@
-# Reviews: Voice of Customer (why TBSoftWash wins at top 50–75% pricing)
+# Reviews: Voice of Customer (why Tampa Bay Soft Wash wins at top 50–75% pricing)
 
-This doc converts TBSoftWash Google review language into *course-ready* operational standards.
+This doc converts Tampa Bay Soft Wash Google review language into *course-ready* operational standards.
 
 ## Core themes customers repeatedly mention
 

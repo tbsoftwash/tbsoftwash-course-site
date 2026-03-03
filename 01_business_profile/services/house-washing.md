@@ -1,4 +1,4 @@
-# House Washing (Soft Wash) — TBSoftWash (site extraction)
+# House Washing (Soft Wash) — Tampa Bay Soft Wash (site extraction)
 Source: https://tbsoftwash.com/house-washing-service/
 
 ## Positioning / promise

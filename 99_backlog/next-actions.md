@@ -1,7 +1,7 @@
 # Next actions
 
 ## SOP buildout (priority)
-1) Polish Roof Soft Wash SOP v1 into v2 (add TBSoftWash-specific field notes + QA checklist one-pager). (done)
+1) Polish Roof Soft Wash SOP v1 into v2 (add Tampa Bay Soft Wash-specific field notes + QA checklist one-pager). (done)
 2) Draft / polish Gutter Cleaning SOP v2 (springboard track). (done)
 3) Polish Traditional Window Cleaning SOP v2 (springboard track). (done)
 4) House Wash SOP v2 package (SOP + QA + homeowner explainer). (done)
@@ -11,7 +11,7 @@
 ## Competitors
 4) Run 3 competitor teardowns using `02_competitors/TEARDOWN-TEMPLATE.md` and update `02_competitors/takeaways.md`. (done: first 3)
 
-## TBSoftWash site truth-source
+## Tampa Bay Soft Wash site truth-source
 5) Sitemap-driven verify/refresh service page extractions (fix any 404 assumptions) and update `01_business_profile/services/_index.md`.
 
 ## Curriculum assembly

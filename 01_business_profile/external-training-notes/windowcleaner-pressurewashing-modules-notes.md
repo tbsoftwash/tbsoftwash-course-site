@@ -1,6 +1,6 @@
 # External Training Notes — WindowCleaner.com (Pressure Washing Module)
 
-Purpose: extract high-signal training structure + illustration ideas we can reproduce as **original TBSoftWash visuals**.
+Purpose: extract high-signal training structure + illustration ideas we can reproduce as **original Tampa Bay Soft Wash visuals**.
 
 ## Source (internal provenance)
 - https://windowcleaner.com/pages/learn-to-clean-windows-modules-pressure-washing
@@ -14,7 +14,7 @@ This module is strong at:
 - operational micro-SOPs (hoses, reels, quick connects, O-rings)
 - visual instruction sequences (e.g., taping off plugs)
 
-## Illustration targets (we will recreate as TBSoftWash originals)
+## Illustration targets (we will recreate as Tampa Bay Soft Wash originals)
 1) **Electrical outlet taping sequence** (LOTO first; then bottom-to-top overlap for water-shedding)
 2) **Pressure washer types diagram**
    - portable vs mounted
@@ -36,7 +36,7 @@ This module is strong at:
    - O-ring failure modes
    - pressure release before disconnect
 
-## Where this integrates in TBSoftWash course
+## Where this integrates in Tampa Bay Soft Wash course
 - Module 2 (Equipment/Chemicals):
   - measurements basics (PSI/GPM)
   - equipment selection ladder (start with method needs)
@@ -51,6 +51,6 @@ This module is strong at:
 ## Notes on using their illustrations
 We should **not** copy their images/screenshots into our course.
 Instead:
-- recreate the same concepts with TBSoftWash styling (dark glassy friendly)
+- recreate the same concepts with Tampa Bay Soft Wash styling (dark glassy friendly)
 - use our own diagrams/icons and our own photo examples when needed
 - optionally request permission/license if you want to use their exact artwork

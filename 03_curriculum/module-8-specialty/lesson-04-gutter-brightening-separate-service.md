@@ -14,7 +14,7 @@ Brightening is restoration work.
 
 It has different chemistry, risk, and pricing.
 
-## TBSoftWash positioning notes
+## Tampa Bay Soft Wash positioning notes
 Source: `01_business_profile/services/gutter-brightening.md`
 
 ## SOP
