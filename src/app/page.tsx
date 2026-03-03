@@ -41,7 +41,12 @@ export default function Home() {
       </div>
 
       <div className="mt-10 grid gap-4 rounded-2xl glass-panel p-6">
-        <div className="text-sm font-semibold">Start here (how to use this)</div>
+        <div className="text-sm font-semibold">Start here (read this first)</div>
+        <p className="text-sm text-muted-foreground">
+          This trade is hard work — but it’s not complicated forever. If you persist, you’ll close the
+          knowledge gap and you’ll start seeing the job the way pros see it: surfaces, risks, and
+          repeatable steps.
+        </p>
         <ol className="list-decimal pl-5 text-sm text-muted-foreground">
           <li>Read the lesson once for the big picture.</li>
           <li>Run it on a real job (or a mock walkaround).</li>
