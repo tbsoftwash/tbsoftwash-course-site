@@ -11,9 +11,11 @@ function escapeRegExp(s: string) {
 const entries = [...GLOSSARY]
   .flatMap((e) => {
     const terms = [e.term, ...(e.aliases ?? [])].filter(Boolean);
+    const isAcronym = /^[A-Z0-9]{2,5}$/.test(e.term);
     return terms.map((t) => ({
       display: t,
       def: e.def,
+      isAcronym,
     }));
   })
   .sort((a, b) => b.display.length - a.display.length);
@@ -60,19 +62,26 @@ function wrapTermsInTextNode(textNode: Text) {
     const start = m.index;
     const end = start + hit.length;
 
-    // Basic boundary guard: avoid mid-word matches for alpha-only hits.
     const before = start > 0 ? s[start - 1] : "";
     const after = end < s.length ? s[end] : "";
     const isAlphaNum = /[a-z0-9]/i;
+
+    // Avoid mid-word matches (most important fix for SH inside "wash").
     if (isAlphaNum.test(before) && isAlphaNum.test(after)) {
+      continue;
+    }
+
+    // Acronyms should not trigger on lowercase word fragments.
+    // Example: "waSH" could be valid, but "wash" should not underline "sh".
+    const matchedEntry = entries.find((e) => e.display.toLowerCase() === hit.toLowerCase());
+    if (matchedEntry?.isAcronym && hit === hit.toLowerCase()) {
       continue;
     }
 
     if (start > last) frag.appendChild(document.createTextNode(s.slice(last, start)));
 
     // Find definition for this hit (case-insensitive match against display terms).
-    const def =
-      entries.find((e) => e.display.toLowerCase() === hit.toLowerCase())?.def || "";
+    const def = matchedEntry?.def || "";
 
     const span = document.createElement("span");
     span.textContent = hit;

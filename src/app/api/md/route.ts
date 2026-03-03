@@ -10,7 +10,8 @@ function safeResolve(relPath: string) {
   const allowedPrefixes = [
     "04_sops/",
     "02_chemicals/",
-    "03_curriculum/printables/",
+    // allow curriculum references (printables + springboard + module docs)
+    "03_curriculum/",
     "06_ops/",
     "05_sales_marketing/",
     // internal citations / sources

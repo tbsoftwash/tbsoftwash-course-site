@@ -34,7 +34,13 @@ function ProgressBar({ value }: { value: number }) {
   );
 }
 
-export function CourseDashboard({ lessons }: { lessons: LessonMeta[] }) {
+export function CourseDashboard({
+  lessons,
+  moduleTitles,
+}: {
+  lessons: LessonMeta[];
+  moduleTitles: Record<number, string>;
+}) {
   const [completed, setCompleted] = React.useState<Set<string>>(new Set());
   const [last, setLast] = React.useState<string | null>(null);
 
@@ -92,7 +98,10 @@ export function CourseDashboard({ lessons }: { lessons: LessonMeta[] }) {
     for (const l of lessons) {
       const bucket =
         l.track === "core" ? `core:module:${l.module}` : `springboard:week:${l.week}`;
-      const label = l.track === "core" ? `Module ${l.module}` : String(l.week);
+      const label =
+        l.track === "core"
+          ? `Module ${l.module}${moduleTitles?.[Number(l.module)] ? ` — ${moduleTitles[Number(l.module)]}` : ""}`
+          : String(l.week);
 
       const k = lessonKey({
         track: l.track,
