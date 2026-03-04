@@ -8,7 +8,7 @@ lesson: 2
 # Module 4 — House Wash: Workflow + QA (Lesson)
 
 ## What you’re doing today
-You’re going to run a house wash the way we run it: **protect first, apply top-down, control rinse, and close out with proof**.
+You’re going to run a house wash the way we run it: **protect first, apply bottom-up, rinse top-down, and close out with proof**.
 
 This is the “bread and butter” job — and it’s where rookies accidentally create damage.
 
@@ -64,6 +64,16 @@ VIDEO: https://www.youtube.com/watch?v=onn2hosJwY8 | House wash workflow with 12
 - If you see oxidation risk (or unknown paint/coating):
   - stop promising restoration
   - test in an inconspicuous spot
+
+- If you see a stained/sealed wood front door (non-negotiable protection)
+  - avoid direct chemical contact
+  - when possible, wrap it like a present:
+    1) open the door
+    2) wrap the door in plastic
+    3) close the door
+    4) drape a second sheet in front of the wrapped door
+  - **Do not** tape plastic across the face of the door.
+  - why: layer 1 protects the surface; layer 2 stops solution from wicking into edges.
 
 - If wind/sun is pushing toward windows or drying things fast:
   - reduce overspray and **rinse glass more frequently**
