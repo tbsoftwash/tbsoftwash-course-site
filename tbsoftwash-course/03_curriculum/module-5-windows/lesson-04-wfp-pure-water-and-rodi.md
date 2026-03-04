@@ -7,25 +7,50 @@ lesson: 4
 ---
 # Module 5 — Windows: WFP (Pure Water) + RO/DI Basics (Lesson)
 
-## What WFP is
+## What you’re doing today
+You’re learning the WFP lane: when it wins, when it loses, and how to run it so the glass dries spot-free.
+
 VIDEO: https://www.youtube.com/watch?v=GNkP5djASNc | Water-fed pole window cleaning example (real jobsite).
+VIDEO: https://www.youtube.com/watch?v=1f6NJuUiWpU | Short WFP clip (Gardiner). Watch brush control + rinse.
 
-Water-fed pole (WFP) cleaning uses purified water so the window can dry spot-free when done correctly.
+## Why this matters
+WFP wins on:
+- safety (less ladder)
+- consistency
+- premium positioning
 
-## When WFP wins
-- multi-story exteriors
-- recurring maintenance
-- speed with consistency
+But only if your water is actually pure.
 
-## When WFP loses
-- heavy hydrophobic glass (needs technique)
-- frames that bleed oxidation
-- severe hard water staining
+## Tools & materials (minimum viable)
+- TDS meter (non-negotiable)
+- RO/DI system
+- WFP pole + brush
 
-## RO/DI basics (public-safe)
-- TDS matters.
-- Filter maintenance matters.
-- Technique matters more than people want to admit.
+## Step-by-step: WFP startup check (foreman routine)
+1) Measure TDS (in → out).
+2) Flush/prime.
+3) Inspect brush (no grit).
+4) Clean top-down.
+5) Final rinse pass.
+6) Verify dry-down.
+
+## Decision points
+- If TDS is high:
+  - stop and fix water quality before promising spot-free.
+
+- If frames bleed oxidation:
+  - switch method or set expectations.
+
+## Common mistakes + fixes
+- Skipping TDS checks
+  - Fix: treat TDS like fuel gauge.
+
+- Not doing a final rinse pass
+  - Fix: rinse discipline is the product.
+
+## What good looks like
+- Consistent spot-free dry
+- Less ladder risk on standard second-story exteriors (where feasible)
 
 ## SOPs
 - WFP SOP: `04_sops/windows/wfp-window-cleaning-sop-v1.md`
@@ -33,15 +58,15 @@ Water-fed pole (WFP) cleaning uses purified water so the window can dry spot-fre
 - RO/DI overview: `04_sops/windows/ro-di-water-system.md`
 
 ## Do this next (assignment)
-- [ ] Do a test clean on 2 windows: one shaded, one in full sun.
-- [ ] Document a “frame oxidation risk” window and decide when to switch to traditional.
+- [ ] Record 3 TDS readings (tap, post-RO, post-DI).
+- [ ] Clean 2 windows (shade + sun) and verify dry-down.
 
 ## References
 - Hard water/minerals: `02_chemicals/pages/hard-water-and-mineral-stains.md`
 - Oxidation risk: `02_chemicals/pages/paint-oxidation-and-finish-risk.md`
 
 ## Printables
-- Operator Checklist Pack: `03_curriculum/printables/operator-checklist-pack-v1.md`
+- Operator Checklist Pack (truck copy): `03_curriculum/printables/operator-checklist-pack-v1.md`
 
 ## Gear Box (Amazon)
 (Insert the relevant Gear Box module for this lesson here.)
