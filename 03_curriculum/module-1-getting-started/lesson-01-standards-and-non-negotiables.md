@@ -25,8 +25,12 @@ That means we win with:
 - documentation
 - communication
 
-## Non‑negotiables
-- **No pressure washing roofs.**
+## Non‑negotiables (the Tampa Bay Soft Wash standard)
+- **No high pressure roofs. Ever.** Roofs are soft wash only.
+- **Pressure is for flatwork** (concrete/pavers/flatwork). Soft wash is for everything else.
+- **House wash rule:** apply bottom-up, rinse top-down.
+- **Ladder stabilizers are non-negotiable when applicable.** If a stabilizer can’t be used due to circumstances, slow down and choose a safer setup.
+- **Stained/sealed wood front doors must be protected.** Avoid direct chemical contact. When possible: open door → wrap door in plastic → close door → drape a second sheet in front.
 - Plant protection is part of the job.
 - Proof Pack is part of delivery.
 - Final Walk is part of delivery.
