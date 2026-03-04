@@ -37,6 +37,8 @@ If you can’t measure it, you can’t manage it.
 5) Clean top-down with good rinse discipline.
 6) Do a final rinse pass.
 
+VIDEO: https://www.youtube.com/watch?v=GNkP5djASNc | Water-fed pole example (real jobsite). Watch for: rinse discipline + keeping the brush clean.
+
 ## Decision points
 - If TDS is high:
   - stop and fix water quality before doing “spot-free” promises.
