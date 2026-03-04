@@ -7,6 +7,8 @@ lesson: 1
 ---
 # Module 3 — Roof Soft Wash: Why It’s Soft Wash (Lesson)
 
+This trade is hard work, but it’s not complicated forever. We’re going to keep it simple: protect first, run a repeatable process, and document everything. You don’t need perfect gear on Day 1 — you need good habits and a clear next step. If you’re unsure, you stop, test, and reset expectations before you touch the surface.
+
 ## What you’re doing today
 You’re learning the non-negotiable roof rule and the “why” behind it — so you can explain it to customers and keep yourself out of trouble.
 

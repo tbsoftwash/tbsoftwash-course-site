@@ -7,6 +7,8 @@ lesson: 1
 ---
 # Module 7 — Flatwork: Stripe-Free Results (Lesson)
 
+This trade is hard work, but it’s not complicated forever. We’re going to keep it simple: protect first, run a repeatable process, and document everything. You don’t need perfect gear on Day 1 — you need good habits and a clear next step. If you’re unsure, you stop, test, and reset expectations before you touch the surface.
+
 ## What you’re doing today
 You’re learning how to clean flatwork **evenly** — stripe-free — without etching and without leaving the edges dirty.
 
