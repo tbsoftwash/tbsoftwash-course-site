@@ -7,6 +7,8 @@ lesson: 1
 ---
 # Module 4 — House Wash: Diagnose Before You Spray (Lesson)
 
+This trade is hard work, but it’s not complicated forever. We’re going to keep it simple: protect first, run a repeatable process, and document everything. You don’t need perfect gear on Day 1 — you need good habits and a clear next step. If you’re unsure, you stop, test, and reset expectations before you touch the surface.
+
 ## What you’re doing today
 Before you spray anything, you’re going to **identify what you’re actually looking at**.
 
