@@ -66,8 +66,13 @@ Minimum standard:
 - If you’re unsure how a surface will react:
   - test in an inconspicuous area first
 
+- If glass is in direct sun or drying fast:
+  - rinse windows early and often (don’t let solution dry)
+
 - If you can’t explain the risk to the customer:
   - don’t gamble their property
+
+VIDEO: https://www.youtube.com/watch?v=onn2hosJwY8 | House wash clip (1 min). Watch for: rinse discipline + keeping glass safe.
 
 ## Spill + exposure response
 We don’t operate without a plan.

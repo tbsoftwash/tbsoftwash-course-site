@@ -32,6 +32,8 @@ Pick one:
 - **Oxidation** (chalky paint/coating) → restoration lane or expectation setting
 - **Specialty stains** (rust / hard water / irrigation) → spot-treatment lane or exclude
 
+VIDEO: https://www.youtube.com/watch?v=0106axwJgvc | Roof example (quick). Not for roof technique here — watch for risk control: plant protection + overspray discipline.
+
 ### Step 2 — Identify the surface (what can it tolerate?)
 Surface determines risk.
 
