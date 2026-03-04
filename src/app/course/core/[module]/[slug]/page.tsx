@@ -51,13 +51,17 @@ export default async function LessonPage({
   );
 
   // Replace VIDEO callouts.
-  // Format: VIDEO: <youtube-url-or-id> | Optional caption
+  // Accept:
+  // - VIDEO: <url>
+  // - VIDEO: <a href="url">url</a>
+  // - in <p> or <li>
+  // - optional: | caption
   contentHtml = contentHtml.replace(
-    /<p>VIDEO:\s*([^<|]+?)(?:\s*\|\s*([^<]+))?<\/p>/g,
-    (_m, url, cap) => {
-      const u = String(url).trim();
+    /<(p|li)>VIDEO:\s*(?:(?:<a href=\"([^\"]+)\"[^>]*>[^<]*<\/a>)|([^<|]+?))(?:\s*\|\s*([^<]+))?<\/\1>/g,
+    (_m, _tag, href, raw, cap) => {
+      const u = String(href || raw || "").trim();
       const c = String(cap ?? "").trim();
-      return `<div data-video="${u}" data-caption="${c.replace(/\"/g, "&quot;")}"></div>`;
+      return `<div data-video=\"${u.replace(/\"/g, "&quot;")}\" data-caption=\"${c.replace(/\"/g, "&quot;")}\"></div>`;
     }
   );
 
