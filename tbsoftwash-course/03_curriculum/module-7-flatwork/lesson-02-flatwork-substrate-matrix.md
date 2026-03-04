@@ -49,6 +49,9 @@ PHOTO: flatwork_before_after_walkway.jpg | Flatwork before/after (consistent ang
 - If the surface looks coated:
   - slow down and confirm before cleaning
 
+- If you’re facing a rust stain:
+  - treat it as chemistry, not pressure — don’t turn a small spot into a bigger repair
+
 - If stains are old:
   - set expectations in plain English
 
