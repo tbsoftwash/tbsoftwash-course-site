@@ -1,11 +1,22 @@
 ---
-title: "Module 5 — Windows: Pricing, Bundles + Expectations (Lesson)"
+title: "Module 5 — Windows: Pricing, Bundles, and Expectations (Lesson)"
 track: "core"
 slug: "pricing-bundles-and-expectations"
 module: 5
 lesson: 5
 ---
-# Module 5 — Windows: Pricing, Bundles + Expectations (Lesson)
+# Module 5 — Windows: Pricing, Bundles, and Expectations (Lesson)
+
+## What you’re doing today
+You’re learning how to price and sell windows like a premium service — without overpromising.
+
+## Why this matters
+People who pay for windows expect:
+- clean edges
+- no mess
+- correct expectations
+
+If you undercharge, you rush. If you rush, you get callbacks.
 
 ## What we sell
 We sell a result and an experience.
@@ -14,44 +25,36 @@ Clean windows are a premium service when done right.
 Dress like it. Protect the home (booties/gloves). Communicate clearly. Deliver a consistent finish.
 The customer isn’t paying for soap — they’re paying for certainty.
 
-What that means on a real job:
-- clear glass
-- clean edges
-- no mess
-- correct expectations
+## Simple bundle options
+- House wash + windows
+- Roof wash + windows (when it fits)
+- Windows + screens/tracks (priced as add-ons)
 
-## Bundles that print money
-- House wash + exterior windows
-- Roof wash + “front elevation windows”
-- Gutter clean + windows
+## Decision points
+- If hard water staining is present:
+  - don’t promise removal without separate restoration scope.
 
-## Expectation language (protect the brand)
-Be upfront about what window cleaning cannot fix:
-- etched glass
-- failed seals
-- permanent hard water staining
-- oxidation transfer from frames
+- If oxidation risk is present:
+  - set expectations.
 
-## Customer-friendly truth
-We can clean it.
+## What good looks like
+- Customer knows what’s included.
+- You documented exceptions.
 
-We can’t always restore it.
-
-## Proof Pack + closeout
-- show wins
-- document exceptions
-- make the customer feel taken care of
+## How to prove it (Proof Pack)
+- before/after of representative windows
+- close-ups of exceptions
 
 ## Do this next (assignment)
-- [ ] Write your “exceptions” text template (hard water / oxidation / seals).
-- [ ] Build a 3-tier window package (Good / Better / Best).
+- [ ] Write your minimum window price floor (so you don’t become the “cheap guy”).
+- [ ] Write 2 expectation lines for hard-water and oxidation exceptions.
 
 ## References
 - Proof Pack SOP: `04_sops/proof-pack/proof-pack-sop-v1.md`
-- Terms language: `06_ops/bids-contracts/photo-documentation-language.md`
+- Final Walk checklist: `04_sops/universal/final-walk-checklist-v1.md`
 
 ## Printables
-- Operator Checklist Pack: `03_curriculum/printables/operator-checklist-pack-v1.md`
+- Operator Checklist Pack (truck copy): `03_curriculum/printables/operator-checklist-pack-v1.md`
 
 ## Gear Box (Amazon)
 (Insert the relevant Gear Box module for this lesson here.)
