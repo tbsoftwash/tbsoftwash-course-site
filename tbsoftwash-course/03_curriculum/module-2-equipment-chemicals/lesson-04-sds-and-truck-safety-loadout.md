@@ -37,6 +37,12 @@ Minimum standard:
 ## Truck safety loadout (non-negotiable)
 If you touch chemicals, ladders, or traffic—this gear is part of the job.
 
+### Foreman reminder: sprayer lane discipline
+If you’re using pump-up sprayers, here’s the unsexy truth: they fail. Treat them as semi-disposable.
+
+- Run **dedicated sprayers by lane** (label them; don’t cross-contaminate).
+- Carry **a backup pump-up sprayer**. Downtime kills momentum and sprayers fail at the worst time.
+
 Printable:
 - `03_curriculum/printables/safety-loadout-checklist-v1.md`
 
@@ -49,6 +55,10 @@ Printable:
 - `03_curriculum/printables/spill-and-exposure-response-card-v1.md`
 
 ## Step-by-step: the 2-minute readiness drill
+Downtime kills momentum.
+
+Carry the parts that fix the common failures and stop the bleeding before you lose the day.
+
 1) “Where is the first aid kit?”
 2) “Where is the eyewash?”
 3) “Where are the gloves + eye protection?”
