@@ -40,6 +40,8 @@ If you touch chemicals, ladders, or traffic—this gear is part of the job.
 Printable:
 - `03_curriculum/printables/safety-loadout-checklist-v1.md`
 
+VIDEO: https://www.youtube.com/watch?v=jzLfNry-h7o | Quick disconnect fit trick. Add this to your truck-readiness habits.
+
 ## Spill + exposure response
 You don’t “wing it” when something splashes.
 
