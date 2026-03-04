@@ -24,8 +24,7 @@ This is the “non‑negotiable” safety loadout for Tampa Bay Soft Wash work.
 - [ ] Labels readable
 - [ ] Secondary containment / tote discipline (as applicable)
 - [ ] Dedicated rinse water available
-- [ ] Pump-up sprayers: dedicated sprayer per lane (no cross-contamination)
-- [ ] Backup pump-up sprayer (working)
+- [ ] Backup pump-up sprayer (working) + dedicated sprayers labeled by lane
 
 ## 6) Documentation
 - [ ] Phone charged
