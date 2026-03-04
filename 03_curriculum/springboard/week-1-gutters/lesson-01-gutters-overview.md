@@ -38,6 +38,8 @@ Your goal is **trust + documentation + a clean jobsite**.
 5) Cleanup: beds/patios/driveway.
 6) Proof Pack + completion message.
 
+VIDEO: https://www.youtube.com/watch?v=FAYSWpUfG8k | Gutter cleaning example (short). Focus: containment, downspouts, clean jobsite.
+
 ## Decision points
 - If downspouts don’t verify:
   - document it; don’t pretend it’s fine.

@@ -40,6 +40,8 @@ Most failures are:
 5) Cleanup (no mess)
 6) Proof Pack before/after
 
+VIDEO: https://www.youtube.com/watch?v=FAYSWpUfG8k | Gutter cleaning example (short). Watch for: downspout verification and cleanup.
+
 ## Pricing reality check
 Undercharging isn’t hustle — it’s a liability plan.
 
@@ -49,6 +51,12 @@ Price so you can work safely, show up professionally, and still be here next yea
 ## Decision points
 - If a downspout won’t verify:
   - document it and message it.
+
+- If the customer asks about gutter stains:
+  - explain the difference between cleaning vs brightening (separate service)
+  - show an example so expectations are clear
+
+VIDEO: https://www.youtube.com/watch?v=mOjbUvlr8s8 | Gutter brightening example (short). Use this to set expectations (restoration work).
 
 - If you can’t work safely:
   - reschedule or adjust access. Don’t gamble your health.
