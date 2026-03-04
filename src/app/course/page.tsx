@@ -62,6 +62,11 @@ export default async function CourseIndex() {
             We’re transparent: publishing this also builds trust and authority for Tampa Bay Soft Wash. Use the training either
             way.
           </p>
+          <p className="mt-3 text-sm text-muted-foreground">
+            Just starting out and want momentum fast? Hit the <span className="font-medium text-foreground">Springboard Lessons</span>
+            first — a simple path through entry services so you can get reps, proof, and confidence quickly. Then circle back
+            and deepen your skill with the Core Modules.
+          </p>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
@@ -69,7 +74,7 @@ export default async function CourseIndex() {
             <Link href="/course/core/0/welcome-and-how-to-use">Start Here (Module 0)</Link>
           </Button>
           <Button asChild variant="outline">
-            <Link href="/course/springboard/week-1-gutters/gutters-overview">Start Springboard</Link>
+            <Link href="/course/springboard/week-1-gutters/gutters-overview">Springboard Lessons (Start Here)</Link>
           </Button>
           <Button asChild variant="outline">
             <Link href="/course/printables">Printables</Link>
