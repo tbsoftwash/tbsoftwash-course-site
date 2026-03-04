@@ -48,6 +48,16 @@ FIGURE: mock-fig-101-outlet-taping-sequence
 ## Why this matters
 Sometimes the best closeout decision is a value decision.
 
+### Commercial / property manager note (operator perspective)
+When you’re working for a property manager, your closeout isn’t optional — it’s the product.
+
+They’re buying:
+- reliability
+- documentation
+- fewer complaints
+
+If you want repeat commercial work, treat your Proof Pack like a deliverable, not a bonus.
+
 We don’t run on “the customer is always right.” But we do run on math:
 
 Is a negative Google review really worth refusing a small fix that takes five minutes — even if it wasn’t in the original scope?
