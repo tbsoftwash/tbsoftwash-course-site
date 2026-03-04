@@ -1,11 +1,10 @@
 ---
-title: "Module 1 — Getting Started: Your First 7 Days (Springboard Plan) (Lesson)"
-track: "core"
-slug: "your-first-7-days-springboard"
-module: 1
-lesson: 4
+title: "Week 0 — Springboard: Your First 7 Days (Momentum Plan) (Lesson)"
+track: "springboard"
+slug: "first-7-days-momentum-plan"
+lesson: 1
 ---
-# Module 1 — Getting Started: Your First 7 Days (Springboard Plan) (Lesson)
+# Week 0 — Springboard: Your First 7 Days (Momentum Plan) (Lesson)
 
 You don’t need everything to start.
 
@@ -33,7 +32,7 @@ This 7-day plan is a simple momentum builder: one SOP, one proof pack, one check
 - Review mistakes and tighten your checklists.
 
 ## References
-- Springboard track: `03_curriculum/springboard/`
+- Springboard Lessons: `03_curriculum/springboard/`
 - Printables: `03_curriculum/printables/operator-checklist-pack-v1.md`
 ## Do this next (assignment)
 - [ ] Run this lesson on a real job or a mock walkaround.
