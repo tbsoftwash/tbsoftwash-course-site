@@ -27,6 +27,8 @@ When communication is clean, customers feel safe — and they buy more.
 Use Proof Pack completion language:
 - `04_sops/proof-pack/proof-pack-sop-v1.md`
 
+VIDEO: https://www.youtube.com/watch?v=FAYSWpUfG8k | Short example you can reference when explaining what “clean gutters + verified downspouts” means.
+
 ## Review ask timing
 Ask 24–72 hours after completion.
 
