@@ -6,14 +6,10 @@ lesson: 1
 ---
 # Week 1 — Gutters: The Trust-Builder Service (Lesson)
 
-## Who this is for
-Operators who want a fast-start service that:
-- sells easily
-- has low equipment cost
-- creates repeat customers
-- opens the door to roof/house/windows bundles
+## What you’re doing today
+You’re learning why gutters are one of the best “first services” in this trade — and how to run it like a premium company.
 
-## Why gutters work
+## Why this matters
 Gutters are visible, functional, and emotional:
 - customers hate overflow stains
 - they worry about water damage
@@ -21,37 +17,62 @@ Gutters are visible, functional, and emotional:
 
 Your goal isn’t just “debris removal.”
 
-Your goal is: **trust + documentation + a clean jobsite.**
+Your goal is **trust + documentation + a clean jobsite**.
+
+## Tools & materials (minimum viable)
+- Ladder + stabilizer
+- Gloves
+- Blower (optional) + contractor bags / containment
+- A way to verify downspouts (hose / water)
+- Phone camera (Proof Pack)
 
 ## What you sell (clear scope)
-Gutter cleaning = debris removal + downspout flow verification.
+- **Gutter cleaning** = debris removal + downspout flow verification.
+- **Gutter brightening** = restoration/tiger stripe removal (separate service).
 
-Gutter brightening = restoration/tiger stripe removal (separate service).
+## Step-by-step: what “premium gutters” looks like
+1) Walk the home once and identify downspouts + overflow zones.
+2) Stage containment so debris doesn’t become a mess.
+3) Clear the gutter runs.
+4) Verify downspouts (document restrictions).
+5) Cleanup: beds/patios/driveway.
+6) Proof Pack + completion message.
 
-## What success looks like
+## Decision points
+- If downspouts don’t verify:
+  - document it; don’t pretend it’s fine.
+
+- If ladder work feels unsafe:
+  - stop and reset. Don’t “tough it out.”
+
+## Common mistakes + fixes
+- Throwing debris into beds
+  - Fix: containment system.
+- Skipping downspout verification
+  - Fix: treat outlets as a checklist item.
+
+## What good looks like
 - Gutters cleared
 - Downspouts verified flowing (or documented)
 - Yard is clean
 - Proof Pack delivered
 
-## Safety focus
-- Ladder safety and no overreach
-- Don’t rush
+## How to prove it (Proof Pack)
+Minimum shots:
+- before: heavy debris + overflow stains
+- after: clean runs + downspout discharge verification
 
 ## The 3 upsells that fit naturally
 1) Roof soft wash (if roof growth present)
 2) House wash (if walls show organics)
-3) Windows (if they’re already thinking curb appeal)
+3) Windows (curb appeal bundle)
 
-## Go do this
-- SOP: `04_sops/gutters/gutter-cleaning-sop-v2.md`
-- Proof Pack: `04_sops/proof-pack/proof-pack-sop-v1.md`
 ## Do this next (assignment)
-- [ ] Run this lesson on a real job or a mock walkaround.
-- [ ] Capture a Proof Pack for the scenario.
-- [ ] Do the Final Walk.
+- [ ] Walk a home and mark every downspout + overflow zone.
+- [ ] Write your “scope line” for gutters in one sentence.
 
 ## References (SOPs + checklists)
+- Gutter SOP: `04_sops/gutters/gutter-cleaning-sop-v2.md`
 - Proof Pack SOP: `04_sops/proof-pack/proof-pack-sop-v1.md`
 - Final Walk checklist: `04_sops/universal/final-walk-checklist-v1.md`
 
