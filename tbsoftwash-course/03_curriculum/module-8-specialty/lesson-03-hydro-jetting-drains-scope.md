@@ -29,6 +29,8 @@ Source: `01_business_profile/services/hydro-jetting-drains.md`
 VIDEO: https://www.youtube.com/watch?v=Sy1Rg09SiNc | Hydro-jetting example: deck drain unclogging (short). Focus: access points + before/after.
 
 ## Proof
+Drain jetting isn’t a flex. It’s a controlled way to restore flow in a line without guessing. The standard is access, verification, and documentation — not “we blasted it and hoped.”
+
 Document access points and outcomes.
 
 - Proof Pack SOP: `04_sops/proof-pack/proof-pack-sop-v1.md`
