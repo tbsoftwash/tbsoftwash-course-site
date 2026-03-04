@@ -47,6 +47,8 @@ Chemistry + dwell + gentle rinse.
 
 No blasting.
 
+Those black roof streaks aren’t “dirt.” They’re usually living growth that feeds off humidity and shade patterns. Your job is to kill it safely, rinse clean, and leave the roof intact.
+
 ## Decision points (foreman rules)
 - If a roof isn’t safe to walk:
   - don’t walk it. Use a no-walk approach.

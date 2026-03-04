@@ -30,6 +30,8 @@ Your goal is **trust + documentation + a clean jobsite**.
 - **Gutter cleaning** = debris removal + downspout flow verification.
 - **Gutter brightening** = restoration/tiger stripe removal (separate service).
 
+Gutter brightening is restoration, not “a regular wash.” If we can improve it safely we will — but tiger striping and oxidation are their own scope, their own risk, and their own price.
+
 ## Step-by-step: what “premium gutters” looks like
 1) Walk the home once and identify downspouts + overflow zones.
 2) Stage containment so debris doesn’t become a mess.

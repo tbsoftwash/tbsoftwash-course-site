@@ -15,6 +15,8 @@ A clean house wash is simple. A bad diagnosis is expensive.
 ## Why this matters
 The biggest money-loser in house washing is treating **oxidation** like **mildew**.
 
+Soft wash is about results with control: low pressure + the right chemistry + dwell + a gentle rinse. Pressure is a tool — but on the wrong surface it’s a damage multiplier.
+
 That mistake creates:
 - disappointed customers
 - “it didn’t work” reviews
