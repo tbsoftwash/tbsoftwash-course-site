@@ -50,8 +50,25 @@ export default async function CourseIndex() {
           SOP-driven training for premium exterior cleaning — Proof Packs, QA checklists, and systems.
         </p>
 
+        <div className="mt-4 rounded-2xl border bg-background/30 p-4">
+          <h2 className="text-base font-semibold">Why this Academy is free</h2>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Exterior cleaning has a low barrier to entry — which is a gift and a double‑edged sword. Easy entry means heavy
+            competition and a lot of gatekeeping. We built this Academy to set a baseline standard for soft washing and
+            pressure washing: safer methods, repeatable workflows, proof you can stand behind, and closeouts that protect
+            your reputation.
+          </p>
+          <p className="mt-2 text-sm text-muted-foreground">
+            We’re transparent: publishing this also builds trust and authority for Tampa Bay Soft Wash. Use the training either
+            way.
+          </p>
+        </div>
+
         <div className="mt-4 flex flex-wrap gap-2">
           <Button asChild>
+            <Link href="/course/core/0/welcome-and-how-to-use">Start Here (Module 0)</Link>
+          </Button>
+          <Button asChild variant="outline">
             <Link href="/course/springboard/week-1-gutters/gutters-overview">Start Springboard</Link>
           </Button>
           <Button asChild variant="outline">
