@@ -27,7 +27,7 @@ Folder: `03_curriculum/module-1-getting-started/`
 - Module 1 — Getting Started: Standards + Non‑Negotiables (Lesson) — `03_curriculum/module-1-getting-started/lesson-01-standards-and-non-negotiables.md`
 - Module 1 — Getting Started: Communication Timeline (Lesson) — `03_curriculum/module-1-getting-started/lesson-02-communication-timeline.md`
 - Module 1 — Getting Started: Proof Pack + Final Walk (Lesson) — `03_curriculum/module-1-getting-started/lesson-03-proof-pack-and-final-walk.md`
-- Module 1 — Getting Started: Your First 7 Days (Springboard Plan) (Lesson) — `03_curriculum/module-1-getting-started/lesson-04-your-first-7-days-springboard.md`
+- Week 0 — Springboard: Your First 7 Days (Momentum Plan) (Lesson) — `03_curriculum/springboard/week-0-first-7-days/lesson-01-first-7-days-springboard-plan.md`
 - Module 1 — Getting Started: File + Folder Discipline (Lesson) — `03_curriculum/module-1-getting-started/lesson-05-file-and-folder-discipline.md`
 
 ### Module 10 Marketing
