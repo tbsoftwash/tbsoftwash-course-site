@@ -27,7 +27,11 @@ function sortLessons(a: LessonMeta, b: LessonMeta) {
 }
 
 export function getNeighbors(key: LessonKey): { prev?: Neighbor; next?: Neighbor } {
-  const lessons = listLessons().sort(sortLessons);
+  // Keep navigation within the current track.
+  // (Cross-track neighbors can create confusing jumps and bad hrefs.)
+  const lessons = listLessons()
+    .filter((l) => l.track === key.track)
+    .sort(sortLessons);
 
   const idx = lessons.findIndex((l) => {
     if (l.track !== key.track) return false;
