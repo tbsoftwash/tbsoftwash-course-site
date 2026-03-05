@@ -17,6 +17,9 @@ We do **not** pressure wash roofs.
 
 That isn’t a preference. It’s a safety and damage-prevention standard.
 
+If a customer says “the last guy pressure washed it,” that doesn’t change our rule.
+We don’t risk damaging a roof to win an argument.
+
 ## Why this matters
 Roof work is where a small mistake becomes a big bill.
 
@@ -55,8 +58,22 @@ Those black roof streaks aren’t “dirt.” They’re usually living growth th
 - If a roof isn’t safe to walk:
   - don’t walk it. Use a no-walk approach.
 
-- If wind is pushing toward plants/windows:
-  - slow down and build a protection plan first.
+Hard rule: if you’re asking yourself whether it’s safe to walk, the answer is **no**.
+
+- If the roof is biologically loaded:
+  - assume it’s slick when wet until the growth is neutralized
+  - move like you’re on ice, or don’t go up at all
+
+- If wind is pushing toward plants/windows/neighbor property:
+  - wind is a stop condition. Pause and wait.
+
+- If you see tile (especially ridge tiles / mortar caps):
+  - photograph anything questionable before you touch it
+  - work around it and document limitations
+
+- If you’re near solar panels:
+  - avoid direct contact
+  - keep them cool and rinsed while you work around them
 
 - If you’re unsure about paint/coatings nearby:
   - test first. Overspray/runoff can still create paint problems.
@@ -75,7 +92,12 @@ Those black roof streaks aren’t “dirt.” They’re usually living growth th
 - Customer can repeat back the process in one sentence.
 - Plants look the same after the job as before.
 - Roof looks even (no blast marks).
+- Customer understands results develop over time.
 - Proof Pack is complete.
+
+## The two things you must say before every roof job
+1) **“Full results take a few good rains to clear the dead growth. The treatment keeps working after we leave.”**
+2) **(If heavy lichen/moss) “You may see some shadowing after the growth clears. That’s the shingle carrying years of growth history — not something we missed.”**
 
 ## How to prove it (Proof Pack)
 Minimum shots:
