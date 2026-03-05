@@ -6,6 +6,23 @@ Folder: `08_illustrations/photos/`
 
 ---
 
+## High-visibility placeholders (so missing assets scream)
+
+Use these when you’re drafting a lesson and don’t have the real job photo yet.
+They’re intentionally loud so placeholders are obvious in the rendered lesson.
+
+Files:
+- `PLACEHOLDER__template.jpg`
+- `PLACEHOLDER__roof.jpg`
+- `PLACEHOLDER__house.jpg`
+- `PLACEHOLDER__flatwork.jpg`
+- `PLACEHOLDER__safety.jpg`
+
+Authoring example:
+- `PHOTO: PLACEHOLDER__roof.jpg | Replace with a real roof proof photo.`
+
+---
+
 ## Ready-to-use images (curated)
 
 ### 1) Roof (After) — clean tile result
