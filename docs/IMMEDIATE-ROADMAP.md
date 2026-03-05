@@ -26,7 +26,7 @@ Status: ✅ Implemented in code; verify Vercel deployment + cache propagation.
 
 ---
 
-## 1) Safety policy vs “recipe-level” details (liability wall)
+## 1) Safety policy vs "recipe-level" details (liability wall)
 
 **Critique:** Without exact chemical ratios, an operator course may feel incomplete.
 
@@ -37,7 +37,7 @@ Status: ✅ Implemented in code; verify Vercel deployment + cache propagation.
 
 **Notes / open questions (for later):**
 - We currently intentionally avoid publishing exact recipe-level ratios publicly.
-- Decide: do we create a “Recipe Vault” lane with an acknowledgement wall (local storage gated in Phase 1), and keep the main lessons public-safe?
+- Decide: do we create a "Recipe Vault" lane with an acknowledgement wall (local storage gated in Phase 1), and keep the main lessons public-safe?
 
 Status: Planned / decision pending.
 
@@ -67,7 +67,7 @@ Status: Planned (Phase 1+).
 
 **Notes:**
 - Current Phase 1 intentionally ships with local progress + export/import.
-- Future: add honest messaging (“saved on this device; sync later”).
+- Future: add honest messaging ("saved on this device; sync later").
 
 Status: Planned (Phase 2).
 
@@ -95,20 +95,72 @@ Status: Planned (Phase 2).
 
 ---
 
+## 6) Second-pass review (Claude) - immediate product credibility fixes
+
+Source: grounded review after reading real lessons (Module 0, House Wash workflow, Springboard Week 0).
+
+### 6.1 Fix broken/empty "References (SOPs + checklists)" + "Printables" sections
+**Issue:** lessons contain sections that promise SOP/checklist links but render as blank bullets or stubs.
+
+**Why it matters:** this is the #1 credibility hit: operators expect the linked QA checklist/SOP and see nothing.
+
+**Deliverable:**
+- Ensure every lesson either:
+  - links to real SOP/checklist files that exist, or
+  - removes the section until it's ready.
+
+### 6.2 Remove or fill visible template placeholders
+**Issue:** literal placeholder text appears:
+- "(Insert the relevant Gear Box module for this lesson here.)"
+
+**Deliverable:**
+- Remove placeholders from public lessons, or
+- replace with real Gear Box content modules.
+
+### 6.3 Fix Springboard Week 0 prev/next navigation bug
+**Issue:** Week 0 "Prev" links to `/course/core/undefined/welcome-and-how-to-use`.
+
+**Deliverable:**
+- Correct navigation mapping for Springboard lessons and Module 0.
+
+### 6.4 Deepen Roof workflow lesson (process detail, not recipes)
+**Issue:** Roof workflow is noticeably thinner than House workflow.
+
+**Deliverable:**
+- Expand roof workflow "if X, do Y" branches:
+  - application approach (angle/distance/sequence)
+  - dwell monitoring and "don't let it dry" discipline
+  - glass/metal/plant protection specifics
+  - closeout/QA proof expectations
+
+Status: Planned (Phase 1 content + UX pass).
+
+---
+
 ## Execution order (proposed)
 
 1) **SEO plumbing**: robots + sitemap + Search Console verification
-2) **Interactive operator resources**: checklists, proof-pack generator, non-negotiables card
-3) **Recipe Vault decision**: acknowledgement wall + content policy
-4) **Offline/PWA**: cache core resources + assets
-5) **Auth + analytics**: cross-device progress + insight into lesson dropoff
+2) **Credibility fixes**: fix broken SOP/printable references + remove placeholders + fix Week 0 nav
+3) **Content depth pass**: deepen roof workflow (process detail) + continue foreman-style expansions
+4) **Interactive operator resources**: checklists, proof-pack generator, non-negotiables card
+5) **Recipe Vault decision**: acknowledgement wall + content policy
+6) **Offline/PWA**: cache core resources + assets
+7) **Auth + analytics**: cross-device progress + insight into lesson dropoff
 
 ---
 
 ## Source critique (verbatim summary)
 
+### External AI critique (first pass, no full context)
 - “Safety policy is a curriculum killer” (wants recipes behind waiver)
 - “Custom Next.js misses LMS features (quizzes/community/video tracking)”
 - “LocalStorage progress unacceptable for professional app”
 - “SOP markdown download not field-usable; make interactive mobile checklists”
 - “Offline problem; convert to PWA with caching”
+
+### Claude grounded critique (after reading lessons)
+- Voice and Module 0 are strong; House wash workflow structure is best-in-course.
+- Biggest credibility hit: broken/empty SOP + printable reference sections.
+- Visible template placeholders (“Gear Box module here”).
+- Broken nav on Springboard Week 0 (Prev → undefined).
+- Roof workflow needs deeper process detail (not recipes).
