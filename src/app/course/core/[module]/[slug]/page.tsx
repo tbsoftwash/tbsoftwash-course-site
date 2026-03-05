@@ -86,7 +86,11 @@ export default async function LessonPage({
   // Inline occurrences like: "Source: <code>...md</code>"
   contentHtml = contentHtml.replace(
     /<code>((?:04_sops|02_chemicals|03_curriculum\/printables|06_ops|05_sales_marketing|01_business_profile)\/[^<\s]+\.md)<\/code>/g,
-    (_m, mdPath) => `<span data-md=\"${String(mdPath).trim()}\"></span>`
+    (_m, mdPath) => {
+      const p = String(mdPath).trim();
+      // Keep visible text so lists don’t render as empty bullets before hydration.
+      return `<span data-md=\"${p}\">${p}</span>`;
+    }
   );
 
   // 2) Markdown links to .md files
@@ -100,7 +104,7 @@ export default async function LessonPage({
     /(04_sops\/[^\s<]+\.md|02_chemicals\/[^\s<]+\.md|03_curriculum\/printables\/[^\s<]+\.md|06_ops\/[^\s<]+\.md|05_sales_marketing\/[^\s<]+\.md|01_business_profile\/[^\s<]+\.md)/g;
 
   contentHtml = contentHtml.replace(/>([^<]+)</g, (full, text) => {
-    const replaced = String(text).replace(mdPathRegex, (m) => `<span data-md="${m}"></span>`);
+    const replaced = String(text).replace(mdPathRegex, (m) => `<span data-md="${m}">${m}</span>`);
     return `>${replaced}<`;
   });
 
