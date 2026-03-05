@@ -2,8 +2,7 @@ import Link from "next/link";
 import { listLessons, type LessonMeta } from "@/lib/course";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { CourseDashboard } from "@/components/CourseDashboard";
-import { CourseAccordion } from "@/components/CourseAccordion";
+import { CourseIndexClient } from "@/components/CourseIndexClient";
 
 import { getCoreModuleTitles } from "@/lib/moduleTitles";
 
@@ -82,19 +81,12 @@ export default async function CourseIndex() {
         </div>
       </div>
 
-      <div className="grid gap-6">
-        <CourseDashboard lessons={lessons} moduleTitles={moduleTitles} />
-        <CourseAccordion
-          title="Core Modules (accordion reader)"
-          groups={coreGroups}
-          hrefTemplate="/course/core/{module}/{slug}"
-        />
-        <CourseAccordion
-          title="Springboard (accordion reader)"
-          groups={springGroups}
-          hrefTemplate="/course/springboard/{week}/{slug}"
-        />
-      </div>
+      <CourseIndexClient
+        lessons={lessons}
+        coreGroups={coreGroups}
+        springGroups={springGroups}
+        moduleTitles={moduleTitles}
+      />
     </main>
   );
 }

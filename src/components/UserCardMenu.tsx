@@ -4,6 +4,7 @@ import * as React from "react";
 
 import { ModeToggle } from "@/components/ModeToggle";
 import { DiagramStyleToggle } from "@/components/DiagramStyleToggle";
+import { CourseViewToggle } from "@/components/CourseViewToggle";
 import { PreviewModeToggle } from "@/components/PreviewModeToggle";
 import { clearProgress } from "@/lib/progress";
 import { downloadExport, applyImportPayload } from "@/lib/progressExport";
@@ -90,7 +91,11 @@ export function UserCardMenu({ collapsed }: { collapsed?: boolean }) {
                 <DiagramStyleToggle />
               </div>
               <div>
-                <div className="mb-1 text-xs text-muted-foreground">Accordion reader</div>
+                <div className="mb-1 text-xs text-muted-foreground">Course view</div>
+                <CourseViewToggle />
+              </div>
+              <div>
+                <div className="mb-1 text-xs text-muted-foreground">Reader previews</div>
                 <PreviewModeToggle />
               </div>
               <button
@@ -204,7 +209,11 @@ export function UserCardMenu({ collapsed }: { collapsed?: boolean }) {
               <DiagramStyleToggle />
             </div>
             <div>
-              <div className="mb-1 text-xs text-muted-foreground">Accordion reader</div>
+              <div className="mb-1 text-xs text-muted-foreground">Course view</div>
+              <CourseViewToggle />
+            </div>
+            <div>
+              <div className="mb-1 text-xs text-muted-foreground">Reader previews</div>
               <PreviewModeToggle />
             </div>
             <div className="grid gap-2 sm:grid-cols-2">

@@ -7,6 +7,7 @@ import { usePathname, useRouter } from "next/navigation";
 import type { LessonMeta } from "@/lib/course";
 import { DiagramStyleToggle } from "@/components/DiagramStyleToggle";
 import { PreviewModeToggle } from "@/components/PreviewModeToggle";
+import { CourseViewToggle } from "@/components/CourseViewToggle";
 import { SearchInput } from "@/components/SearchInput";
 import { UserCardMenu } from "@/components/UserCardMenu";
 import { cn } from "@/lib/utils";
