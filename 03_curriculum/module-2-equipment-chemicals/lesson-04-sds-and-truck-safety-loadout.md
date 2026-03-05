@@ -103,6 +103,6 @@ Add one “safety + readiness” photo once per week:
 - Final Walk checklist: `04_sops/universal/final-walk-checklist-v1.md`
 
 ## Gear Box (Amazon)
-(Insert the relevant Gear Box module for this lesson here.)
+Gear Box links (Amazon): Coming soon.
 
 Disclosure: As an Amazon Associate, we earn from qualifying purchases.
