@@ -74,6 +74,6 @@ VIDEO: https://www.youtube.com/watch?v=GNkP5djASNc | Water-fed pole example (rea
 - Operator Checklist Pack (truck copy): `03_curriculum/printables/operator-checklist-pack-v1.md`
 
 ## Gear Box (Amazon)
-(Insert the relevant Gear Box module for this lesson here.)
+Gear Box links (Amazon): Coming soon.
 
 Disclosure: As an Amazon Associate, we earn from qualifying purchases.

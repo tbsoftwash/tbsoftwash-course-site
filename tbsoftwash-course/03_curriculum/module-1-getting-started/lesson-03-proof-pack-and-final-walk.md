@@ -38,6 +38,6 @@ If it isn’t documented, it didn’t happen.
 - Operator Checklist Pack (truck copy): `03_curriculum/printables/operator-checklist-pack-v1.md`
 
 ## Gear Box (Amazon)
-(Insert the relevant Gear Box module for this lesson here.)
+Gear Box links (Amazon): Coming soon.
 
 Disclosure: As an Amazon Associate, we earn from qualifying purchases.
