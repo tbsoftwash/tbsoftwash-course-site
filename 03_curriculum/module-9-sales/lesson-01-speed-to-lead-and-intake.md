@@ -45,11 +45,6 @@ Use:
 Let customers feel your professionalism before the truck arrives:
 - “We’ll do a quick walkthrough + photos, then protect landscaping and begin.”
 
-## Gear Box
-Add Gear Box blocks at end of lesson.
-Policy: Option A links only or `AMZ_TODO:<slug>`.
-
-Disclosure: As an Amazon Associate, we earn from qualifying purchases.
 ## Do this next (assignment)
 - [ ] Run this lesson on a real job or a mock walkaround.
 - [ ] Capture a Proof Pack for the scenario.
