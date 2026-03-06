@@ -1,4 +1,4 @@
-# RO/DI System (Amazon Build Guide) — Draft Skeleton
+# RO/DI System (Amazon Build Guide) — Draft (Internal)
 
 ## Goal
 Build a simple RO/DI purification system for WFP window cleaning using Amazon-available parts.
