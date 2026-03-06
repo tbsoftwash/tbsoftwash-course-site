@@ -7,7 +7,10 @@ lesson: 1
 ---
 # Module 5 — Windows: Method Selection + Safety (Lesson)
 
-This trade is hard work, but it’s not complicated forever. We’re going to keep it simple: protect first, run a repeatable process, and document everything. You don’t need perfect gear on Day 1 — you need good habits and a clear next step. If you’re unsure, you stop, test, and reset expectations before you touch the surface.
+Windows are reputation work.
+
+A roof can look great from the street. A bad window job looks bad from the kitchen.
+This module gives you a simple method-selection rule so you don’t guess — and you don’t create drips, haze, or frame damage that kills trust.
 
 ## What you’re doing today
 You’re learning how to choose the right window method **without guessing** — and how to keep windows, frames, screens, and customers safe.

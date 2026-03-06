@@ -6,7 +6,9 @@ lesson: 1
 ---
 # Week 1 — Gutters: The Trust-Builder Service (Lesson)
 
-This trade is hard work, but it’s not complicated forever. We’re going to keep it simple: protect first, run a repeatable process, and document everything. You don’t need perfect gear on Day 1 — you need good habits and a clear next step. If you’re unsure, you stop, test, and reset expectations before you touch the surface.
+If you’re new and you want momentum fast, gutters are one of the smartest first services you can sell.
+
+It’s visible. It’s functional. It’s emotional. And you can run it like a premium company with basic tools — if you follow a repeatable workflow and document the result.
 
 ## What you’re doing today
 You’re learning why gutters are one of the best “first services” in this trade — and how to run it like a premium company.
