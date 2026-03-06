@@ -73,14 +73,35 @@ Hard rule: if you’re asking yourself whether it’s safe to walk, the answer i
 Take your before photos now (front wide, worst slope, notable problem areas). This starts your Proof Pack and protects you if a pre-existing issue gets blamed on you later.
 
 ## Plant protection (before anything else)
-Roof runoff travels down every slope, through every gutter, out every downspout, and lands at the foundation.
+Roof runoff travels down every slope, through every gutter, out every downspout, and lands at the foundation. Whatever is planted there is in the path.
 
 - Pre-wet everything in the runoff path **before** solution touches the roof.
 - Keep beds wet during dwell.
 - If you can temporarily redirect a downspout extension away from a sensitive bed, do it (and put it back when you’re done).
 - If runoff is going to pool aggressively in a valley/downspout area, stage a capture plan (bucket/bin) *when it’s appropriate*.
 
+### Covering plants with painter’s plastic (when you need it)
+We will cover bushes/flowers — and in “no gutter” situations, even grass — with painter’s plastic when the risk is high.
+
+Two rules:
+- Plastic is a **short-duration tool**, not a permanent blanket.
+- In direct sun, plants can “cook” under plastic. Don’t leave them sealed up and walk away.
+
 During dwell, plant management is your primary job.
+
+### Gutter bags + vent bags (small tools that make you look premium)
+- **Gutter bags** at downspout exits capture runoff so it doesn’t dump straight into landscaping.
+- **Vent cover bags** (small versions of gutter bags) keep roof solution off lead vent pipes.
+  - If lead vents get hit, they can flash-rust and turn orange.
+  - It doesn’t always “hurt” anything, but it looks sloppy. We avoid it.
+
+### No gutters = different strategy
+With gutters, you don’t have to cover as many plants with plastic.
+
+Without gutters:
+- assume runoff will sheet straight off the drip edge
+- cover more aggressively (including grass when needed)
+- dilute runoff on the plastic and manage it back toward the foundation instead of letting it roam
 
 ## Step-by-step workflow (foreman sequence)
 1) **Scope + roof type + hazards**
@@ -92,6 +113,7 @@ During dwell, plant management is your primary job.
    - Start at the bottom of the slope and work up.
    - Why: starting at the ridge can let solution run ahead of coverage and dry unevenly in Florida heat.
    - Overlap passes. Consistent coverage beats hot spots.
+   - **Tile detail:** as you work, make sure you hit the lips/ledges. On many tile roofs the bottom edge/face of the lowest tile (right above the gutter/drip edge) needs attention — and that piece often gets handled from the ground.
    - Wind is a stop condition.
 
 Real story: I cleaned a roof on a windy day and solution drifted into a neighbor’s flower bed. We apologized and paid to replace the flowers — and they were still upset. That job taught me something I treat as a hard rule now: **if I can’t control my solution, I don’t work.**
@@ -116,6 +138,10 @@ On roofs, the best setup is two people when possible: one applying with control,
 - If the pitch is too steep to walk safely:
   - ladder-at-the-eave or ground application only
   - document the approach in Proof Pack notes (protects you if coverage questions come up)
+
+- If trees are hanging over the roof:
+  - plan time to blow off leaves/debris before you start
+  - price it in (or upsell gutter clearing if it’s needed)
 
 - If you see loose tile or mortar caps:
   - photograph them before you touch anything
@@ -160,6 +186,8 @@ On roofs, the best setup is two people when possible: one applying with control,
 ## What good looks like
 PHOTO: roof_tile_after_clean.jpg | Roof “after” standard (tile): clean, even, no blast marks, no broken mortar.
 
+PHOTO: PLACEHOLDER__roof.jpg | Placeholder: add your plant-protection photos (plastic cover, gutter bags, vent bags).
+
 - Even finish, no streaking
 - Plants healthy
 - Clean closeout message + proof
@@ -174,8 +202,24 @@ Minimum shots:
 Use the one-page checklist:
 - `04_sops/roofs/roof-soft-wash-qa-checklist-v1.md`
 
+## Pricing reality (what actually changes the job)
+Roof pricing isn’t just “square footage.” The factors that move price are:
+- pitch (walkable vs steep)
+- roof type (shingle vs tile)
+- gutters present vs no gutters
+- biological load / neglect level
+- landscaping density + sensitivity
+- trees hanging over the roof (debris removal time)
+
+### Simple upsell script (trees → gutters)
+> “Ok, I’ve got the quote for your roof — it comes to $X. Also, I noticed a lot of trees near your house… have your gutters been cleaned out?”
+
+If they mention gutter guards:
+> “Great — just as a warning, we still recommend having gutter guards cleared off.”
+
 ## Do this next (assignment)
 - [ ] Run this workflow on a mock roof scenario and write your plant protection plan.
+- [ ] Identify every runoff exit point (gutter/downspout/drip edge) and write the control plan.
 - [ ] Capture a Proof Pack set (before/after + notes).
 
 ## References (SOPs + checklists)
