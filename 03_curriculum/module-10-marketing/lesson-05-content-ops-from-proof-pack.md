@@ -30,11 +30,6 @@ Then repurpose.
 - Proof Pack SOP: `04_sops/proof-pack/proof-pack-sop-v1.md`
 - Voice of Customer: `05_sales_marketing/reviews-voice-of-customer.md`
 
-## Gear Box (Amazon)
-If you show gear publicly, do it with end-of-lesson Gear Boxes.
-Option A links only.
-
-Disclosure: As an Amazon Associate, we earn from qualifying purchases.
 ## Do this next (assignment)
 - [ ] Run this lesson on a real job or a mock walkaround.
 - [ ] Capture a Proof Pack for the scenario.

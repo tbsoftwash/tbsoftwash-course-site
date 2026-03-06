@@ -43,8 +43,6 @@ Source: `01_business_profile/pricing-notes.md`
 ## Tools
 - Scope checklist: `06_ops/bids-contracts/job-scope-checklist.md`
 
-## Gear Box
-(End-of-lesson Gear Box.)
 ## Do this next (assignment)
 - [ ] Run this lesson on a real job or a mock walkaround.
 - [ ] Capture a Proof Pack for the scenario.

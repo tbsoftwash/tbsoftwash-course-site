@@ -36,8 +36,6 @@ Attach or link:
 ## Terms
 - `06_ops/bids-contracts/terms-and-conditions-template.md`
 
-## Gear Box
-(End-of-lesson Gear Box.)
 ## Do this next (assignment)
 - [ ] Run this lesson on a real job or a mock walkaround.
 - [ ] Capture a Proof Pack for the scenario.

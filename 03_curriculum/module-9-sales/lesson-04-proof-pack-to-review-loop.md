@@ -25,8 +25,6 @@ Reviews keep you from racing to the bottom.
 ## The rule
 If it isn’t documented, it didn’t happen.
 
-## Gear Box
-(End-of-lesson Gear Box.)
 ## Do this next (assignment)
 - [ ] Run this lesson on a real job or a mock walkaround.
 - [ ] Capture a Proof Pack for the scenario.
