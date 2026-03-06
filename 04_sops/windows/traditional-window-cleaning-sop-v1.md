@@ -31,6 +31,6 @@
 - WFP exterior maintenance plan
 
 ## Gear Box (Amazon)
-(See master library: `tbsoftwash-course/05_sales_marketing/affiliate/gearbox-library.md` → “Traditional Windows (Springboard)” + Universal PPE/Protection.)
+Gear Box links (Amazon): Coming soon.
 
 **Disclosure:** As an Amazon Associate, we earn from qualifying purchases.
