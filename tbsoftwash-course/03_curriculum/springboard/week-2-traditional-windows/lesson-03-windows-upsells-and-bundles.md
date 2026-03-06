@@ -19,12 +19,6 @@ WFP/RODI lets you:
 - speed up recurring routes
 - sell higher-ticket “maintenance” packages
 
-## Gear Box (Amazon)
-Add Gear Box blocks at the end of the lesson.
-
-Policy: Option A links only; otherwise use `AMZ_TODO:<slug>` placeholders.
-
-Disclosure: As an Amazon Associate, we earn from qualifying purchases.
 ## Do this next (assignment)
 - [ ] Run this lesson on a real job or a mock walkaround.
 - [ ] Capture a Proof Pack for the scenario.
