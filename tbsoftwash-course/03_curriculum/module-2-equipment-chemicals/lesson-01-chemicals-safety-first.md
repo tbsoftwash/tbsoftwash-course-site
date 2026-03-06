@@ -7,7 +7,9 @@ lesson: 1
 ---
 # Module 2 — Equipment & Chemicals: Safety First (Lesson)
 
-This trade is hard work, but it’s not complicated forever. We’re going to keep it simple: protect first, run a repeatable process, and document everything. You don’t need perfect gear on Day 1 — you need good habits and a clear next step. If you’re unsure, you stop, test, and reset expectations before you touch the surface.
+Chemicals don’t make you a pro — they make you dangerous if you don’t respect them.
+
+This module is about building a calm, repeatable way to handle the daily realities: labeling, PPE, SDS discipline, testing, and a simple “lane” mindset so you don’t cross-contaminate and you don’t gamble on somebody’s property.
 
 ## What you’re doing today
 You’re setting your baseline for chemicals and equipment: **safe handling, testing discipline, and a simple toolkit**.

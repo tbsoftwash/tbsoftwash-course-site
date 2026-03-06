@@ -7,7 +7,9 @@ lesson: 1
 ---
 # Module 7 — Flatwork: Stripe-Free Results (Lesson)
 
-This trade is hard work, but it’s not complicated forever. We’re going to keep it simple: protect first, run a repeatable process, and document everything. You don’t need perfect gear on Day 1 — you need good habits and a clear next step. If you’re unsure, you stop, test, and reset expectations before you touch the surface.
+Flatwork is the fastest way to earn trust because the before/after is obvious — and it’s also the fastest way to look like an amateur if you leave stripes and dirty edges.
+
+This module is about consistency: overlap, pace, edges, and leaving the concrete clean without etching.
 
 ## What you’re doing today
 You’re learning how to clean flatwork **evenly** — stripe-free — without etching and without leaving the edges dirty.
