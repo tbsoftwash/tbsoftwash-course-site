@@ -71,6 +71,6 @@ Water spigot → carbon filter → RO membrane (stage 1) → rejection valve (wa
 - `04_sops/windows/wfp-rodi-upgrade-path.md`
 
 ## Gear Box (Amazon)
-Use Option A: only links from the sheet. If missing SKUs, use placeholders.
+Use your approved link sheet for any affiliate links. If something isn’t in your sheet yet, leave it out for now.
 
 **Disclosure:** As an Amazon Associate, we earn from qualifying purchases.

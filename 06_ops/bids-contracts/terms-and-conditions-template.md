@@ -1,4 +1,4 @@
-# Terms & Conditions Template (Draft)
+# Terms & Conditions Template (Working)
 
 > Not legal advice. Finalize with counsel for Florida.
 
