@@ -10,6 +10,12 @@ lesson: 1
 ## The Tampa Bay Soft Wash standard
 We are not the cheapest.
 
+Our premium is our reputation.
+
+We sell ourselves as people who know how to get the job done while **respecting** the property — and not damaging it.
+Insurance matters (and we carry what we need), but most customers don’t buy insurance.
+They buy **process** and **attention to detail**.
+
 We are the cleanest process.
 
 And here’s the part most beginners miss: this trade is easy to overcomplicate on Day 1.

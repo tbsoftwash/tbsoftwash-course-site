@@ -23,6 +23,10 @@ Job → Proof Pack → Review ask → Review response → GBP post → Website g
 
 ## The rule
 If it isn’t documented, it didn’t happen.
+
+## Why proof matters when things go sideways
+I’ve had Proof Pack documentation give me everything I needed to defend my side of a dispute.
+Sometimes insurance still settles because they don’t want the fight — but without documentation you don’t even get to have the argument.
 ## Do this next (assignment)
 - [ ] Run this lesson on a real job or a mock walkaround.
 - [ ] Capture a Proof Pack for the scenario.

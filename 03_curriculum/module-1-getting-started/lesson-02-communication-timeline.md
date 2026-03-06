@@ -12,6 +12,10 @@ Premium pricing requires premium communication.
 
 Silence loses trust.
 
+This is the part rookies miss: a lot of “skill” in this trade is just saying the right thing at the right time.
+When you do it right, you can schedule around family events, set your own hours, and run your life.
+When you do it wrong, you spend your nights putting out fires.
+
 ## The timeline
 Use the SOP:
 - `05_sales_marketing/communication-timeline-sop.md`

@@ -99,6 +99,8 @@ VIDEO: https://www.youtube.com/watch?v=onn2hosJwY8 | House wash workflow with 12
 - Leaving residue on windows/fixtures
   - Fix: rinse glass/fixtures early and often; don’t let solution dry on glass.
 
+Foreman habit: rinse the windows over and over — and when you think they’re rinsed, rinse them one final time.
+
 ### Mud nest stains (dirt dobber / mud wasp)
 Often removable with a gentle spot-clean approach.
 

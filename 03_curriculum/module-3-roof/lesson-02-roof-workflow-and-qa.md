@@ -93,6 +93,10 @@ During dwell, plant management is your primary job.
    - Why: starting at the ridge can let solution run ahead of coverage and dry unevenly in Florida heat.
    - Overlap passes. Consistent coverage beats hot spots.
    - Wind is a stop condition.
+
+Real story: I cleaned a roof on a windy day and solution drifted into a neighbor’s flower bed. We apologized and paid to replace the flowers — and they were still upset. That job taught me something I treat as a hard rule now: **if I can’t control my solution, I don’t work.**
+
+On roofs, the best setup is two people when possible: one applying with control, and one dedicated to plant/watch duty the entire time.
 4) **Dwell + monitoring**
    - don’t rinse early
    - watch for drying on hot sections (re-apply as needed)
@@ -123,6 +127,7 @@ During dwell, plant management is your primary job.
 
 - If wind picks up:
   - pause application. Re-assess. Don’t send it.
+  - if you can’t keep full control, reschedule.
 
 - If you’re near solar panels:
   - avoid direct contact
