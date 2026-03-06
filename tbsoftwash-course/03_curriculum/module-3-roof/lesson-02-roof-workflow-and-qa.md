@@ -109,11 +109,16 @@ Without gutters:
 2) **Plant protection plan**
    - pre-wet and keep plants wet
    - stage runoff control
-3) **Controlled application (bottom-up, then work up)**
-   - Start at the bottom of the slope and work up.
-   - Why: starting at the ridge can let solution run ahead of coverage and dry unevenly in Florida heat.
+
+### House vs Roof direction (don’t mix these)
+- **House wash:** apply bottom-up, rinse top-down (streak prevention rule).
+- **Roof wash:** apply top-down in controlled sections. Your job is runoff control + dwell monitoring.
+
+3) **Controlled application (top-down, in controlled sections)**
+   - Start at the top of the slope and work down.
+   - Why: roof work is about **control and efficiency**. Top-down lets the solution work its way down while you continue your pattern, reducing double-work.
    - Overlap passes. Consistent coverage beats hot spots.
-   - **Tile detail:** as you work, make sure you hit the lips/ledges. On many tile roofs the bottom edge/face of the lowest tile (right above the gutter/drip edge) needs attention — and that piece often gets handled from the ground.
+   - **Tile detail:** as you work, make sure you hit the lips/ledges/faces. On many tile roofs the bottom edge/face of the lowest tile (right above the gutter/drip edge) needs attention — and that piece often gets handled from the ground.
    - Wind is a stop condition.
 
 Real story: I cleaned a roof on a windy day and solution drifted into a neighbor’s flower bed. We apologized and paid to replace the flowers — and they were still upset. That job taught me something I treat as a hard rule now: **if I can’t control my solution, I don’t work.**
