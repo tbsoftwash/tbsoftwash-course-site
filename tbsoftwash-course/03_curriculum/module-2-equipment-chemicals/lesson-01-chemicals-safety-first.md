@@ -52,8 +52,8 @@ If you touch SH, ladders, or traffic — PPE is part of the job.
 
 VIDEO: https://www.youtube.com/watch?v=jzLfNry-h7o | Quick field fix: improving a 3/8" quick disconnect fit (small thing, big time saver).
 
-Gear library:
-- `05_sales_marketing/affiliate/gearbox-library.md`
+Gear note:
+- Gear Boxes (Amazon) are coming soon. For now, focus on PPE + workflow discipline.
 
 ## SDS habit (public-safe)
 Your best “recipe” is the SDS.

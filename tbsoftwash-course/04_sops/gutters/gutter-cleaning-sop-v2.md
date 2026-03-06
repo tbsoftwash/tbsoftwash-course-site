@@ -90,6 +90,6 @@ Follow: `04_sops/proof-pack/proof-pack-sop-v1.md`
 Use: `04_sops/universal/final-walk-checklist-v1.md`
 
 ## Gear Box (Amazon)
-(See master library: `tbsoftwash-course/05_sales_marketing/affiliate/gearbox-library.md` → “Gutters (Springboard)” + Universal PPE/Protection.)
+Gear Box links (Amazon): Coming soon.
 
 **Disclosure:** As an Amazon Associate, we earn from qualifying purchases.
