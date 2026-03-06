@@ -14,7 +14,14 @@ Use this doc to build your script library and your proof captions:
 - `05_sales_marketing/reviews-voice-of-customer.md`
 
 ## Review ask timing
-- ask 24–72 hours after completion
+We typically ask right at the end of the walkaround.
+
+The simplest version:
+> “If you use Google, we would really appreciate a Google review.”
+
+Some customers don’t use Google — that’s fine. If they’re a Facebook person, take the win there.
+
+- ask 24–72 hours after completion (follow-up if needed)
 
 Use:
 - `05_sales_marketing/review-request-and-response-sop.md`

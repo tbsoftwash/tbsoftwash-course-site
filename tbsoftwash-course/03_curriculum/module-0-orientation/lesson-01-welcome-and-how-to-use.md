@@ -18,6 +18,12 @@ Here’s the Tampa Bay Soft Wash standard: **knowledge is power**, and you’re 
 That’s what this Academy is.
 
 ## What this Academy does
+I got introduced to “pressure washing” the same way a lot of people do — by accident.
+
+I was a detailer at a car dealership. I bought a small pressure washer for detailing on the side. That turned into house washes, pool lanais, and downstream/soft-wash style work.
+
+The first time I cleaned a lanai and made **4×** what I used to make working for someone else, it clicked: if you can learn the process and sell it the right way, this trade can give you real control over your life.
+
 This course is built to help you:
 - diagnose surfaces and stains before you spray
 - choose the **least aggressive method that works**
