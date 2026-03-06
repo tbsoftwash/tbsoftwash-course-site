@@ -7,6 +7,10 @@ lesson: 1
 ---
 # Module 6 (Advanced) — Gutters: Brightening vs Cleaning (Lesson)
 
+This module is where you stop treating gutters like a simple add-on and start treating brightening like what it is: **restoration work**.
+
+If you price it like cleaning, you’ll hate your life. If you run it like restoration (risk control + expectations + proof), it becomes a high-margin skill that separates you from the pack.
+
 ## The rule
 VIDEO: https://www.youtube.com/watch?v=mOjbUvlr8s8 | Gutter brightening example (short). Watch for: dwell, agitation, rinse, and expectation setting.
 

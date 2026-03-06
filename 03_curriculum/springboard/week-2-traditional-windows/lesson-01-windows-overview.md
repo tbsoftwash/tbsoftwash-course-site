@@ -6,6 +6,10 @@ lesson: 1
 ---
 # Week 2 — Traditional Windows: Detail + Customer Experience (Lesson)
 
+This is “small detail” work that creates big trust.
+
+One bad drip inside, one dirty track, one towel mark on a sill — and it doesn’t matter how good the house wash looked.
+
 ## Why windows matter
 Window cleaning is where customers decide if you’re “a guy with a wand” or a real company.
 
