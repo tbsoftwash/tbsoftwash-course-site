@@ -17,10 +17,6 @@ A leak-free RO/DI system with a known flow path and a known TDS output.
 - service carbon/membrane/resin based on performance
 - store out of sun; protect from freezing
 
-## Gear Box (Amazon)
-Use Option A links only; otherwise placeholders.
-
-Disclosure: As an Amazon Associate, we earn from qualifying purchases.
 ## Do this next (assignment)
 - [ ] Run this lesson on a real job or a mock walkaround.
 - [ ] Capture a Proof Pack for the scenario.
