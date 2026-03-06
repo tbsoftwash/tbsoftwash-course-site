@@ -7,6 +7,10 @@ lesson: 1
 ---
 # Module 10 — Marketing Engine: Proof *is* the Marketing (Lesson)
 
+If you’re a good operator but nobody can *see* it, the market will price you like a commodity.
+
+This module is how we turn field work into authority: Proof Packs, reviews, posts, and pages — built from real jobs, not “content ideas.”
+
 ## The core idea
 You don’t win because you do better work.
 

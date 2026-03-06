@@ -7,6 +7,11 @@ lesson: 1
 ---
 # Module 9 — Sales: Speed-to-Lead + Intake (Lesson)
 
+Most operators don’t fail because they can’t clean.
+They fail because they can’t keep the phone ringing — and when it rings, they don’t respond fast enough.
+
+This module is your “front desk” training: speed-to-lead, intake discipline, and how to sound professional before you ever touch a surface.
+
 ## The rule
 Leads are melting ice cubes.
 

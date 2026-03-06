@@ -6,6 +6,10 @@ lesson: 1
 ---
 # Week 3 — WFP/RODI: Premium Upgrade (Lesson)
 
+This week is about getting paid for skill instead of getting paid for ladder time.
+
+WFP/RODI done right is faster, safer, and easier to sell as a recurring maintenance plan — but only if you respect the water quality and the workflow.
+
 ## What it is
 Water Fed Pole (WFP) + purified water (RO/DI) for spot-free exterior window cleaning.
 

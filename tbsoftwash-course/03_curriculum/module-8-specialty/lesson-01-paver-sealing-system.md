@@ -7,6 +7,10 @@ lesson: 1
 ---
 # Module 8 — Specialty: Paver Sealing System (Lesson)
 
+Paver sealing is one of the easiest ways to look like a pro — and one of the easiest ways to get blamed when it fails.
+
+This module gives you a system you can defend: prep, cleaning, joint sand, application, cure, and expectations. The order matters because customers remember the failure, not the effort.
+
 ## What you’re really selling
 Not “sealer.”
 

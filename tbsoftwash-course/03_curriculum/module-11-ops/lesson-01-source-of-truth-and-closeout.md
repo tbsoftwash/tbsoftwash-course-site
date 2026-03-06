@@ -7,6 +7,10 @@ lesson: 1
 ---
 # Module 11 — Ops: Source of Truth + Closeout Discipline (Lesson)
 
+If you want premium pricing, you need premium operations.
+
+This module is about doing the unsexy things that keep you paid: logging jobs, documenting exceptions, closing out the same day, and never letting a small issue turn into a bad review.
+
 ## The rule
 If it isn’t logged, it didn’t happen.
 
