@@ -58,8 +58,8 @@ export function listLessons(): LessonMeta[] {
       title: String(data.title),
       track: data.track,
       slug: String(data.slug),
-      module: data.module ? Number(data.module) : undefined,
-      lesson: data.lesson ? Number(data.lesson) : undefined,
+      module: data.module !== undefined && data.module !== null ? Number(data.module) : undefined,
+      lesson: data.lesson !== undefined && data.lesson !== null ? Number(data.lesson) : undefined,
       week,
     });
   }
@@ -104,8 +104,8 @@ export function getLesson(track: string, moduleOrWeek: string, slug: string): Le
       title: String(data.title),
       track: data.track,
       slug: String(data.slug),
-      module: data.module ? Number(data.module) : undefined,
-      lesson: data.lesson ? Number(data.lesson) : undefined,
+      module: data.module !== undefined && data.module !== null ? Number(data.module) : undefined,
+      lesson: data.lesson !== undefined && data.lesson !== null ? Number(data.lesson) : undefined,
       filePath,
       content: parsed.content,
     };
