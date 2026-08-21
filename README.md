@@ -37,7 +37,7 @@ If you see the live site showing an older version, it’s usually because Vercel
 Vercel does not reliably fetch private submodules. We vendor the course repo into this app:
 
 - Vendored path: `tbsoftwash-course-site/tbsoftwash-course/`
-- Source repo remote: `course` → `https://github.com/BrianV1981/tbsoftwash-course.git`
+- Source repo remote: `course` → `https://github.com/tbsoftwash/tbsoftwash-course.git`
 
 ### Updating the vendored course content
 From this repo root:
