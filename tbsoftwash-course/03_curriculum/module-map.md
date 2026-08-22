@@ -89,6 +89,7 @@
   - `03_curriculum/module-8-specialty/lesson-02-graffiti-removal-expectations.md`
   - `03_curriculum/module-8-specialty/lesson-03-hydro-jetting-drains-scope.md`
   - `03_curriculum/module-8-specialty/lesson-04-gutter-brightening-separate-service.md`
+  - `03_curriculum/module-8-specialty/lesson-05-rust-stain-removal.md`
 
 ## Module 9 — Sales, estimating, and customer experience
 - On-site estimate SOP
