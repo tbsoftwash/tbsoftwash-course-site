@@ -1,0 +1,325 @@
+{
+  "tag": "tbsoftwash06-20",
+  "products": {
+    "oxalic_acid": {
+      "asin": "B0147JPQAI",
+      "name": "Oxalic Acid Powder or Granules 99%"
+    },
+    "surfactant_dish_soap": {
+      "asin": "B0040ZODY8",
+      "name": "Dawn Dish Soap (Surfactant)"
+    },
+    "chapin_pump_sprayer": {
+      "asin": "B00295QD96",
+      "name": "Chapin 20075 1-Gallon Pump Sprayer"
+    },
+    "sodium_percarbonate": {
+      "asin": "B00OKNY8ME",
+      "name": "Sodium Percarbonate (5 lb)"
+    },
+    "sodium_hydroxide": {
+      "asin": "B0CWL155PV",
+      "name": "Sodium Hydroxide (Caustic Soda)"
+    },
+    "safety_goggles": {
+      "asin": "B00467C7AE",
+      "name": "3M Splash-Proof Safety Goggles"
+    },
+    "nitrile_gloves": {
+      "asin": "B07ZRM6SZN",
+      "name": "LANON Chemical-Resistant Nitrile Gloves"
+    },
+    "respirator_half_face": {
+      "asin": "B007JZ1N00",
+      "name": "3M Half-Face Respirator"
+    },
+    "vapor_cartridge": {
+      "asin": "B00AEFCKKY",
+      "name": "3M Organic Vapor/Acid Gas Cartridges"
+    },
+    "baking_soda": {
+      "asin": "B000N3BBW0",
+      "name": "Arm & Hammer Baking Soda (5 lb)"
+    },
+    "spray_bottle": {
+      "asin": "B074PTQZRP",
+      "name": "Chemical-Resistant Spray Bottle"
+    },
+    "ph_test_strips": {
+      "asin": "B00X9D4JS4",
+      "name": "0-14 pH Test Strips"
+    },
+    "acid_magic": {
+      "asin": "B000KKQ8LA",
+      "name": "Acid Magic"
+    },
+    "flexzilla_hose": {
+      "asin": "B0045LVL4I",
+      "name": "Flexzilla Hose"
+    },
+    "zero_g_hose": {
+      "asin": "B014MAD99Q",
+      "name": "Zero-G Hose"
+    },
+    "downstream_injector": {
+      "asin": "B07S478CGH",
+      "name": "Downstream Chemical Injector"
+    },
+    "x_jet": {
+      "asin": "B071RR8M91",
+      "name": "X-Jet M5"
+    },
+    "kuriyama_hose": {
+      "asin": "B009TC50KC",
+      "name": "Kuriyama Hose"
+    },
+    "rubber_boots_hisea": {
+      "asin": "B08CXS2W6L",
+      "name": "HISEA Rubber Boots"
+    },
+    "rain_suit_frogg_toggs": {
+      "asin": "B007X5Z69I",
+      "name": "FROGG TOGGS Rain Suit"
+    },
+    "pressure_washer_hose_yamatic": {
+      "asin": "B08CK9T7QZ",
+      "name": "YAMATIC Non Marking 3/8\" Pressure Washer Hose"
+    },
+    "boots_xtratuf": {
+      "asin": "B073WLHQ74",
+      "name": "XTRATUF Boots"
+    },
+    "apparel_huk": {
+      "asin": "B07V6WNZ2H",
+      "name": "HUK Apparel"
+    },
+    "boots_sureway": {
+      "asin": "B08HJTYD4R",
+      "name": "SUREWAY Boots"
+    },
+    "boots_dunlop": {
+      "asin": "B00125RBAA",
+      "name": "DUNLOP Boots"
+    },
+    "pressure_washer_hose_flexzilla": {
+      "asin": "B007QX4G56",
+      "name": "Flexzilla Pressure Washer Hose"
+    },
+    "pressure_washer_hose_uberflex": {
+      "asin": "B08P1P3N5W",
+      "name": "Uberflex Pressure Washer Hose"
+    },
+    "apparel_arctix": {
+      "asin": "B0189W6S3G",
+      "name": "Arctix Apparel"
+    },
+    "scotchgard": {
+      "asin": "B00006IA8O",
+      "name": "Scotchgard"
+    },
+    "gutter_getter": {
+      "asin": "B000223LAK",
+      "name": "Gutter Getter"
+    },
+    "hose_5_8": {
+      "asin": "B001V4C5CA",
+      "name": "Flexzilla 5/8\" Hose"
+    },
+    "hose_clamps_stainless": {
+      "asin": "B07B9L5V88",
+      "name": "Stainless Steel Hose Clamps"
+    },
+    "soft_wash_gun": {
+      "asin": "B087CZYMZT",
+      "name": "Soft Wash Gun"
+    },
+    "12v_chemical_pump": {
+      "asin": "B00O5YF60G",
+      "name": "12-volt On-Demand Chemical Pump"
+    },
+    "marine_battery": {
+      "asin": "B004W5SGBO",
+      "name": "Marine Battery Box"
+    },
+    "battery_charger": {
+      "asin": "B004LWVEKS",
+      "name": "Battery Charger"
+    },
+    "power_switch": {
+      "asin": "B013QUNBA2",
+      "name": "Power Switch"
+    },
+    "inline_fuse": {
+      "asin": "B01N220FOW",
+      "name": "Inline Fuse"
+    },
+    "water_fed_pole_gardiner": {
+      "asin": "B08N56V7LQ",
+      "name": "Gardiner Water Fed Pole"
+    },
+    "12v_diaphragm_pump": {
+      "asin": "B079V2NBQF",
+      "name": "Delavan 5850-201E-SB Diaphragm Pump 12V"
+    },
+    "soft_wash_spray_gun": {
+      "asin": "B0H3QS99PH",
+      "name": "Zoreblay ST-510 Soft-Wash Spray Gun"
+    },
+    "pressure_washer_ball_valve": {
+      "asin": "B07LCSWL4Y",
+      "name": "MTM Hydro DN10 Italian Pressure Washer Ball Valve"
+    },
+    "deck_boots_mens_showave": {
+      "asin": "B0DGFYMK4N",
+      "name": "Showave Men's Deck Boots"
+    },
+    "deck_boots_womens_showave": {
+      "asin": "B0CPJMCYDY",
+      "name": "Showave Women's Deck Boots"
+    },
+    "deck_boots_womens_xtratuf": {
+      "asin": "B07RWQZL2N",
+      "name": "XTRATUF Women's Ankle Deck Boots"
+    },
+    "deck_boots_mens_xtratuf": {
+      "asin": "B074NGKL9G",
+      "name": "XTRATUF Men's Ankle Deck Boot"
+    },
+    "rubber_boots_tall_hisea": {
+      "asin": "B0CRB1Y7SW",
+      "name": "HISEA Mens Rubber Boots Tall"
+    },
+    "respirator_half_face_3m": {
+      "asin": "B007JZ1MK6",
+      "name": "3M Half Facepiece Reusable Respirator 6300"
+    },
+    "respirator_cartridge_3m": {
+      "asin": "B00AEFCKKY",
+      "name": "3M P100 Respirator Cartridge/Filter 60923"
+    },
+    "safety_work_gloves": {
+      "asin": "B08X6GHFJ6",
+      "name": "DULFINE Safety Work Gloves"
+    },
+    "safety_glasses_anti_fog": {
+      "asin": "B0GLGCBWM3",
+      "name": "OXG Safety Glasses for Men"
+    },
+    "spears_gate_valve": {
+      "asin": "B009F2VXPK",
+      "name": "Spears Gate Valve, 3/4 In"
+    },
+    "pressure_washer_hose_whip": {
+      "asin": "B09QZDGKGG",
+      "name": "Essential Washer Pressure Washer Hose Whip"
+    },
+    "wash_down_gun_low_pressure": {
+      "asin": "B0DQ9RMK26",
+      "name": "General Pump RB35 High Volume, Low Pressure Wash Down Gun"
+    },
+    "spray_gun_rear_entry": {
+      "asin": "B000WQB6E6",
+      "name": "General Pump YG5000 Rear Entry Spray Gun"
+    },
+    "pivoting_coupler": {
+      "asin": "B07FXXXXJ3",
+      "name": "Meteor Blast Pressure Washer Pivoting Coupler"
+    },
+    "quick_connect_stainless": {
+      "asin": "B0C6HLQMPV",
+      "name": "Raincovo Pressure Washer Quick Connect 3/8 Inch, Stainless Steel"
+    },
+    "wand_extension": {
+      "asin": "B0D2X1ZK2Y",
+      "name": "YUNVI 110 Inch Pressure Washer Wand Extension"
+    },
+    "x_jet_twist": {
+      "asin": "B088ZV5DDX",
+      "name": "X-Jet DS Twist Nozzle - Adjustable Downstream Soft Wash Nozzle"
+    },
+    "jariko_jrod": {
+      "asin": "B09RV52WGP",
+      "name": "Jariko Jrod Pressure Washer Nozzle 4 GPM"
+    },
+    "chapin_22000_2pack": {
+      "asin": "B08PZJ6ZTG",
+      "name": "CHAPIN 22000 1-Gallon Pump Sprayer 2-Pack"
+    },
+    "gen_pump_injector_100776": {
+      "asin": "B00F1ZBPO4",
+      "name": "General Pump Fixed Chemical Injector 100776, High Draw"
+    },
+    "bumllashop_turbo_nozzle": {
+      "asin": "B0CNT8MZ6C",
+      "name": "BUMLLASHOP Pressure Washer Turbo Nozzle 2600-5100 PSI"
+    },
+    "gen_pump_turbo_yr36k": {
+      "asin": "PENDING_YR36K",
+      "name": "American Pressure Inc. General Pump YR36K 3650 PSI Turbo Nozzle"
+    },
+    "ancimoon_fittings": {
+      "asin": "B0D8QLC9LS",
+      "name": "ANCIMOON 2PCS 3/8'' Reusable Hydraulic Fittings"
+    },
+    "nffrtutu_fittings": {
+      "asin": "PENDING_NFFRTUTU",
+      "name": "NffrTuTu 2PCS 3/8\" Hydraulic Hose Repair Kit"
+    },
+    "ridge_washer_hose": {
+      "asin": "PENDING_RIDGE",
+      "name": "RIDGE WASHER Pressure Washer Hose 100 Ft X 3/8 Inch Gray"
+    },
+    "ocpty_hose": {
+      "asin": "PENDING_OCPTY",
+      "name": "OCPTY Hot Water Pressure Washer Hose 3/8\" x 100ft Gray"
+    },
+    "moerman_excelerator": {
+      "asin": "PENDING_MOERMAN_EXC",
+      "name": "Moerman Excelerator 2.0 14-Inch"
+    },
+    "ettore_backflip": {
+      "asin": "B00002N6FO",
+      "name": "Ettore ProSeries Backflip 14-Inch"
+    },
+    "ettore_brass_squeegee": {
+      "asin": "B00002N6DY",
+      "name": "Ettore Pro Series Brass Squeegee 12-Inch"
+    },
+    "ettore_plastic_squeegee": {
+      "asin": "B000BQRNOY",
+      "name": "Ettore All-Purpose Squeegee 12-Inch"
+    },
+    "ettore_rubber": {
+      "asin": "B00002N6E3",
+      "name": "Ettore Replacement Rubber 12-Inch"
+    },
+    "ettore_washer": {
+      "asin": "B001B11S9Y",
+      "name": "Ettore Mighty Window Washer 10-Inch"
+    },
+    "ettore_bucket": {
+      "asin": "B00002N6EG",
+      "name": "Ettore 3 Gallon Compact Super Bucket"
+    },
+    "dawn_dish_soap": {
+      "asin": "B0040ZODY8",
+      "name": "Dawn Ultra Dish Soap"
+    },
+    "huck_towels": {
+      "asin": "B07C64YZ3T",
+      "name": "Arkwright Surgical Huck Towels"
+    },
+    "ettore_starter_kit": {
+      "asin": "B00002N6FC",
+      "name": "Ettore 2506 Starter Window Cleaning Kit"
+    },
+    "ettore_scraper": {
+      "asin": "B00002N6EB",
+      "name": "Ettore 31044 Pro Scraper 6-Inch"
+    },
+    "ettore_extension_pole": {
+      "asin": "B00002N6F5",
+      "name": "Ettore 44016 REA-C-H Extension Pole 16-Feet"
+    }
+  }
+}

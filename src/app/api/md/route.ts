@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { getAffiliatesMarkdown } from "@/lib/affiliates";
 
 function safeResolve(relPath: string) {
   // normalize and prevent traversal
@@ -50,7 +51,7 @@ export async function GET(req: Request) {
 
   if (!fs.existsSync(resolved.full)) return new Response("Not found", { status: 404 });
 
-  const md = fs.readFileSync(resolved.full, "utf8");
+  const md = fs.readFileSync(resolved.full, "utf8") + getAffiliatesMarkdown();
   const title = firstH1(md) ?? path.basename(resolved.cleaned);
 
   if (download) {

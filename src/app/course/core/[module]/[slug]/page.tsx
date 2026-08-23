@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getLesson } from "@/lib/course";
 import { getCoreModuleTitles } from "@/lib/moduleTitles";
 import { getNeighbors } from "@/lib/nav";
+import { getAffiliatesMarkdown } from "@/lib/affiliates";
 import { remark } from "remark";
 import html from "remark-html";
 import gfm from "remark-gfm";
@@ -30,7 +31,7 @@ export default async function LessonPage({
   const moduleTitles = getCoreModuleTitles();
   const moduleTitle = moduleTitles?.[Number(module)];
 
-  const processed = await remark().use(gfm).use(html).process(lesson.content);
+  const processed = await remark().use(gfm).use(html).process(lesson.content + getAffiliatesMarkdown());
   let contentHtml = processed.toString();
 
   // Replace FIGURE callouts.
