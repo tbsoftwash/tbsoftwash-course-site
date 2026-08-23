@@ -67,6 +67,12 @@ function patchHtmlForMdEmbeds(input: string) {
     return `>${replaced}<`;
   });
 
+
+  // Open external links in a new tab
+  out = out.replace(/<a\s+(?:[^>]*?\s+)?href="(http[^"]+)"([^>]*)>/g, (match) => {
+    if (match.includes('target=')) return match;
+    return match.replace('>', ' target="_blank" rel="noopener noreferrer">');
+  });
   return out;
 }
 

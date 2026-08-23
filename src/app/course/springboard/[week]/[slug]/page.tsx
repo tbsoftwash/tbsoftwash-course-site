@@ -91,6 +91,12 @@ export default async function SpringboardLessonPage({
     return `>${replaced}<`;
   });
 
+
+  // Open external links in a new tab
+  contentHtml = contentHtml.replace(/<a\s+(?:[^>]*?\s+)?href="(http[^"]+)"([^>]*)>/g, (match) => {
+    if (match.includes('target=')) return match;
+    return match.replace('>', ' target="_blank" rel="noopener noreferrer">');
+  });
   return (
     <main className="mx-auto max-w-4xl px-6">
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.18),transparent_55%)]" />
