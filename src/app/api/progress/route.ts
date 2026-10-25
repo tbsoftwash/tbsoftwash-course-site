@@ -50,6 +50,8 @@ export async function POST(req: NextRequest) {
       activityDays: body?.activityDays,
       bookmarks: body?.bookmarks,
       notes: body?.notes,
+      quizScores: body?.quizScores,
+      rigLoadout: body?.rigLoadout,
       preferences: body?.preferences,
     });
 

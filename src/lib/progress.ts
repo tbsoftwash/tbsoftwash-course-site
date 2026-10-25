@@ -15,7 +15,20 @@ export const STORAGE_LAST = "tbsa.lastLesson.v1";
 export const STORAGE_ACTIVITY = "tbsa.activityDays.v1";
 export const STORAGE_BOOKMARKS = "tbsa.bookmarks.v1";
 export const STORAGE_NOTES = "tbsa.notes.v1";
+export const STORAGE_QUIZ_SCORES = "tbsa.quizScores.v1";
+export const STORAGE_RIG_LOADOUT = "tbsa.rigLoadout.v1";
+export const STORAGE_CERTIFICATES = "tbsa.certificates.v1";
 export const STORAGE_EMAIL = "tbsa.memberEmail.v1";
+
+export interface CertificateRecord {
+  code: string;
+  milestoneId: string;
+  milestoneTitle: string;
+  recipientName: string;
+  email: string;
+  issuedAt: string;
+  issuer: string;
+}
 
 export interface CloudProfile {
   completedLessons?: string[];
@@ -23,6 +36,9 @@ export interface CloudProfile {
   activityDays?: Record<string, number>;
   bookmarks?: string[];
   notes?: Record<string, string>;
+  quizScores?: Record<string, number>;
+  rigLoadout?: string[];
+  certificates?: Record<string, CertificateRecord>;
   preferences?: Record<string, string>;
   lastActiveAt?: string;
   lastLoginAt?: string;
@@ -34,6 +50,8 @@ export interface RosterEntry {
   activeDays: number;
   bookmarksCount: number;
   notesCount: number;
+  quizzesPassed?: number;
+  certsIssued?: number;
   lastLesson: string | null;
   lastActiveAt: string | null;
   lastLoginAt: string | null;
@@ -149,6 +167,80 @@ export function saveLessonNote(key: ProgressKey, noteText: string, sync = true) 
   }
 }
 
+export function loadQuizScores(): Record<string, number> {
+  if (typeof window === "undefined") return {};
+  try {
+    const raw = window.localStorage.getItem(STORAGE_QUIZ_SCORES);
+    const parsed = raw ? JSON.parse(raw) : {};
+    return parsed && typeof parsed === "object" && !Array.isArray(parsed) ? parsed : {};
+  } catch {
+    return {};
+  }
+}
+
+export function saveQuizScore(quizId: string, scorePct: number, sync = true) {
+  if (typeof window === "undefined") return;
+  try {
+    const scores = loadQuizScores();
+    scores[quizId] = Math.max(Number(scores[quizId] ?? 0), Math.round(scorePct));
+    window.localStorage.setItem(STORAGE_QUIZ_SCORES, JSON.stringify(scores));
+    window.dispatchEvent(new CustomEvent("tbsa:progress"));
+    if (sync) {
+      void syncProgressToCloud("merge");
+    }
+  } catch {
+    // ignore
+  }
+}
+
+export function loadRigLoadout(): Set<string> {
+  if (typeof window === "undefined") return new Set();
+  try {
+    const raw = window.localStorage.getItem(STORAGE_RIG_LOADOUT);
+    if (!raw) return new Set();
+    const arr = JSON.parse(raw);
+    return Array.isArray(arr) ? new Set(arr.map(String)) : new Set();
+  } catch {
+    return new Set();
+  }
+}
+
+export function saveRigLoadout(keys: Set<string>, sync = true) {
+  if (typeof window === "undefined") return;
+  try {
+    window.localStorage.setItem(STORAGE_RIG_LOADOUT, JSON.stringify(Array.from(keys)));
+    window.dispatchEvent(new CustomEvent("tbsa:progress"));
+    if (sync) {
+      void syncProgressToCloud("set");
+    }
+  } catch {
+    // ignore
+  }
+}
+
+export function loadCertificates(): Record<string, CertificateRecord> {
+  if (typeof window === "undefined") return {};
+  try {
+    const raw = window.localStorage.getItem(STORAGE_CERTIFICATES);
+    const parsed = raw ? JSON.parse(raw) : {};
+    return parsed && typeof parsed === "object" && !Array.isArray(parsed) ? parsed : {};
+  } catch {
+    return {};
+  }
+}
+
+export function saveCertificateLocal(cert: CertificateRecord) {
+  if (typeof window === "undefined") return;
+  try {
+    const certs = loadCertificates();
+    certs[cert.milestoneId] = cert;
+    window.localStorage.setItem(STORAGE_CERTIFICATES, JSON.stringify(certs));
+    window.dispatchEvent(new CustomEvent("tbsa:progress"));
+  } catch {
+    // ignore
+  }
+}
+
 export function clearProgress() {
   if (typeof window === "undefined") return;
   try {
@@ -194,6 +286,28 @@ export function applyCloudProfileToLocal(profile: CloudProfile | null | undefine
     }
     window.localStorage.setItem(STORAGE_NOTES, JSON.stringify(localNotes));
 
+    const localQuizzes = mode === "replace" ? {} : loadQuizScores();
+    for (const [qk, qv] of Object.entries(profile.quizScores ?? {})) {
+      localQuizzes[qk] = Math.max(Number(localQuizzes[qk] ?? 0), Number(qv ?? 0));
+    }
+    window.localStorage.setItem(STORAGE_QUIZ_SCORES, JSON.stringify(localQuizzes));
+
+    const localRig = mode === "replace" ? new Set<string>() : loadRigLoadout();
+    for (const rk of profile.rigLoadout ?? []) {
+      localRig.add(String(rk));
+    }
+    window.localStorage.setItem(STORAGE_RIG_LOADOUT, JSON.stringify(Array.from(localRig)));
+
+    if (profile.certificates && typeof profile.certificates === "object") {
+      const localCerts = mode === "replace" ? {} : loadCertificates();
+      for (const [cid, crec] of Object.entries(profile.certificates)) {
+        if (crec && crec.code) {
+          localCerts[cid] = crec;
+        }
+      }
+      window.localStorage.setItem(STORAGE_CERTIFICATES, JSON.stringify(localCerts));
+    }
+
     window.dispatchEvent(new CustomEvent("tbsa:progress"));
   } catch {
     // ignore
@@ -214,6 +328,8 @@ export async function syncProgressToCloud(mode: "merge" | "set" | "reset" = "mer
     const activityDays = loadActivityDays();
     const bookmarks = Array.from(loadBookmarks());
     const notes = loadNotes();
+    const quizScores = loadQuizScores();
+    const rigLoadout = Array.from(loadRigLoadout());
     const preferences: Record<string, string> = {};
     for (const pk of ["theme", "tbsa.diagramStyle.v1", "tbsa.previewMode.v1", "tbsa.themePreset.v1"]) {
       const val = window.localStorage.getItem(pk);
@@ -230,6 +346,8 @@ export async function syncProgressToCloud(mode: "merge" | "set" | "reset" = "mer
         activityDays,
         bookmarks,
         notes,
+        quizScores,
+        rigLoadout,
         preferences,
       }),
     });

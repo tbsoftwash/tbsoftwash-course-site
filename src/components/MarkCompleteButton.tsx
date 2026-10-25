@@ -26,6 +26,10 @@ export function MarkCompleteButton(props: {
   const [noteText, setNoteText] = React.useState("");
   const [noteSavedMsg, setNoteSavedMsg] = React.useState(false);
 
+  // "Listen in the Truck" Audio SOP Mode
+  const [speaking, setSpeaking] = React.useState(false);
+  const [rate, setRate] = React.useState<1 | 1.25 | 1.5>(1);
+
   React.useEffect(() => {
     const refresh = () => {
       setDone(loadCompleted().has(key));
@@ -36,8 +40,49 @@ export function MarkCompleteButton(props: {
     refresh();
     setLastLesson(key);
     window.addEventListener("tbsa:progress", refresh as any);
-    return () => window.removeEventListener("tbsa:progress", refresh as any);
+    return () => {
+      window.removeEventListener("tbsa:progress", refresh as any);
+      if (typeof window !== "undefined" && "speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
+      }
+    };
   }, [key]);
+
+  function startSpeech(targetRate: 1 | 1.25 | 1.5) {
+    if (typeof window === "undefined" || !("speechSynthesis" in window)) {
+      alert("Audio playback is not supported in this browser.");
+      return;
+    }
+    window.speechSynthesis.cancel();
+    const articleEl = document.querySelector(".markdown");
+    const rawText = articleEl ? (articleEl as HTMLElement).innerText : document.body.innerText;
+    if (!rawText) return;
+
+    const utter = new SpeechSynthesisUtterance(rawText);
+    utter.rate = targetRate;
+    utter.onend = () => setSpeaking(false);
+    utter.onerror = () => setSpeaking(false);
+    setSpeaking(true);
+    window.speechSynthesis.speak(utter);
+  }
+
+  function toggleAudio() {
+    if (typeof window === "undefined" || !("speechSynthesis" in window)) return;
+    if (speaking) {
+      window.speechSynthesis.cancel();
+      setSpeaking(false);
+    } else {
+      startSpeech(rate);
+    }
+  }
+
+  function cycleRate() {
+    const nextRate: 1 | 1.25 | 1.5 = rate === 1 ? 1.25 : rate === 1.25 ? 1.5 : 1;
+    setRate(nextRate);
+    if (speaking) {
+      startSpeech(nextRate);
+    }
+  }
 
   function toggleComplete() {
     const set = loadCompleted();
@@ -76,14 +121,30 @@ export function MarkCompleteButton(props: {
   const hasSavedNote = Boolean(loadNotes()[key]);
 
   return (
-    <div className="flex flex-wrap items-center gap-2">
+    <div className="flex flex-wrap items-center gap-1.5">
+      <Button
+        variant={speaking ? "default" : "outline"}
+        size="sm"
+        onClick={toggleAudio}
+        title="Hands-free Truck Audio SOP Mode"
+      >
+        {speaking ? "⏹ Stop Audio" : "🎧 Listen"}
+      </Button>
+      <Button
+        variant="outline"
+        size="sm"
+        onClick={cycleRate}
+        title="Change Audio Speed (1x / 1.25x / 1.5x)"
+      >
+        {rate}x
+      </Button>
       <Button
         variant={bookmarked ? "secondary" : "outline"}
         size="sm"
         onClick={toggleBookmark}
         title="Bookmark this SOP to your Dashboard"
       >
-        {bookmarked ? "★ Saved SOP" : "☆ Save SOP"}
+        {bookmarked ? "★ Saved" : "☆ Save SOP"}
       </Button>
       <Button
         variant={hasSavedNote || noteOpen ? "secondary" : "outline"}
@@ -91,7 +152,7 @@ export function MarkCompleteButton(props: {
         onClick={() => setNoteOpen((v) => !v)}
         title="Add or view personal rig & field notes for this lesson"
       >
-        {hasSavedNote ? "📝 Field Note ✓" : "📝 Add Note"}
+        {hasSavedNote ? "📝 Note ✓" : "📝 Note"}
       </Button>
       <Button variant={done ? "secondary" : "outline"} size="sm" onClick={toggleComplete}>
         {done ? "✓ Completed" : "Mark complete"}

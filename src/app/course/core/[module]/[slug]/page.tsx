@@ -15,6 +15,7 @@ import { PhotosHydrator } from "@/components/PhotosHydrator";
 import { VideosHydrator } from "@/components/VideosHydrator";
 import { MdEmbedsHydrator } from "@/components/MdEmbedsHydrator";
 import { GlossaryHydrator } from "@/components/GlossaryHydrator";
+import { ModuleQuizCard } from "@/components/ModuleQuizCard";
 import { Button } from "@/components/ui/button";
 
 export default async function LessonPage({
@@ -133,6 +134,8 @@ export default async function LessonPage({
       <VideosHydrator />
       <MdEmbedsHydrator />
       <GlossaryHydrator />
+
+      <ModuleQuizCard track="core" module={Number(module)} />
 
       <div className="mt-10 flex flex-wrap gap-2">
         {neighbors.prev ? (

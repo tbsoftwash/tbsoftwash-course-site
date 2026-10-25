@@ -243,8 +243,10 @@ export function SidebarNav({
 
         <SearchInput value={query} onChange={setQuery} placeholder="Search lessons…" />
 
-        <div className="mb-4">
-          <NavItem href="/course" label="Course Index" />
+        <div className="mb-4 grid gap-1">
+          <NavItem href="/course" label="Course Index & Dashboard" />
+          <NavItem href="/course/calculators" label="🧪 Field Calculators" />
+          <NavItem href="/course/rig-builder" label="🚛 My Rig & Gear Loadout" />
         </div>
 
       </div>
