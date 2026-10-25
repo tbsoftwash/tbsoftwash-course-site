@@ -9,6 +9,8 @@ export const EXPORT_KEYS = [
   "tbsa.completedLessons.v1",
   "tbsa.lastLesson.v1",
   "tbsa.activityDays.v1",
+  "tbsa.bookmarks.v1",
+  "tbsa.notes.v1",
   "tbsa.diagramStyle.v1",
   "tbsa.previewMode.v1",
   "tbsa.themePreset.v1",

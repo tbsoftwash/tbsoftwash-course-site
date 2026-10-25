@@ -33,6 +33,9 @@ export default function Home() {
           <Link href="/course">Start learning</Link>
         </Button>
         <Button asChild variant="outline">
+          <Link href="/signin">Operator Sign In / Cloud Sync</Link>
+        </Button>
+        <Button asChild variant="outline">
           <Link href="/course/printables">Printables</Link>
         </Button>
         <Button asChild variant="secondary">
@@ -56,7 +59,8 @@ export default function Home() {
           <li>Use the checklists, then do a final walk.</li>
         </ol>
         <p className="text-xs text-muted-foreground">
-          Note: Progress is saved on this device. You can export/import a JSON backup in the User Card.
+          Note: Sign in with your email (6-digit passcode or 1-click magic link) to sync your completed
+          lessons, certification milestones, saved SOP bookmarks, and field notes across all your devices.
         </p>
       </div>
 

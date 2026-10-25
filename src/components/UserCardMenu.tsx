@@ -1,12 +1,13 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link";
 
 import { ModeToggle } from "@/components/ModeToggle";
 import { DiagramStyleToggle } from "@/components/DiagramStyleToggle";
 import { CourseViewToggle } from "@/components/CourseViewToggle";
 import { PreviewModeToggle } from "@/components/PreviewModeToggle";
-import { clearProgress } from "@/lib/progress";
+import { clearProgress, STORAGE_EMAIL, syncProgressToCloud } from "@/lib/progress";
 import { downloadExport, applyImportPayload } from "@/lib/progressExport";
 import { cn } from "@/lib/utils";
 import {
@@ -35,15 +36,18 @@ export function UserCardMenu({ collapsed }: { collapsed?: boolean }) {
   const [diagramStyle, setDiagramStyle] = React.useState("B-dark-glassy");
   const [readerMode, setReaderMode] = React.useState("preview");
   const [preset, setPreset] = React.useState<ThemePreset>("default");
+  const [memberEmail, setMemberEmail] = React.useState<string | null>(null);
   const ref = React.useRef<HTMLDivElement | null>(null);
 
   React.useEffect(() => {
     const refresh = () => {
-      // next-themes uses localStorage key "theme"
       setTheme(readLS("theme", "dark"));
       setDiagramStyle(readLS("tbsa.diagramStyle.v1", "B-dark-glassy"));
       setReaderMode(readLS("tbsa.previewMode.v1", "preview"));
       setPreset(loadThemePreset());
+      if (typeof window !== "undefined") {
+        setMemberEmail(window.localStorage.getItem(STORAGE_EMAIL));
+      }
     };
 
     refresh();
@@ -56,10 +60,12 @@ export function UserCardMenu({ collapsed }: { collapsed?: boolean }) {
 
     window.addEventListener("mousedown", onDown);
     window.addEventListener("storage", refresh);
+    window.addEventListener("tbsa:progress", refresh as any);
     window.addEventListener("tbsa:themePreset", refresh as any);
     return () => {
       window.removeEventListener("mousedown", onDown);
       window.removeEventListener("storage", refresh);
+      window.removeEventListener("tbsa:progress", refresh as any);
       window.removeEventListener("tbsa:themePreset", refresh as any);
     };
   }, []);
@@ -80,7 +86,21 @@ export function UserCardMenu({ collapsed }: { collapsed?: boolean }) {
 
         {open ? (
           <div className="absolute bottom-12 left-0 z-50 w-64 rounded-xl border bg-background/95 p-3 shadow-xl backdrop-blur">
-            <div className="mb-2 text-sm font-semibold">@tbsoftwash</div>
+            <div className="mb-1 truncate text-sm font-semibold">
+              {memberEmail || "Guest Operator"}
+            </div>
+            <div className="mb-2 text-xs text-muted-foreground">
+              {memberEmail ? "Cloud Synced ✓" : "Local Device Only"}
+            </div>
+            <div className="mb-3">
+              <Link
+                href="/signin"
+                onClick={() => setOpen(false)}
+                className="block w-full rounded-lg bg-primary px-3 py-1.5 text-center text-xs font-semibold text-primary-foreground"
+              >
+                {memberEmail ? "Account / Cloud Sync" : "Sign In with Email →"}
+              </Link>
+            </div>
             <div className="grid gap-3">
               <div>
                 <div className="mb-1 text-xs text-muted-foreground">Theme</div>
@@ -126,9 +146,11 @@ export function UserCardMenu({ collapsed }: { collapsed?: boolean }) {
         )}
       >
         <div className="min-w-0">
-          <div className="truncate text-sm font-semibold">Tampa Bay Soft Wash</div>
+          <div className="truncate text-sm font-semibold">
+            {memberEmail || "Guest Operator (Sign In)"}
+          </div>
           <div className="truncate text-xs text-muted-foreground">
-            Theme: {theme} • Style: {friendlyDiagramStyle(diagramStyle)} • Reader: {readerMode}
+            {memberEmail ? "Cloud Synced ✓" : "Local Only"} • Theme: {theme} • {friendlyDiagramStyle(diagramStyle)}
           </div>
         </div>
         <div className="text-xs text-muted-foreground">{open ? "▲" : "▼"}</div>
@@ -136,20 +158,35 @@ export function UserCardMenu({ collapsed }: { collapsed?: boolean }) {
 
       {open ? (
         <div className="absolute bottom-14 left-0 z-50 w-full rounded-xl border bg-background/95 p-3 shadow-xl backdrop-blur">
+          <div className="mb-3 rounded-lg border bg-background/40 p-2.5">
+            <div className="truncate text-xs font-semibold">
+              {memberEmail ? `Signed in: ${memberEmail}` : "Guest Mode (Local Storage)"}
+            </div>
+            <div className="mt-1.5 flex flex-wrap gap-2">
+              <Link
+                href="/signin"
+                onClick={() => setOpen(false)}
+                className="rounded-md bg-primary px-2.5 py-1 text-xs font-semibold text-primary-foreground"
+              >
+                {memberEmail ? "Manage Account" : "Sign In (Code / Magic Link) →"}
+              </Link>
+              {memberEmail ? (
+                <button
+                  onClick={() => void syncProgressToCloud("merge")}
+                  className="rounded-md border px-2.5 py-1 text-xs text-muted-foreground hover:text-foreground"
+                >
+                  Sync Now
+                </button>
+              ) : null}
+            </div>
+          </div>
+
           <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Settings</div>
           <div className="mb-3 text-xs text-muted-foreground">
             Current: Theme <span className="text-foreground">{theme}</span> • Preset{" "}
             <span className="text-foreground">{preset}</span> • Style{" "}
             <span className="text-foreground">{friendlyDiagramStyle(diagramStyle)}</span> • Reader{" "}
             <span className="text-foreground">{readerMode}</span>
-            {theme === "dark" && preset === "maclight" ? (
-              <>
-                <br />
-                <span className="text-xs text-destructive">
-                  Note: Mac Light is a light-only preset. Switch Theme to Light/System to use it.
-                </span>
-              </>
-            ) : null}
           </div>
 
           <div className="grid gap-3">
@@ -195,9 +232,6 @@ export function UserCardMenu({ collapsed }: { collapsed?: boolean }) {
                 >
                   Mac Light
                 </button>
-              </div>
-              <div className="mt-1 text-[11px] text-muted-foreground">
-                Presets skin the UI (buttons/rounding/contrast) on top of Light/Dark/System.
               </div>
             </div>
             <div>
