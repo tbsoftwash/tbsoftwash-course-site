@@ -88,6 +88,12 @@ VIDEO: https://www.youtube.com/watch?v=iSwdT4MdZsM | Quick traditional window cl
 ## Printables
 - Operator Checklist Pack (truck copy): `03_curriculum/printables/operator-checklist-pack-v1.md`
 
+## Field Guide & Interactive Calculator (tbsoftwash.com)
+> **🪟 Pro Window Cleaning, Hard-Water Removal & `0-TDS` WFP Guides:**
+> - **[Beginner's Guide to Traditional Window Cleaning Tools →](https://tbsoftwash.com/blog-beginners-guide-to-traditional-window-cleaning-tools/)**
+> - **[Commercial Storefront, Awning & 0-TDS Window Washing in Tampa Bay →](https://tbsoftwash.com/blog-commercial-storefront-awning-sidewalk-washing-tampa-bay/)**
+> - **[How We Remove Hard Water Stains from Glass →](https://tbsoftwash.com/blog-how-we-remove-hard-water-stains/)**
+
 ## Gear Box (Amazon)
 - [Ettore 3 Gallon Super Bucket][ettore_bucket]
 - [Ettore Mighty Washer (10-Inch)][ettore_washer]

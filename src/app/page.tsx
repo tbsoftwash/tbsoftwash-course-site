@@ -35,8 +35,10 @@ export default function Home() {
         <Button asChild variant="outline">
           <Link href="/course/printables">Printables</Link>
         </Button>
-        <Button asChild variant="secondary" title="Use your email to save your progress — no passwords required. (Coming soon)">
-          <Link href="/signin">Sign in with Email (coming soon)</Link>
+        <Button asChild variant="secondary">
+          <a href="https://tbsoftwash.com/resources/" target="_blank" rel="noopener noreferrer">
+            Field Guides &amp; Calculators (tbsoftwash.com) ↗
+          </a>
         </Button>
       </div>
 

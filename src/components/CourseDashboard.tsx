@@ -18,6 +18,24 @@ import {
 } from "@/components/ui/alert-dialog";
 import { loadCompleted, getLastLesson, lessonKey, clearProgress } from "@/lib/progress";
 
+const SPRINGBOARD_LABELS: Record<string, string> = {
+  "week-0-first-7-days": "Week 0 — Your First 7 Days",
+  "week-1-gutters": "Week 1 — Gutters (Fast-Start)",
+  "week-2-traditional-windows": "Week 2 — Traditional Windows",
+  "week-3-wfp-rodi": "Week 3 — Pure Water (WFP / RO-DI)",
+};
+
+function springboardWeekLabel(weekId: string): string {
+  if (SPRINGBOARD_LABELS[weekId]) return SPRINGBOARD_LABELS[weekId];
+  const m = weekId.match(/^week-(\d+)-(.+)$/i);
+  if (m) {
+    const num = parseInt(m[1], 10);
+    const title = m[2].replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+    return `Week ${num} — ${title}`;
+  }
+  return weekId;
+}
+
 function hrefForLesson(l: LessonMeta) {
   if (l.track === "core") return `/course/core/${l.module}/${l.slug}`;
   return `/course/springboard/${l.week}/${l.slug}`;
@@ -98,15 +116,20 @@ export function CourseDashboard({
   }, [completed]);
 
   const byModule = React.useMemo(() => {
-    const map = new Map<string, { label: string; total: number; done: number; href?: string }>();
+    const map = new Map<string, { label: string; sortKey: number; total: number; done: number; href?: string }>();
 
     for (const l of lessons) {
-      const bucket =
-        l.track === "core" ? `core:module:${l.module}` : `springboard:week:${l.week}`;
-      const label =
-        l.track === "core"
-          ? `Module ${l.module}${moduleTitles?.[Number(l.module)] ? ` — ${moduleTitles[Number(l.module)]}` : ""}`
-          : String(l.week);
+      const isCore = l.track === "core";
+      const modNum = Number(l.module ?? 0);
+      const weekStr = String(l.week ?? "");
+      const weekMatch = weekStr.match(/week-(\d+)/);
+      const weekNum = weekMatch ? Number(weekMatch[1]) : 99;
+
+      const bucket = isCore ? `core:module:${modNum}` : `springboard:week:${weekStr}`;
+      const label = isCore
+        ? `Module ${modNum}${moduleTitles?.[modNum] ? ` — ${moduleTitles[modNum]}` : ""}`
+        : springboardWeekLabel(weekStr);
+      const sortKey = isCore ? modNum : 100 + weekNum;
 
       const k = lessonKey({
         track: l.track,
@@ -117,6 +140,7 @@ export function CourseDashboard({
 
       const entry = map.get(bucket) ?? {
         label,
+        sortKey,
         total: 0,
         done: 0,
         href: hrefForLesson(l),
@@ -131,8 +155,8 @@ export function CourseDashboard({
       map.set(bucket, entry);
     }
 
-    return Array.from(map.values()).sort((a, b) => a.label.localeCompare(b.label));
-  }, [lessons, completed]);
+    return Array.from(map.values()).sort((a, b) => a.sortKey - b.sortKey);
+  }, [lessons, completed, moduleTitles]);
 
   const lastHref = React.useMemo(() => {
     if (!last) return null;

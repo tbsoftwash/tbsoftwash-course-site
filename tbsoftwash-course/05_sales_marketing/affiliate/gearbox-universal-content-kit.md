@@ -8,11 +8,11 @@ Use this for the Proof Pack / Content Engine modules.
 
 ## Pro
 - **Lav mic (wireless)** — cleaner voice for quick job explanations.
-  - Link: AMZ_TODO:lav-mic
+  - Link: [NEEWER KM19 Wireless Lavalier Microphone for iPhone & Android][lav_mic_wireless] (https://www.amazon.com/dp/B0H7S7RWB4?tag=tbsoftwash06-20)
 
 ## Premium
 - (placeholder)
 
 **Disclosure:** As an Amazon Associate, we earn from qualifying purchases.
 
-NOTE: Per Option A, only links from your sheet should be used. If this mic link isn’t in your sheet, we will replace with `AMZ_TODO:lav-mic`.
+NOTE: Per Option A, only links from your sheet should be used. If this mic link isn’t in your sheet, we will replace with `[NEEWER KM19 Wireless Lavalier Microphone for iPhone & Android][lav_mic_wireless] (https://www.amazon.com/dp/B0H7S7RWB4?tag=tbsoftwash06-20)`.

@@ -16,7 +16,7 @@ Use this Gear Box for any lesson where water supply reliability or flow matters.
 
 ## Premium
 - **100' heavy-duty rubber hose (durability over light weight)** — jobsite abuse, less “mystery leaks.” If you cheap out: burst/leaks mid-job.
-  - Link: https://www.amazon.com/Briggs-Stratton-8BS100-100-Foot-Heavy-Duty/dp/B003UIRKUU?&_encoding=UTF8&tag=tbsoftwash06-20&linkCode=ur2&linkId=b6c5c4c6cbdac94b0f3c61e4dd3cc55b&camp=1789&creative=9325
+  - Link: https://www.amazon.com/Briggs-Stratton-8BS100-100-Foot-Heavy-Duty/dp/B007R0UHEU?&_encoding=UTF8&tag=tbsoftwash06-20&linkCode=ur2&linkId=b6c5c4c6cbdac94b0f3c61e4dd3cc55b&camp=1789&creative=9325
 
 ## Consumables
 - Hose repair kit (brass) — https://www.amazon.com/Hamineler-Garden-Extension-Connector-Stainless/dp/B08MBZ5WB7/ref=asc_df_B08MBZ5WB7/?tag=tbsoftwash06-20&linkCode=ur2&psc=1&_encoding=UTF8&linkId=b1087007ef09e4014d6c023901d97139&camp=1789&creative=9325

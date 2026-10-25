@@ -114,7 +114,21 @@ Add a note:
 ## Printables
 - Operator Checklist Pack (truck copy): `03_curriculum/printables/operator-checklist-pack-v1.md`
 
-## Gear Box (Amazon)
-Gear Box links (Amazon): Coming soon.
+## Field Guide & Interactive Calculator (tbsoftwash.com)
+> **🏡 Interactive Stucco Paint Warranty, Siding Oxidation & Lanai Calculators:**
+> - **[How to Preserve Your Sherwin-Williams Exterior Paint Warranty with Stucco Soft Washing →](https://tbsoftwash.com/blog-preserve-sherwin-williams-exterior-paint-warranty-stucco-soft-wash/)**
+> - **[Vinyl Siding & Aluminum Soffit Oxidation (`TiO2`) Removal in Florida →](https://tbsoftwash.com/blog-vinyl-siding-aluminum-soffit-oxidation-removal-florida/)**
+> - **[Florida Pool Cage, Lanai Screen & Travertine Cleaning Guide →](https://tbsoftwash.com/blog-florida-pool-cage-lanai-screen-travertine-cleaning-guide/)**
+> - **[Multi-Story Condo Window & Stucco Cleaning in Pinellas County →](https://tbsoftwash.com/blog-multi-story-condo-window-stucco-cleaning-pinellas/)**
 
-Disclosure: As an Amazon Associate, we earn from qualifying purchases.
+## Gear Box (Amazon)
+### House Wash Downstream, Pool Cage & Rinse Control Kit
+- **[General Pump 100776 High-Draw Fixed Downstream Injector][gen_pump_injector_100776]** — reliable 10:1 house-wash draw without delicate moving parts.
+- **[Jariko 4-Way J-Rod Nozzle Holder (4 GPM)][jariko_jrod]** + **[X-Jet DS Twist Adjustable Soft Wash Nozzle][x_jet_twist]** — instant transitions from 2-story soap reach to wide fan rinse.
+- **[MTM Hydro DN10 Italian Ball Valve][pressure_washer_ball_valve]** + **[Raincovo 3/8" Stainless Quick Connects][quick_connect_stainless]**.
+- **[General Pump RB35 Low-Pressure Wash Down Gun][wash_down_gun_low_pressure]** — high-volume delicate rinsing around oxidized siding, lanai screens, and plants.
+- **[YAMATIC Non-Marking 3/8" Pressure Washer Hose][pressure_washer_hose_yamatic]** / **[Uberflex Pressure Washer Hose][pressure_washer_hose_uberflex]**.
+- **[3M 12ft x 400ft Painter's Plastic][painters_plastic_12x400]** — masking exterior outlets, keypads, and stained wood doors.
+
+**Disclosure:** As an Amazon Associate, we earn from qualifying purchases.
+

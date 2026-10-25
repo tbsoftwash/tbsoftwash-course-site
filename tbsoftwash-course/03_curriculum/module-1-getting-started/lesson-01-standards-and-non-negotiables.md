@@ -63,7 +63,19 @@ That means we win with:
 ## Printables
 - Operator Checklist Pack (truck copy): `03_curriculum/printables/operator-checklist-pack-v1.md`
 
-## Gear Box (Amazon)
-Gear Box links (Amazon): Coming soon.
+## Field Guide & Interactive Calculator (tbsoftwash.com)
+> **📖 TBSoftWash Operator Standards & Florida Property Guides:**
+> - **[Florida HOA & Condo Exterior Maintenance Guide →](https://tbsoftwash.com/blog-hoa-condo-exterior-maintenance-guide-florida/)**
+> - **[Pre-Listing Home Inspection & Exterior Cleaning ROI in Tampa Bay →](https://tbsoftwash.com/blog-pre-listing-home-inspection-exterior-cleaning-roi-tampa-bay/)**
+> - **[What Is the Difference Between Pressure Washing and Soft Washing? →](https://tbsoftwash.com/blog-what-is-the-difference-between-pressure-washing-and-soft-washing/)**
 
-Disclosure: As an Amazon Associate, we earn from qualifying purchases.
+## Gear Box (Amazon)
+### Proof Pack, Property Protection & Daily Operator Kit
+- **[UBeesize 64" Phone Tripod for Before/After Proof Packs][ubeesize_64in_tripod]** — consistent elevation framing so before/after angles match 100%. *If you cheap out:* crooked handheld shots reduce review conversions.
+- **[3M 12ft x 400ft Hand-Masker Painter's Plastic Film][painters_plastic_12x400]** + **[8" x 350' 6 Mil Poly Tubing Roll][poly_tubing_6mil]** — masking smart locks, ring cameras, and sensitive landscaping.
+- **[5-Gallon Heavy-Duty Buckets (3-Pack)][homer_buckets_3pack]** — jobsite tool organization, draw testing, and downspout containment.
+- **[XTRATUF Men's Ankle Deck Boots][deck_boots_mens_xtratuf]** / **[XTRATUF Women's Ankle Deck Boots][deck_boots_womens_xtratuf]** — non-slip wet-surface traction.
+- **[3M Splash-Proof Safety Goggles][safety_goggles]** + **[LANON Chemical-Resistant Nitrile Gloves][nitrile_gloves]**.
+
+**Disclosure:** As an Amazon Associate, we earn from qualifying purchases.
+

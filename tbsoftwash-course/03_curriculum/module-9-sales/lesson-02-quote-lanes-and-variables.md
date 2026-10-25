@@ -30,7 +30,7 @@ Good for:
 - unsafe access
 
 ## Variables that change pricing (Tampa Bay Soft Wash)
-Source: `01_business_profile/pricing-notes.md`
+- Reference Profile: `01_business_profile/pricing-notes.md`
 - pitch/height
 - water access
 - delicate landscaping
@@ -55,7 +55,18 @@ Source: `01_business_profile/pricing-notes.md`
 ## Printables
 - Operator Checklist Pack (truck copy): `03_curriculum/printables/operator-checklist-pack-v1.md`
 
-## Gear Box (Amazon)
-Gear Box links (Amazon): Coming soon.
+## Field Guide & Interactive Calculator (tbsoftwash.com)
+> **💼 Commercial & HOA Proposal Templates + Interactive Estimators:**
+> - **[Florida HOA Pressure Washing RFP Template (`F.S. § 720.3055` 10% Rule Calculator) →](https://tbsoftwash.com/blog-florida-hoa-pressure-washing-rfp-template-statute-720-3055/)**
+> - **[Florida HOA & Condo Exterior Maintenance Guide →](https://tbsoftwash.com/blog-hoa-condo-exterior-maintenance-guide-florida/)**
+> - **[Pre-Listing Home Inspection & Exterior Cleaning ROI Calculator →](https://tbsoftwash.com/blog-pre-listing-home-inspection-exterior-cleaning-roi-tampa-bay/)**
+> - **[How to Measure a Roof Remotely for Soft Wash Quotes →](https://tbsoftwash.com/blog-how-to-measure-a-roof/)**
 
-Disclosure: As an Amazon Associate, we earn from qualifying purchases.
+## Gear Box (Amazon)
+### Field Estimating, Test-Spot & Proof Pack Kit
+- **[UBeesize 64" Phone Tripod][ubeesize_64in_tripod]** — filming walkaround video estimates and before/after Proof Packs.
+- **[Chemical Guys Acc_136 32oz Acid/Chemical Sprayer][chemical_guys_acid_sprayer]** + **[0-14 pH Test Strips][ph_test_strips]** — running live 60-second on-site test spots during HOA & commercial walkarounds.
+- **[XTRATUF Men's Ankle Deck Boots][deck_boots_mens_xtratuf]** + **[HUK Performance Work Apparel][apparel_huk]** — clean, uniform on-site estimator presentation.
+
+**Disclosure:** As an Amazon Associate, we earn from qualifying purchases.
+

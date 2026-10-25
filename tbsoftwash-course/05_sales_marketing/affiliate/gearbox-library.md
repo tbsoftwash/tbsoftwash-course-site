@@ -19,7 +19,7 @@ IMPORTANT: Per current workflow, **only use Amazon URLs provided by your spreads
 
 ### Pro
 - **5-gallon buckets (3-pack)** — debris containment / jobsite cleanliness. If you cheap out: cracked handles, leaks.
-  - Link: https://www.amazon.com/5-Gal-Homer-Bucket-3-Pack/dp/B08NT7KFSP/ref=sr_1_5?crid=3AAAQ56COJ4Y3&keywords=5+gallon+bucket&qid=1656564093&s=home-garden&sprefix=5+gallon+bucket%252Cgarden%252C80&sr=1-5&_encoding=UTF8&tag=tbsoftwash06-20&linkCode=ur2&linkId=b80ea300e95240601650f8ab632d24f6&camp=1789&creative=9325
+  - Link: https://www.amazon.com/5-Gal-Homer-Bucket-3-Pack/dp/B09KYFZ3KZ/ref=sr_1_5?crid=3AAAQ56COJ4Y3&keywords=5+gallon+bucket&qid=1656564093&s=home-garden&sprefix=5+gallon+bucket%252Cgarden%252C80&sr=1-5&_encoding=UTF8&tag=tbsoftwash06-20&linkCode=ur2&linkId=b80ea300e95240601650f8ab632d24f6&camp=1789&creative=9325
 
 ### Premium
 - **Pop-up pod / changing tent (portable privacy)** — changing PPE, keeping customer-facing professionalism, shade during breaks. If you cheap out: flimsy zippers and it collapses in wind.
@@ -52,21 +52,21 @@ IMPORTANT: Per current workflow, **only use Amazon URLs provided by your spreads
 ## Gear Box — Gutters (Springboard)
 ### Starter
 - **Gutter scoop/trowel** — fastest way to clear debris without tearing gutters. If you cheap out: flimsy scoop breaks and slows you down.
-  - Link: AMZ_TODO:gutter-scoop
+  - Link: [Gutter Getter][gutter_getter] (https://www.amazon.com/dp/B0FH1SKWM7?tag=tbsoftwash06-20)
 
 - **Ladder bucket hook / ladder tray** — keeps hands free and reduces dropped tools. If you cheap out: you’ll climb more and move slower.
-  - Link: AMZ_TODO:ladder-bucket-hook
+  - Link: [Heavy-Duty Metal Ladder Bucket Hook & Utility Tool Hanger (4-Pack)][ladder_bucket_hook] (https://www.amazon.com/dp/B0HDZ2WHQV?tag=tbsoftwash06-20)
 
 - **Contractor-grade spray nozzle** — flushing + verifying downspout flow. If you cheap out: weak pattern and constant leaks.
-  - Link: AMZ_TODO:contractor-spray-nozzle
+  - Link: [FANHAO Heavy-Duty 100% Metal High-Pressure Garden Hose Spray Nozzle][contractor_spray_nozzle] (https://www.amazon.com/dp/B07MYWK5RY?tag=tbsoftwash06-20)
 
 ### Pro
 - **Wet/dry vac** — fast cleanup for certain gutter runs and jobsite debris control. If you cheap out: weak suction and short hose.
-  - Link: AMZ_TODO:wet-dry-vac
+  - Link: [CRAFTSMAN Wet/Dry Shop Vacuum Cleaner for Gutter & Sump Cleanup][wet_dry_shop_vac] (https://www.amazon.com/dp/B07MHZJVM4?tag=tbsoftwash06-20)
 
 ### Premium
 - **Ladder standoff / stabilizer** — protects gutters/siding and improves safety. If you cheap out: wobble + gutter damage.
-  - Link: AMZ_TODO:ladder-standoff-stabilizer
+  - Link: [Heavy-Duty Extension Ladder Standoff Stabilizer for Gutters & Roofs][ladder_standoff_stabilizer] (https://www.amazon.com/dp/B0G32DJYBX?tag=tbsoftwash06-20)
 
 **Disclosure:** As an Amazon Associate, we earn from qualifying purchases.
 
@@ -75,21 +75,21 @@ IMPORTANT: Per current workflow, **only use Amazon URLs provided by your spreads
 ## Gear Box — Traditional Windows (Springboard)
 ### Starter
 - **Window cleaning combo/kit (squeegee + washer)** — fastest way to get streak-free without buying pro routes gear day one. If you cheap out: bad rubber + streaks.
-  - Link: AMZ_TODO:squeegee-washer-kit
+  - Link: [Ettore 2506 Starter Window Cleaning Kit][ettore_starter_kit] (https://www.amazon.com/dp/B000KIFO9O?tag=tbsoftwash06-20)
 
 - **Microfiber detailing towels** — edge detailing + sill wipe. If you cheap out: lint + smears.
-  - Link: AMZ_TODO:microfiber-detail-towels
+  - Link: [MR.SIGA Lint-Free Streak-Free Microfiber Glass Detailing Towels (12-Pack)][microfiber_glass_towels] (https://www.amazon.com/dp/B07HRCDDL1?tag=tbsoftwash06-20)
 
 ### Pro
 - **Extension pole** — reduces ladder time and speeds exteriors.
-  - Link: https://www.amazon.com/Ettore-43012-Extension-Pole-foot/dp/B000HEI8Z0/ref=sr_1_5?crid=2FW4VHCZHHOTW&keywords=ettore%2Bextension%2Bpole&qid=1649183952&sprefix=ettore%2Bextension%2Bpole%2Caps%2C89&sr=8-5&_encoding=UTF8&tag=tbsoftwash06-20&linkCode=ur2&linkId=add9c6131fe2fb27ff50bdc7600185b9&camp=1789&creative=9325
+  - Link: https://www.amazon.com/Ettore-43012-Extension-Pole-foot/dp/B002EQ7R7W/ref=sr_1_5?crid=2FW4VHCZHHOTW&keywords=ettore%2Bextension%2Bpole&qid=1649183952&sprefix=ettore%2Bextension%2Bpole%2Caps%2C89&sr=8-5&_encoding=UTF8&tag=tbsoftwash06-20&linkCode=ur2&linkId=add9c6131fe2fb27ff50bdc7600185b9&camp=1789&creative=9325
 
 - **Scraper + blades (safe use only)** — paint/bugs when appropriate. If you cheap out: scratched glass.
-  - Link: AMZ_TODO:scraper-and-blades
+  - Link: [Ettore 31044 Pro Scraper 6-Inch][ettore_scraper] (https://www.amazon.com/dp/B001CLGSK2?tag=tbsoftwash06-20)
 
 ### Premium
 - **Better channels + replacement rubber** — consistent glide and fewer redo passes. If you cheap out: chatter and rework.
-  - Link: AMZ_TODO:replacement-rubber
+  - Link: [Ettore Replacement Rubber 12-Inch][ettore_rubber] (https://www.amazon.com/dp/B01EURTPWM?tag=tbsoftwash06-20)
 
 **Disclosure:** As an Amazon Associate, we earn from qualifying purchases.
 
@@ -98,17 +98,17 @@ IMPORTANT: Per current workflow, **only use Amazon URLs provided by your spreads
 ## Gear Box — WFP / RO-DI (Upgrade)
 ### Starter
 - **TDS meter** — tells you when resin is spent. If you cheap out: you chase spotting blindly.
-  - Link: AMZ_TODO:tds-meter
+  - Link: [Digital TDS Water Quality Tester Meter (0-9990 PPM for RO/DI Pure Water)][tds_water_meter] (https://www.amazon.com/dp/B0DXKWTDLF?tag=tbsoftwash06-20)
 
 - **Entry-level WFP brush + hose** — gets you in the game. If you cheap out: shedding bristles + poor rinse.
-  - Link: AMZ_TODO:wfp-brush
+  - Link: [Water-Fed Pole Window & Solar Panel Washing Brush Head][wfp_boars_hair_brush] (https://www.amazon.com/dp/B0HHHMDD84?tag=tbsoftwash06-20)
 
 ### Pro
 - **RO/DI build parts** — carbon + RO + DI stages.
-  - Link: AMZ_TODO:rodi-carbon-prefilter / AMZ_TODO:ro-membrane / AMZ_TODO:di-resin / AMZ_TODO:di-housing
+  - Link: [PUREPLUS 1-Micron 10" x 2.5" CTO Activated Carbon Block Pre-Filter (4-Pack)][rodi_carbon_prefilter] (https://www.amazon.com/dp/B01N1IJ5V1?tag=tbsoftwash06-20) / [Max Water 4" x 40" 4040 Commercial Reverse Osmosis Membrane (2400 GPD)][ro_membrane_4040] (https://www.amazon.com/dp/B07ZVYQKTQ?tag=tbsoftwash06-20) / [Color-Changing Mixed-Bed Deionization (DI) Filter Resin Refill][di_resin_color_changing] (https://www.amazon.com/dp/B0FT7SRTK5?tag=tbsoftwash06-20) / [Hydronix 10" Clear Filter Housing Canister with 3/4" NPT Ports (for DI Resin)][di_canister_housing] (https://www.amazon.com/dp/B01CFOGH32?tag=tbsoftwash06-20)
 
 ### Premium
 - **Higher-end pole sections** — reach + rigidity. If you cheap out: flex and fatigue.
-  - Link: AMZ_TODO:wfp-entry-pole
+  - Link: [Gardiner Water Fed Pole][water_fed_pole_gardiner] (https://www.amazon.com/dp/B0G4CJVB9V?tag=tbsoftwash06-20)
 
 **Disclosure:** As an Amazon Associate, we earn from qualifying purchases.

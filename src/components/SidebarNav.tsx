@@ -14,6 +14,24 @@ import { cn } from "@/lib/utils";
 import { lessonKey, loadCompleted } from "@/lib/progress";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 
+const SPRINGBOARD_LABELS: Record<string, string> = {
+  "week-0-first-7-days": "Week 0 — Your First 7 Days",
+  "week-1-gutters": "Week 1 — Gutters (Fast-Start)",
+  "week-2-traditional-windows": "Week 2 — Traditional Windows",
+  "week-3-wfp-rodi": "Week 3 — Pure Water (WFP / RO-DI)",
+};
+
+function springboardWeekLabel(weekId: string): string {
+  if (SPRINGBOARD_LABELS[weekId]) return SPRINGBOARD_LABELS[weekId];
+  const m = weekId.match(/^week-(\d+)-(.+)$/i);
+  if (m) {
+    const num = parseInt(m[1], 10);
+    const title = m[2].replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+    return `Week ${num} — ${title}`;
+  }
+  return weekId;
+}
+
 function cleanTitle(t: string) {
   return t
     .replace(/^Module\s+\d+\s+—\s+/i, "")
@@ -279,7 +297,7 @@ export function SidebarNav({
                   <div key={week} className="rounded-xl border bg-background/30">
                     <Collapsible open={isOpen} onOpenChange={(v) => toggle(key, v)}>
                       <CollapsibleTrigger>
-                        <span className="truncate">{week}</span>
+                        <span className="truncate">{springboardWeekLabel(week)}</span>
                         <span className="text-xs text-muted-foreground">{isOpen ? "Hide" : "Show"}</span>
                       </CollapsibleTrigger>
                       <CollapsibleContent>
@@ -312,9 +330,24 @@ export function SidebarNav({
           </section>
 
           <section>
-            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Tools</h3>
+            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">TBSoftWash Ecosystem</h3>
             <div className="grid gap-1">
-              <NavItem href="/course/figures/psi-vs-gpm" label="Figure demo" />
+              <a
+                href="https://tbsoftwash.com/resources/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between gap-3 rounded-lg px-3 py-2 text-sm text-muted-foreground transition hover:bg-accent/40 hover:text-foreground"
+              >
+                <span className="min-w-0 truncate">Field Guides &amp; Calculators ↗</span>
+              </a>
+              <a
+                href="https://tbsoftwash.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between gap-3 rounded-lg px-3 py-2 text-sm text-muted-foreground transition hover:bg-accent/40 hover:text-foreground"
+              >
+                <span className="min-w-0 truncate">tbsoftwash.com Main Site ↗</span>
+              </a>
             </div>
           </section>
 

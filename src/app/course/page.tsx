@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CourseIndexClient } from "@/components/CourseIndexClient";
 
-import { getCoreModuleTitles } from "@/lib/moduleTitles";
+import { getCoreModuleTitles, springboardWeekLabel } from "@/lib/moduleTitles";
 
 function groupCore(lessons: LessonMeta[], moduleTitles: Record<number, string>) {
   const byModule = new Map<number, LessonMeta[]>();
@@ -28,7 +28,7 @@ function groupSpringboard(lessons: LessonMeta[]) {
   }
   const weeks = Array.from(byWeek.entries()).sort((a, b) => a[0].localeCompare(b[0]));
   for (const [, items] of weeks) items.sort((a, b) => (a.lesson ?? 999) - (b.lesson ?? 999));
-  return weeks.map(([week, items]) => ({ label: week, lessons: items }));
+  return weeks.map(([week, items]) => ({ label: springboardWeekLabel(week), lessons: items }));
 }
 
 export default async function CourseIndex() {

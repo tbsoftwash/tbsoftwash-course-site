@@ -125,7 +125,21 @@ Add notes:
 ## Printables
 - Operator Checklist Pack (truck copy): `03_curriculum/printables/operator-checklist-pack-v1.md`
 
-## Gear Box (Amazon)
-Gear Box links (Amazon): Coming soon.
+## Field Guide & Interactive Calculator (tbsoftwash.com)
+> **🏠 Interactive Florida Roof Soft Wash & Insurance Calculators:**
+> - **[Barrel Tile vs. Shingle Roof Soft Washing in Florida (Interactive Calculator) →](https://tbsoftwash.com/blog-barrel-tile-vs-shingle-roof-soft-washing-florida/)**
+> - **[Satellite Roof Inspection & Florida Insurance Non-Renewal Guide →](https://tbsoftwash.com/blog-satellite-roof-inspection-insurance-non-renewal-florida/)**
+> - **[Florida's 25% Roof Replacement Rule & Soft Washing (`FBC § 706.1.1`) →](https://tbsoftwash.com/blog-florida-25-percent-roof-replacement-rule-soft-washing/)**
+> - **[Coastal Metal Roof Soft Washing & Oxidation Guide →](https://tbsoftwash.com/blog-coastal-metal-roof-soft-washing-oxidation-clearwater-tampa-bay/)**
 
-Disclosure: As an Amazon Associate, we earn from qualifying purchases.
+## Gear Box (Amazon)
+### ARMA-Compliant Roof Soft Wash & Plant Protection Rig
+- **[Delavan 5850 5.0 GPM 12V Diaphragm Pump][12v_diaphragm_pump]** / **[Delavan FB3 7.0 GPM 12V Diaphragm Pump][delavan_fb3_7gpm_pump]** — dedicated `< 60 PSI` roof delivery.
+- **[Zoreblay ST-510 Soft-Wash Poly Spray Gun][soft_wash_spray_gun]** + **[Kuriyama K1176 300ft Braided Chemical Hose][kuriyama_k1176_300ft_hose]**.
+- **[General Pump RB35 Low-Pressure Wash Down Gun][wash_down_gun_low_pressure]** + **[Flexzilla 5/8" x 100ft Supply Hose][flexzilla_garden_hose_100ft]** — dedicated ground-person plant dilution line.
+- **[3M 12ft x 400ft Painter's Plastic][painters_plastic_12x400]** + **[8" x 350' 6 Mil Poly Tubing Roll][poly_tubing_6mil]** — bagging downspout runoff and tropical beds.
+- **[HUK Men's Rogue Wave High-Traction Shoe][huk_rogue_wave_shoe]** / **[XTRATUF Ankle Deck Boots][deck_boots_mens_xtratuf]** — wet-surface grip.
+- **[3M Half-Face Respirator 6300][respirator_half_face_3m]** + **[3M P100 Cartridges][respirator_cartridge_3m]** + **[3M Splash-Proof Goggles][safety_goggles]**.
+
+**Disclosure:** As an Amazon Associate, we earn from qualifying purchases.
+

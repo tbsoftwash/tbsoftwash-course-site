@@ -69,3 +69,20 @@ Default timing: **24–72 hours later** (give the customer time to enjoy the cle
 - Don’t skip the closeout.
 
 If you’re unsure at any point: stop, test, reset expectations, then proceed.
+
+## Field Guide & Interactive Calculator (tbsoftwash.com)
+> **📖 Essential Starting Guides & Interactive Calculators on `tbsoftwash.com`:**
+> - **[What Is the Difference Between Pressure Washing and Soft Washing? →](https://tbsoftwash.com/blog-what-is-the-difference-between-pressure-washing-and-soft-washing/)**
+> - **[Complete Beginner's Guide to a Soft Wash System →](https://tbsoftwash.com/blog-complete-beginners-guide-soft-wash-system/)**
+> - **[Should You Buy a Soft Wash System or a Pressure Washing System First? →](https://tbsoftwash.com/blog-should-you-buy-a-soft-wash-system-or-a-pressure-washing-system/)**
+> - **[Explore All Interactive Chemical, Nozzle & Paver Calculators →](https://tbsoftwash.com/resources/)**
+
+## Gear Box (Amazon)
+### Day-One Operator PPE, Safety & Proof Pack Starter Kit
+- **[3M Half-Face Respirator 6300][respirator_half_face_3m]** + **[3M 60926 Multi-Gas/Vapor & P100 Cartridges][respirator_cartridge_60926]** — protect your lungs from day one around sodium hypochlorite and acids.
+- **[3M Splash-Proof Safety Goggles][safety_goggles]** + **[LANON Chemical-Resistant Nitrile Gloves][nitrile_gloves]** — mandatory eye and skin protection.
+- **[XTRATUF Men's Ankle Deck Boots][deck_boots_mens_xtratuf]** / **[XTRATUF Women's Ankle Deck Boots][deck_boots_womens_xtratuf]** / **[Dunlop Waterproof PVC Work Boots][dunlop_chesapeake_lightweight]** — wet-concrete and roof traction.
+- **[UBeesize 64" Phone Tripod][ubeesize_64in_tripod]** — capture matched before/after Proof Pack photos and reels on every job.
+- **[Chapin 22000 1-Gallon Pump Sprayer (2-Pack)][chapin_22000_2pack]** + **[5-Gallon Heavy-Duty Buckets (3-Pack)][homer_buckets_3pack]**.
+
+**Disclosure:** As an Amazon Associate, we earn from qualifying purchases.
